@@ -7410,9 +7410,16 @@
     {
       "source": "report/design_report.pdf",
       "path": "report/design_report.pdf",
-      "source_sha256": "ae87a6294d911269925d1427f89dc9f4bc26e11db0d7fc5f1624407a7ca71b5d",
+      "source_sha256": "9cbe2dfc1c017cf261a184b58379e6d01ff33f8e51096fc590fd153d5e8e145e",
       "adapted": false,
-      "published_sha256": "ae87a6294d911269925d1427f89dc9f4bc26e11db0d7fc5f1624407a7ca71b5d"
+      "published_sha256": "9cbe2dfc1c017cf261a184b58379e6d01ff33f8e51096fc590fd153d5e8e145e"
+    },
+    {
+      "source": "README.md",
+      "path": "README.md",
+      "source_sha256": "2ceeccb1e092e3fb7c94c8e87169ddc26484af291828de4303b0183ae5fa33c7",
+      "published_sha256": "d5ee94c74e7f5bb902d90c74fe2eb9414fa02edaec512536236684471a21860d",
+      "adapted": true
     }
   ]
 }
