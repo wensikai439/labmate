@@ -1,0 +1,61 @@
+{
+  "source_environment": "Ubuntu 24.04, apt-get download; original development package cache",
+  "packages": [
+    {
+      "file": "binutils-arm-linux-gnueabihf_2.42-4ubuntu2.10_amd64.deb",
+      "bytes": 3552010,
+      "sha256": "698eb4afbb292d5c3e58d2193f0bf5f53682c3ac42dfb8510e3450d992faaec9"
+    },
+    {
+      "file": "cpp-13-arm-linux-gnueabihf_13.3.0-6ubuntu2~24.04.1cross1_amd64.deb",
+      "bytes": 10156004,
+      "sha256": "397ac4b1644ad1a3b4c6ec30bbcf6af81e4282745f483e4b8fee407ccae7ddab"
+    },
+    {
+      "file": "gcc-13-arm-linux-gnueabihf-base_13.3.0-6ubuntu2~24.04.1cross1_amd64.deb",
+      "bytes": 51818,
+      "sha256": "e632c2b7f2138799a73d8539f664267b7d6cc91567dae4ff71f0a69bce3f0c8f"
+    },
+    {
+      "file": "gcc-13-arm-linux-gnueabihf_13.3.0-6ubuntu2~24.04.1cross1_amd64.deb",
+      "bytes": 19555392,
+      "sha256": "60dbb65b4fbd249eddc2e68482ea9a9f532e66baed878845161132c3cb3a69e9"
+    },
+    {
+      "file": "gcc-13-cross-base_13.3.0-6ubuntu2~24.04.1cross1_all.deb",
+      "bytes": 46536,
+      "sha256": "02676468c2f71d57be2fbd6e6f74462ab419a49db15a1b1f031b2460a2954cd3"
+    },
+    {
+      "file": "libc6-armhf-cross_2.39-0ubuntu8cross1_all.deb",
+      "bytes": 1319680,
+      "sha256": "4c61c413e2cc45ce2c5703a1564d1886f45c98ddbbd33d9f8b05736dee045ce1"
+    },
+    {
+      "file": "libc6-dev-armhf-cross_2.39-0ubuntu8cross1_all.deb",
+      "bytes": 1386934,
+      "sha256": "31bb0a43b89d9e6e9d4f2b81d53376ad01e397653e6a834e00ac4129e0e48c44"
+    },
+    {
+      "file": "libgcc-13-dev-armhf-cross_13.3.0-6ubuntu2~24.04.1cross1_all.deb",
+      "bytes": 899314,
+      "sha256": "930c595a54ba1f1096463a9f8ab4757b5d1f12f267a99521aa4505ca302e7988"
+    },
+    {
+      "file": "libgcc-s1-armhf-cross_14.2.0-4ubuntu2~24.04.1cross1_all.deb",
+      "bytes": 41594,
+      "sha256": "1fdbacca10af62652762869a21f07b545d5211257b5b78f245aceefd611e3ce7"
+    },
+    {
+      "file": "linux-libc-dev-armhf-cross_6.8.0-25.25cross1_all.deb",
+      "bytes": 1359284,
+      "sha256": "1f83b9a486063b2daef0f21baf856b0cbb0b64eecf83b180434ab9190f6be8d8"
+    },
+    {
+      "file": "qemu-user-static_1%3a8.2.2+ds-0ubuntu1.16_amd64.deb",
+      "bytes": 14628452,
+      "sha256": "a8f4e6121b7d1710885ba00fdb1e5a8256fb396f12ade2da9ed8a3693ad6d1bd"
+    }
+  ],
+  "chat_source": "01a10637-54b3-70b0-bf0e-11909788aa8a"
+}

@@ -1,0 +1,6 @@
+Failed to find real location of D:\anaconda3\python.exe
+PASS: 9 evidence files match SHA-256.
+PASS: archived SCPI failure + 3 corrected cases; state restoration recorded.
+PASS: historical model checkpoints 38; DS integration 23; reconnect replies 3.
+PASS: 25 sourced excerpts; November 1 and November 2 records each contain 27 cases (5 + 7 + 4 + 11).
+Historical outcomes are verified as records; no hardware or cloud operation was performed.

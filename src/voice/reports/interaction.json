@@ -1,0 +1,166 @@
+{
+  "scope": "Deterministic workstation microphone replay, not a physical-board microphone measurement.",
+  "three_separate_button_processes": {
+    "passed": true,
+    "same_service_pid": 4174052,
+    "results": [
+      [
+        {
+          "asr_service_pid": 4174052,
+          "backend": "PS_CPU_ONNX_INT8_resident",
+          "board_runtime_verified": false,
+          "capture_duration_ms": 2980.0,
+          "cascade_route": "vad_asr_guarded",
+          "confirmation_required": true,
+          "decoder": "offline_ctc_context_prefix",
+          "endpoint_tail_ms": 800,
+          "endpoint_to_result_ms": 226.97795,
+          "frequency_hz": null,
+          "instrument_control_executed": false,
+          "intent_proposal": "CMD_IDENTIFY_INSTRUMENT",
+          "memory": {
+            "process_rss_kib": 150664,
+            "process_swap_kib": 0,
+            "system_available_kib": 4189492
+          },
+          "model_load_count": 1,
+          "parser": "constrained_zh_rules_v6r2_native",
+          "parser_board_verified": false,
+          "pipeline_ms": 225.287125,
+          "process_peak_rss_kib": 149684,
+          "reason": "single_supported_command_proposal",
+          "service_model_load_ms": 267.99305,
+          "service_model_reused": true,
+          "service_queue_wait_ms": 0.0,
+          "service_startup_wait_ms": 0.225383,
+          "timing_ms": {
+            "ctc_decode": 7.5689,
+            "encoder": 213.379,
+            "frontend": 3.89689,
+            "total": 224.964
+          },
+          "transcript": "查询信号发生器的型号"
+        }
+      ],
+      [
+        {
+          "state": "listening",
+          "type": "audio_state"
+        },
+        {
+          "state": "speech_started",
+          "type": "audio_state"
+        },
+        {
+          "capture_duration_ms": 2980.0,
+          "endpoint_tail_ms": 800,
+          "state": "recognizing",
+          "type": "audio_state"
+        },
+        {
+          "asr_service_pid": 4174052,
+          "backend": "PS_CPU_ONNX_INT8_resident",
+          "board_runtime_verified": false,
+          "capture_duration_ms": 2980.0,
+          "cascade_route": "vad_asr_guarded",
+          "confirmation_required": true,
+          "decoder": "offline_ctc_context_prefix",
+          "endpoint_tail_ms": 800,
+          "endpoint_to_result_ms": 217.995073,
+          "frequency_hz": null,
+          "instrument_control_executed": false,
+          "intent_proposal": "CMD_IDENTIFY_INSTRUMENT",
+          "memory": {
+            "process_rss_kib": 150664,
+            "process_swap_kib": 0,
+            "system_available_kib": 4134932
+          },
+          "model_load_count": 1,
+          "parser": "constrained_zh_rules_v6r2_native",
+          "parser_board_verified": false,
+          "pipeline_ms": 216.169498,
+          "process_peak_rss_kib": 160948,
+          "reason": "single_supported_command_proposal",
+          "service_model_load_ms": 267.99305,
+          "service_model_reused": true,
+          "service_queue_wait_ms": 0.0,
+          "service_startup_wait_ms": 0.144075,
+          "timing_ms": {
+            "ctc_decode": 7.7865,
+            "encoder": 204.864,
+            "frontend": 3.14454,
+            "total": 215.895
+          },
+          "transcript": "查询信号发生器的型号"
+        }
+      ],
+      [
+        {
+          "asr_service_pid": 4174052,
+          "backend": "PS_CPU_ONNX_INT8_resident",
+          "board_runtime_verified": false,
+          "capture_duration_ms": 2980.0,
+          "cascade_route": "vad_asr_guarded",
+          "confirmation_required": true,
+          "decoder": "offline_ctc_context_prefix",
+          "endpoint_tail_ms": 800,
+          "endpoint_to_result_ms": 209.805961,
+          "frequency_hz": null,
+          "instrument_control_executed": false,
+          "intent_proposal": "CMD_IDENTIFY_INSTRUMENT",
+          "memory": {
+            "process_rss_kib": 150664,
+            "process_swap_kib": 0,
+            "system_available_kib": 4105356
+          },
+          "model_load_count": 1,
+          "parser": "constrained_zh_rules_v6r2_native",
+          "parser_board_verified": false,
+          "pipeline_ms": 208.147484,
+          "process_peak_rss_kib": 160996,
+          "reason": "single_supported_command_proposal",
+          "service_model_load_ms": 267.99305,
+          "service_model_reused": true,
+          "service_queue_wait_ms": 0.0,
+          "service_startup_wait_ms": 0.146853,
+          "timing_ms": {
+            "ctc_decode": 7.60096,
+            "encoder": 196.659,
+            "frontend": 3.48865,
+            "total": 207.842
+          },
+          "transcript": "查询信号发生器的型号"
+        }
+      ]
+    ]
+  },
+  "busy_rejection": {
+    "passed": true,
+    "response": {
+      "error": "recognition_busy",
+      "message": "Previous recognition is still running; no extra request was queued",
+      "service_startup_wait_ms": 0.092591
+    }
+  },
+  "bad_file_recovery": {
+    "passed": true
+  },
+  "microphone_failure": {
+    "passed": true
+  },
+  "status": {
+    "asr_service_pid": 4174052,
+    "busy": false,
+    "completed_requests": 5,
+    "microphone_opened_by_service": false,
+    "model_load_count": 1,
+    "model_load_ms": 267.99305,
+    "ready": true,
+    "rss_kib": 166176,
+    "state": "ready",
+    "swap_kib": 0,
+    "type": "voice_service_status",
+    "version": "8.2"
+  },
+  "passed": true
+}

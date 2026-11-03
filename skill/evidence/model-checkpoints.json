@@ -1,0 +1,4896 @@
+{
+  "checks": [
+    {
+      "name": "initial vision",
+      "data": {
+        "state": "running",
+        "age": 0.2748485840002104,
+        "seconds": 0.0,
+        "diagnostics": [
+          {
+            "phase": "waiting",
+            "reason": "no_person",
+            "capture_time": 1735.181018299,
+            "timing": {
+              "inference_ms": 1228.5329530000126,
+              "frame_age_ms": 2042.6702689999274
+            },
+            "identity": {
+              "state": "unconfirmed",
+              "reason": "no_person"
+            },
+            "verification": {
+              "state": "idle"
+            },
+            "boot_id": "e487bcf134604b7a9c9a3e8ab50f580c",
+            "last_event_seq": 3,
+            "always_automatic": true,
+            "is_experiment_prerequisite": false,
+            "enrollment_samples": null,
+            "last_result_age_seconds": 0.2748485840002104,
+            "registered": 1,
+            "track_id": null,
+            "enrollment": null
+          }
+        ]
+      }
+    },
+    {
+      "name": "buttons",
+      "data": {
+        "session": "e3ac2481bfff46c887f68239a2d86f97",
+        "seq": 0,
+        "events": [],
+        "values": [
+          0,
+          0,
+          0,
+          0,
+          0
+        ],
+        "updated": 1659699953.906626,
+        "available": true
+      }
+    },
+    {
+      "name": "initial models",
+      "data": {
+        "memory": {
+          "MemAvailable": 187272,
+          "SwapFree": 188664,
+          "SwapTotal": 364536,
+          "oom_kill": 0
+        },
+        "models": [
+          {
+            "pid": 523,
+            "command": "/usr/bin/python3 -B /boot/labmate-control-v2/dashboard/vision_worker.py --root /boot/labmate-control-v2/LabMate_Vision_V2_20261022 --gallery /boot/labmate-control-v2/display-data/student-gallery-v2.json ",
+            "rss": "20252 kB",
+            "swap": "4736 kB"
+          }
+        ]
+      }
+    },
+    {
+      "name": "select-local",
+      "data": {
+        "engine": "local",
+        "ready": true,
+        "button": true
+      }
+    },
+    {
+      "name": "vision after select-local",
+      "data": {
+        "state": "running",
+        "age": 0.6770471110000926,
+        "seconds": 0.0,
+        "diagnostics": [
+          {
+            "phase": "waiting",
+            "reason": "no_person",
+            "capture_time": 1756.872145236,
+            "timing": {
+              "inference_ms": 1334.3588999998701,
+              "frame_age_ms": 1964.0486280000005
+            },
+            "identity": {
+              "state": "unconfirmed",
+              "reason": "no_person"
+            },
+            "verification": {
+              "state": "idle"
+            },
+            "boot_id": "e487bcf134604b7a9c9a3e8ab50f580c",
+            "last_event_seq": 3,
+            "always_automatic": true,
+            "is_experiment_prerequisite": false,
+            "enrollment_samples": null,
+            "last_result_age_seconds": 0.6770471110000926,
+            "registered": 1,
+            "track_id": null,
+            "enrollment": null
+          }
+        ]
+      }
+    },
+    {
+      "name": "select-local memory",
+      "data": {
+        "memory": {
+          "MemAvailable": 120644,
+          "SwapFree": 175096,
+          "SwapTotal": 364536,
+          "oom_kill": 0
+        },
+        "models": [
+          {
+            "pid": 523,
+            "command": "/usr/bin/python3 -B /boot/labmate-control-v2/dashboard/vision_worker.py --root /boot/labmate-control-v2/LabMate_Vision_V2_20261022 --gallery /boot/labmate-control-v2/display-data/student-gallery-v2.json ",
+            "rss": "19888 kB",
+            "swap": "4820 kB"
+          },
+          {
+            "pid": 27826,
+            "command": "/tmp/labmate-model-_gp6w38o/infer --server /boot/labmate-control-v2/SmartBox_ZedBoard_Voice_V8_2_20261022/models/asr ",
+            "rss": "1232 kB",
+            "swap": "0 kB"
+          },
+          {
+            "pid": 27829,
+            "command": "/boot/labmate-control-v2/SmartBox_ZedBoard_Voice_V8_2_20261022/bin/smartbox_voice_service /boot/labmate-control-v2/SmartBox_ZedBoard_Voice_V8_2_20261022 ",
+            "rss": "90428 kB",
+            "swap": "0 kB"
+          }
+        ]
+      }
+    },
+    {
+      "name": "recognize-local",
+      "data": {
+        "seconds": 24.35,
+        "result": {
+          "id": "e0bacca872514e278d19a201facf2fa7",
+          "state": "ready",
+          "result": {
+            "intent": "UNMATCHED",
+            "label": "需要澄清",
+            "transcript": "你好这是语音识别速度测试",
+            "frequency_hz": null,
+            "proposal": "需要澄清",
+            "confirmation_required": true,
+            "instrument_control_executed": false,
+            "route": "V8.2 resident ASR",
+            "asr_engine": "local",
+            "timing_ms": {
+              "ctc_decode": 527.894,
+              "encoder": 22797.7,
+              "frontend": 135.269,
+              "total": 23477.2
+            },
+            "memory": {
+              "process_rss_kib": 105244,
+              "process_swap_kib": 0,
+              "system_available_kib": 137152
+            },
+            "service_model_load_ms": 12268.191004,
+            "asr_service_pid": 27829,
+            "cloud_required": false,
+            "voice_mode": null
+          },
+          "error": null,
+          "cloud_required": false,
+          "voice_mode": null,
+          "wake_only": true,
+          "asr_engine": "local",
+          "capture_stage": "pausing_camera",
+          "resource_busy": false,
+          "asr_requested": "local",
+          "asr_switching": false,
+          "asr_ready": true,
+          "asr_error": null,
+          "asr_button": "BTN8 / PB1 / MIO50",
+          "asr_button_available": true,
+          "asr_button_error": null,
+          "asr_button_presses": 0,
+          "handsfree": {},
+          "available": true,
+          "record_available": true,
+          "microphone": {
+            "available": true,
+            "message": "XVF3800 已识别，开始录音后验证音频数据",
+            "card": 3,
+            "card_id": "Array",
+            "device": 0,
+            "channels": 2,
+            "name": "3 [Array          ]: USB-Audio - reSpeaker XVF3800 4-Mic Array",
+            "alsa": "plughw:CARD=Array,DEV=0",
+            "channel": 1
+          },
+          "record_seconds": 6,
+          "record_mode": "toggle",
+          "wake_only_supported": true,
+          "model_version": "SmartBox V8.2",
+          "recognition_mode": "capture-preview-final",
+          "message": "XVF3800 已识别，开始录音后验证音频数据"
+        }
+      }
+    },
+    {
+      "name": "vision resumed",
+      "data": {
+        "state": "running",
+        "age": 0.3677352229999542,
+        "seconds": 0.0,
+        "diagnostics": [
+          {
+            "phase": "waiting",
+            "reason": "no_person",
+            "capture_time": 1788.496835425,
+            "timing": {
+              "inference_ms": 1028.1469010001274,
+              "frame_age_ms": 1609.1209250000702
+            },
+            "identity": {
+              "state": "unconfirmed",
+              "reason": "no_person"
+            },
+            "verification": {
+              "state": "idle"
+            },
+            "boot_id": "e487bcf134604b7a9c9a3e8ab50f580c",
+            "last_event_seq": 3,
+            "always_automatic": true,
+            "is_experiment_prerequisite": false,
+            "enrollment_samples": null,
+            "last_result_age_seconds": 0.3677352229999542,
+            "registered": 1,
+            "track_id": null,
+            "enrollment": null
+          }
+        ]
+      }
+    },
+    {
+      "name": "after recognize-local",
+      "data": {
+        "memory": {
+          "MemAvailable": 123152,
+          "SwapFree": 172536,
+          "SwapTotal": 364536,
+          "oom_kill": 0
+        },
+        "models": [
+          {
+            "pid": 523,
+            "command": "/usr/bin/python3 -B /boot/labmate-control-v2/dashboard/vision_worker.py --root /boot/labmate-control-v2/LabMate_Vision_V2_20261022 --gallery /boot/labmate-control-v2/display-data/student-gallery-v2.json ",
+            "rss": "19900 kB",
+            "swap": "4816 kB"
+          },
+          {
+            "pid": 27826,
+            "command": "/tmp/labmate-model-_gp6w38o/infer --server /boot/labmate-control-v2/SmartBox_ZedBoard_Voice_V8_2_20261022/models/asr ",
+            "rss": "1236 kB",
+            "swap": "0 kB"
+          },
+          {
+            "pid": 27829,
+            "command": "/boot/labmate-control-v2/SmartBox_ZedBoard_Voice_V8_2_20261022/bin/smartbox_voice_service /boot/labmate-control-v2/SmartBox_ZedBoard_Voice_V8_2_20261022 ",
+            "rss": "105240 kB",
+            "swap": "0 kB"
+          }
+        ]
+      }
+    },
+    {
+      "name": "both local models resident",
+      "data": [
+        {
+          "pid": 523,
+          "command": "/usr/bin/python3 -B /boot/labmate-control-v2/dashboard/vision_worker.py --root /boot/labmate-control-v2/LabMate_Vision_V2_20261022 --gallery /boot/labmate-control-v2/display-data/student-gallery-v2.json ",
+          "rss": "19768 kB",
+          "swap": "4948 kB"
+        },
+        {
+          "pid": 27826,
+          "command": "/tmp/labmate-model-_gp6w38o/infer --server /boot/labmate-control-v2/SmartBox_ZedBoard_Voice_V8_2_20261022/models/asr ",
+          "rss": "1236 kB",
+          "swap": "0 kB"
+        },
+        {
+          "pid": 27829,
+          "command": "/boot/labmate-control-v2/SmartBox_ZedBoard_Voice_V8_2_20261022/bin/smartbox_voice_service /boot/labmate-control-v2/SmartBox_ZedBoard_Voice_V8_2_20261022 ",
+          "rss": "105240 kB",
+          "swap": "0 kB"
+        }
+      ]
+    },
+    {
+      "name": "select-hy",
+      "data": {
+        "engine": "hy",
+        "ready": true,
+        "button": true
+      }
+    },
+    {
+      "name": "vision after select-hy",
+      "data": {
+        "state": "running",
+        "age": 0.5071578550000595,
+        "seconds": 0.0,
+        "diagnostics": [
+          {
+            "phase": "waiting",
+            "reason": "no_person",
+            "capture_time": 1790.10978999,
+            "timing": {
+              "inference_ms": 1514.8351889999958,
+              "frame_age_ms": 2177.9358679998495
+            },
+            "identity": {
+              "state": "unconfirmed",
+              "reason": "no_person"
+            },
+            "verification": {
+              "state": "idle"
+            },
+            "boot_id": "e487bcf134604b7a9c9a3e8ab50f580c",
+            "last_event_seq": 3,
+            "always_automatic": true,
+            "is_experiment_prerequisite": false,
+            "enrollment_samples": null,
+            "last_result_age_seconds": 0.5071578550000595,
+            "registered": 1,
+            "track_id": null,
+            "enrollment": null
+          }
+        ]
+      }
+    },
+    {
+      "name": "select-hy memory",
+      "data": {
+        "memory": {
+          "MemAvailable": 206744,
+          "SwapFree": 172280,
+          "SwapTotal": 364536,
+          "oom_kill": 0
+        },
+        "models": [
+          {
+            "pid": 523,
+            "command": "/usr/bin/python3 -B /boot/labmate-control-v2/dashboard/vision_worker.py --root /boot/labmate-control-v2/LabMate_Vision_V2_20261022 --gallery /boot/labmate-control-v2/display-data/student-gallery-v2.json ",
+            "rss": "19768 kB",
+            "swap": "4948 kB"
+          }
+        ]
+      }
+    },
+    {
+      "name": "select-local",
+      "data": {
+        "engine": "local",
+        "ready": true,
+        "button": true
+      }
+    },
+    {
+      "name": "vision after select-local",
+      "data": {
+        "state": "running",
+        "age": 0.4876557690001846,
+        "seconds": 0.0,
+        "diagnostics": [
+          {
+            "phase": "waiting",
+            "reason": "no_person",
+            "capture_time": 1811.166146564,
+            "timing": {
+              "inference_ms": 1014.9848730000031,
+              "frame_age_ms": 1756.089209000038
+            },
+            "identity": {
+              "state": "unconfirmed",
+              "reason": "no_person"
+            },
+            "verification": {
+              "state": "idle"
+            },
+            "boot_id": "e487bcf134604b7a9c9a3e8ab50f580c",
+            "last_event_seq": 3,
+            "always_automatic": true,
+            "is_experiment_prerequisite": false,
+            "enrollment_samples": null,
+            "last_result_age_seconds": 0.4876557690001846,
+            "registered": 1,
+            "track_id": null,
+            "enrollment": null
+          }
+        ]
+      }
+    },
+    {
+      "name": "select-local memory",
+      "data": {
+        "memory": {
+          "MemAvailable": 139372,
+          "SwapFree": 156408,
+          "SwapTotal": 364536,
+          "oom_kill": 0
+        },
+        "models": [
+          {
+            "pid": 523,
+            "command": "/usr/bin/python3 -B /boot/labmate-control-v2/dashboard/vision_worker.py --root /boot/labmate-control-v2/LabMate_Vision_V2_20261022 --gallery /boot/labmate-control-v2/display-data/student-gallery-v2.json ",
+            "rss": "16816 kB",
+            "swap": "7900 kB"
+          },
+          {
+            "pid": 28691,
+            "command": "/tmp/labmate-model-84ckx6eu/infer --server /boot/labmate-control-v2/SmartBox_ZedBoard_Voice_V8_2_20261022/models/asr ",
+            "rss": "1228 kB",
+            "swap": "0 kB"
+          },
+          {
+            "pid": 28693,
+            "command": "/boot/labmate-control-v2/SmartBox_ZedBoard_Voice_V8_2_20261022/bin/smartbox_voice_service /boot/labmate-control-v2/SmartBox_ZedBoard_Voice_V8_2_20261022 ",
+            "rss": "92776 kB",
+            "swap": "0 kB"
+          }
+        ]
+      }
+    },
+    {
+      "name": "recognize-local",
+      "data": {
+        "seconds": 22.5,
+        "result": {
+          "id": "3f5f3ffd766a40478638ed79d24eb836",
+          "state": "ready",
+          "result": {
+            "intent": "UNMATCHED",
+            "label": "需要澄清",
+            "transcript": "你好这是语音识别速度测试",
+            "frequency_hz": null,
+            "proposal": "需要澄清",
+            "confirmation_required": true,
+            "instrument_control_executed": false,
+            "route": "V8.2 resident ASR",
+            "asr_engine": "local",
+            "timing_ms": {
+              "ctc_decode": 567.769,
+              "encoder": 20791.4,
+              "frontend": 89.2734,
+              "total": 21450.1
+            },
+            "memory": {
+              "process_rss_kib": 108720,
+              "process_swap_kib": 0,
+              "system_available_kib": 158056
+            },
+            "service_model_load_ms": 11638.602747,
+            "asr_service_pid": 28693,
+            "cloud_required": false,
+            "voice_mode": null
+          },
+          "error": null,
+          "cloud_required": false,
+          "voice_mode": null,
+          "wake_only": true,
+          "asr_engine": "local",
+          "capture_stage": "pausing_camera",
+          "resource_busy": false,
+          "asr_requested": "local",
+          "asr_switching": false,
+          "asr_ready": true,
+          "asr_error": null,
+          "asr_button": "BTN8 / PB1 / MIO50",
+          "asr_button_available": true,
+          "asr_button_error": null,
+          "asr_button_presses": 0,
+          "handsfree": {},
+          "available": true,
+          "record_available": true,
+          "microphone": {
+            "available": true,
+            "message": "XVF3800 已识别，开始录音后验证音频数据",
+            "card": 3,
+            "card_id": "Array",
+            "device": 0,
+            "channels": 2,
+            "name": "3 [Array          ]: USB-Audio - reSpeaker XVF3800 4-Mic Array",
+            "alsa": "plughw:CARD=Array,DEV=0",
+            "channel": 1
+          },
+          "record_seconds": 6,
+          "record_mode": "toggle",
+          "wake_only_supported": true,
+          "model_version": "SmartBox V8.2",
+          "recognition_mode": "capture-preview-final",
+          "message": "XVF3800 已识别，开始录音后验证音频数据"
+        }
+      }
+    },
+    {
+      "name": "vision resumed",
+      "data": {
+        "state": "running",
+        "age": 0.6835195629998907,
+        "seconds": 0.0,
+        "diagnostics": [
+          {
+            "phase": "waiting",
+            "reason": "no_person",
+            "capture_time": 1840.564516858,
+            "timing": {
+              "inference_ms": 1105.2271720000135,
+              "frame_age_ms": 1748.0847560000257
+            },
+            "identity": {
+              "state": "unconfirmed",
+              "reason": "no_person"
+            },
+            "verification": {
+              "state": "idle"
+            },
+            "boot_id": "e487bcf134604b7a9c9a3e8ab50f580c",
+            "last_event_seq": 3,
+            "always_automatic": true,
+            "is_experiment_prerequisite": false,
+            "enrollment_samples": null,
+            "last_result_age_seconds": 0.6835195629998907,
+            "registered": 1,
+            "track_id": null,
+            "enrollment": null
+          }
+        ]
+      }
+    },
+    {
+      "name": "after recognize-local",
+      "data": {
+        "memory": {
+          "MemAvailable": 144828,
+          "SwapFree": 153336,
+          "SwapTotal": 364536,
+          "oom_kill": 0
+        },
+        "models": [
+          {
+            "pid": 523,
+            "command": "/usr/bin/python3 -B /boot/labmate-control-v2/dashboard/vision_worker.py --root /boot/labmate-control-v2/LabMate_Vision_V2_20261022 --gallery /boot/labmate-control-v2/display-data/student-gallery-v2.json ",
+            "rss": "16664 kB",
+            "swap": "7928 kB"
+          },
+          {
+            "pid": 28691,
+            "command": "/tmp/labmate-model-84ckx6eu/infer --server /boot/labmate-control-v2/SmartBox_ZedBoard_Voice_V8_2_20261022/models/asr ",
+            "rss": "1240 kB",
+            "swap": "0 kB"
+          },
+          {
+            "pid": 28693,
+            "command": "/boot/labmate-control-v2/SmartBox_ZedBoard_Voice_V8_2_20261022/bin/smartbox_voice_service /boot/labmate-control-v2/SmartBox_ZedBoard_Voice_V8_2_20261022 ",
+            "rss": "108668 kB",
+            "swap": "0 kB"
+          }
+        ]
+      }
+    },
+    {
+      "name": "both local models resident",
+      "data": [
+        {
+          "pid": 523,
+          "command": "/usr/bin/python3 -B /boot/labmate-control-v2/dashboard/vision_worker.py --root /boot/labmate-control-v2/LabMate_Vision_V2_20261022 --gallery /boot/labmate-control-v2/display-data/student-gallery-v2.json ",
+          "rss": "16664 kB",
+          "swap": "7928 kB"
+        },
+        {
+          "pid": 28691,
+          "command": "/tmp/labmate-model-84ckx6eu/infer --server /boot/labmate-control-v2/SmartBox_ZedBoard_Voice_V8_2_20261022/models/asr ",
+          "rss": "1240 kB",
+          "swap": "0 kB"
+        },
+        {
+          "pid": 28693,
+          "command": "/boot/labmate-control-v2/SmartBox_ZedBoard_Voice_V8_2_20261022/bin/smartbox_voice_service /boot/labmate-control-v2/SmartBox_ZedBoard_Voice_V8_2_20261022 ",
+          "rss": "108668 kB",
+          "swap": "0 kB"
+        }
+      ]
+    },
+    {
+      "name": "select-hy",
+      "data": {
+        "engine": "hy",
+        "ready": true,
+        "button": true
+      }
+    },
+    {
+      "name": "vision after select-hy",
+      "data": {
+        "state": "running",
+        "age": 1.5441840309999861,
+        "seconds": 0.0,
+        "diagnostics": [
+          {
+            "phase": "waiting",
+            "reason": "no_person",
+            "capture_time": 1842.310432005,
+            "timing": {
+              "inference_ms": 1391.5300450000814,
+              "frame_age_ms": 1984.7222880000572
+            },
+            "identity": {
+              "state": "unconfirmed",
+              "reason": "no_person"
+            },
+            "verification": {
+              "state": "idle"
+            },
+            "boot_id": "e487bcf134604b7a9c9a3e8ab50f580c",
+            "last_event_seq": 3,
+            "always_automatic": true,
+            "is_experiment_prerequisite": false,
+            "enrollment_samples": null,
+            "last_result_age_seconds": 1.5441840309999861,
+            "registered": 1,
+            "track_id": null,
+            "enrollment": null
+          }
+        ]
+      }
+    },
+    {
+      "name": "select-hy memory",
+      "data": {
+        "memory": {
+          "MemAvailable": 231264,
+          "SwapFree": 153336,
+          "SwapTotal": 364536,
+          "oom_kill": 0
+        },
+        "models": [
+          {
+            "pid": 523,
+            "command": "/usr/bin/python3 -B /boot/labmate-control-v2/dashboard/vision_worker.py --root /boot/labmate-control-v2/LabMate_Vision_V2_20261022 --gallery /boot/labmate-control-v2/display-data/student-gallery-v2.json ",
+            "rss": "16672 kB",
+            "swap": "7920 kB"
+          }
+        ]
+      }
+    },
+    {
+      "name": "select-local",
+      "data": {
+        "engine": "local",
+        "ready": true,
+        "button": true
+      }
+    },
+    {
+      "name": "vision after select-local",
+      "data": {
+        "state": "running",
+        "age": 0.057470580999961385,
+        "seconds": 0.0,
+        "diagnostics": [
+          {
+            "phase": "waiting",
+            "reason": "no_person",
+            "capture_time": 1863.040267449,
+            "timing": {
+              "inference_ms": 1092.1323879999818,
+              "frame_age_ms": 1748.7461809998877
+            },
+            "identity": {
+              "state": "unconfirmed",
+              "reason": "no_person"
+            },
+            "verification": {
+              "state": "idle"
+            },
+            "boot_id": "e487bcf134604b7a9c9a3e8ab50f580c",
+            "last_event_seq": 3,
+            "always_automatic": true,
+            "is_experiment_prerequisite": false,
+            "enrollment_samples": null,
+            "last_result_age_seconds": 0.057470580999961385,
+            "registered": 1,
+            "track_id": null,
+            "enrollment": null
+          }
+        ]
+      }
+    },
+    {
+      "name": "select-local memory",
+      "data": {
+        "memory": {
+          "MemAvailable": 163868,
+          "SwapFree": 135672,
+          "SwapTotal": 364536,
+          "oom_kill": 0
+        },
+        "models": [
+          {
+            "pid": 523,
+            "command": "/usr/bin/python3 -B /boot/labmate-control-v2/dashboard/vision_worker.py --root /boot/labmate-control-v2/LabMate_Vision_V2_20261022 --gallery /boot/labmate-control-v2/display-data/student-gallery-v2.json ",
+            "rss": "15892 kB",
+            "swap": "8468 kB"
+          },
+          {
+            "pid": 29524,
+            "command": "/tmp/labmate-model-_8rvixvy/infer --server /boot/labmate-control-v2/SmartBox_ZedBoard_Voice_V8_2_20261022/models/asr ",
+            "rss": "4 kB",
+            "swap": "0 kB"
+          },
+          {
+            "pid": 29526,
+            "command": "/boot/labmate-control-v2/SmartBox_ZedBoard_Voice_V8_2_20261022/bin/smartbox_voice_service /boot/labmate-control-v2/SmartBox_ZedBoard_Voice_V8_2_20261022 ",
+            "rss": "92780 kB",
+            "swap": "0 kB"
+          }
+        ]
+      }
+    },
+    {
+      "name": "recognize-local",
+      "data": {
+        "seconds": 22.25,
+        "result": {
+          "id": "aa40ae5b42a645c9b321cbc0492d738f",
+          "state": "ready",
+          "result": {
+            "intent": "UNMATCHED",
+            "label": "需要澄清",
+            "transcript": "你好这是语音识别速度测试",
+            "frequency_hz": null,
+            "proposal": "需要澄清",
+            "confirmation_required": true,
+            "instrument_control_executed": false,
+            "route": "V8.2 resident ASR",
+            "asr_engine": "local",
+            "timing_ms": {
+              "ctc_decode": 625.614,
+              "encoder": 20277.8,
+              "frontend": 274.753,
+              "total": 21179.9
+            },
+            "memory": {
+              "process_rss_kib": 108680,
+              "process_swap_kib": 0,
+              "system_available_kib": 176280
+            },
+            "service_model_load_ms": 9732.617216,
+            "asr_service_pid": 29526,
+            "cloud_required": false,
+            "voice_mode": null
+          },
+          "error": null,
+          "cloud_required": false,
+          "voice_mode": null,
+          "wake_only": true,
+          "asr_engine": "local",
+          "capture_stage": "pausing_camera",
+          "resource_busy": false,
+          "asr_requested": "local",
+          "asr_switching": false,
+          "asr_ready": true,
+          "asr_error": null,
+          "asr_button": "BTN8 / PB1 / MIO50",
+          "asr_button_available": true,
+          "asr_button_error": null,
+          "asr_button_presses": 0,
+          "handsfree": {},
+          "available": true,
+          "record_available": true,
+          "microphone": {
+            "available": true,
+            "message": "XVF3800 已识别，开始录音后验证音频数据",
+            "card": 3,
+            "card_id": "Array",
+            "device": 0,
+            "channels": 2,
+            "name": "3 [Array          ]: USB-Audio - reSpeaker XVF3800 4-Mic Array",
+            "alsa": "plughw:CARD=Array,DEV=0",
+            "channel": 1
+          },
+          "record_seconds": 6,
+          "record_mode": "toggle",
+          "wake_only_supported": true,
+          "model_version": "SmartBox V8.2",
+          "recognition_mode": "capture-preview-final",
+          "message": "XVF3800 已识别，开始录音后验证音频数据"
+        }
+      }
+    },
+    {
+      "name": "vision resumed",
+      "data": {
+        "state": "running",
+        "age": 1.0454134320000321,
+        "seconds": 0.0,
+        "diagnostics": [
+          {
+            "phase": "waiting",
+            "reason": "no_person",
+            "capture_time": 1892.439732507,
+            "timing": {
+              "inference_ms": 1060.371774000032,
+              "frame_age_ms": 1702.3971480000455
+            },
+            "identity": {
+              "state": "unconfirmed",
+              "reason": "no_person"
+            },
+            "verification": {
+              "state": "idle"
+            },
+            "boot_id": "e487bcf134604b7a9c9a3e8ab50f580c",
+            "last_event_seq": 3,
+            "always_automatic": true,
+            "is_experiment_prerequisite": false,
+            "enrollment_samples": null,
+            "last_result_age_seconds": 1.0454134320000321,
+            "registered": 1,
+            "track_id": null,
+            "enrollment": null
+          }
+        ]
+      }
+    },
+    {
+      "name": "after recognize-local",
+      "data": {
+        "memory": {
+          "MemAvailable": 161524,
+          "SwapFree": 136952,
+          "SwapTotal": 364536,
+          "oom_kill": 0
+        },
+        "models": [
+          {
+            "pid": 523,
+            "command": "/usr/bin/python3 -B /boot/labmate-control-v2/dashboard/vision_worker.py --root /boot/labmate-control-v2/LabMate_Vision_V2_20261022 --gallery /boot/labmate-control-v2/display-data/student-gallery-v2.json ",
+            "rss": "15892 kB",
+            "swap": "8468 kB"
+          },
+          {
+            "pid": 29524,
+            "command": "/tmp/labmate-model-_8rvixvy/infer --server /boot/labmate-control-v2/SmartBox_ZedBoard_Voice_V8_2_20261022/models/asr ",
+            "rss": "1236 kB",
+            "swap": "0 kB"
+          },
+          {
+            "pid": 29526,
+            "command": "/boot/labmate-control-v2/SmartBox_ZedBoard_Voice_V8_2_20261022/bin/smartbox_voice_service /boot/labmate-control-v2/SmartBox_ZedBoard_Voice_V8_2_20261022 ",
+            "rss": "108680 kB",
+            "swap": "0 kB"
+          }
+        ]
+      }
+    },
+    {
+      "name": "both local models resident",
+      "data": [
+        {
+          "pid": 523,
+          "command": "/usr/bin/python3 -B /boot/labmate-control-v2/dashboard/vision_worker.py --root /boot/labmate-control-v2/LabMate_Vision_V2_20261022 --gallery /boot/labmate-control-v2/display-data/student-gallery-v2.json ",
+          "rss": "15904 kB",
+          "swap": "8456 kB"
+        },
+        {
+          "pid": 29524,
+          "command": "/tmp/labmate-model-_8rvixvy/infer --server /boot/labmate-control-v2/SmartBox_ZedBoard_Voice_V8_2_20261022/models/asr ",
+          "rss": "1236 kB",
+          "swap": "0 kB"
+        },
+        {
+          "pid": 29526,
+          "command": "/boot/labmate-control-v2/SmartBox_ZedBoard_Voice_V8_2_20261022/bin/smartbox_voice_service /boot/labmate-control-v2/SmartBox_ZedBoard_Voice_V8_2_20261022 ",
+          "rss": "108680 kB",
+          "swap": "0 kB"
+        }
+      ]
+    },
+    {
+      "name": "five-minute coexistence",
+      "data": {
+        "seconds": 301.4,
+        "max_vision_age": 1.8623973130002014,
+        "models": [
+          {
+            "pid": 523,
+            "command": "/usr/bin/python3 -B /boot/labmate-control-v2/dashboard/vision_worker.py --root /boot/labmate-control-v2/LabMate_Vision_V2_20261022 --gallery /boot/labmate-control-v2/display-data/student-gallery-v2.json ",
+            "rss": "13172 kB",
+            "swap": "8372 kB"
+          },
+          {
+            "pid": 29524,
+            "command": "/tmp/labmate-model-_8rvixvy/infer --server /boot/labmate-control-v2/SmartBox_ZedBoard_Voice_V8_2_20261022/models/asr ",
+            "rss": "1236 kB",
+            "swap": "0 kB"
+          },
+          {
+            "pid": 29526,
+            "command": "/boot/labmate-control-v2/SmartBox_ZedBoard_Voice_V8_2_20261022/bin/smartbox_voice_service /boot/labmate-control-v2/SmartBox_ZedBoard_Voice_V8_2_20261022 ",
+            "rss": "108680 kB",
+            "swap": "0 kB"
+          }
+        ]
+      }
+    },
+    {
+      "name": "final vision",
+      "data": {
+        "state": "running",
+        "age": 0.3519763479998801,
+        "seconds": 0.0,
+        "diagnostics": [
+          {
+            "phase": "waiting",
+            "reason": "no_person",
+            "capture_time": 2195.92017368,
+            "timing": {
+              "inference_ms": 1217.39090400024,
+              "frame_age_ms": 1967.2621320000871
+            },
+            "identity": {
+              "state": "unconfirmed",
+              "reason": "no_person"
+            },
+            "verification": {
+              "state": "idle"
+            },
+            "boot_id": "e487bcf134604b7a9c9a3e8ab50f580c",
+            "last_event_seq": 3,
+            "always_automatic": true,
+            "is_experiment_prerequisite": false,
+            "enrollment_samples": null,
+            "last_result_age_seconds": 0.3519763479998801,
+            "registered": 1,
+            "track_id": null,
+            "enrollment": null
+          }
+        ]
+      }
+    },
+    {
+      "name": "select-hy",
+      "data": {
+        "engine": "hy",
+        "ready": true,
+        "button": true
+      }
+    },
+    {
+      "name": "vision after select-hy",
+      "data": {
+        "state": "running",
+        "age": 1.7735765180000271,
+        "seconds": 0.0,
+        "diagnostics": [
+          {
+            "phase": "waiting",
+            "reason": "no_person",
+            "capture_time": 2195.92017368,
+            "timing": {
+              "inference_ms": 1217.39090400024,
+              "frame_age_ms": 1967.2621320000871
+            },
+            "identity": {
+              "state": "unconfirmed",
+              "reason": "no_person"
+            },
+            "verification": {
+              "state": "idle"
+            },
+            "boot_id": "e487bcf134604b7a9c9a3e8ab50f580c",
+            "last_event_seq": 3,
+            "always_automatic": true,
+            "is_experiment_prerequisite": false,
+            "enrollment_samples": null,
+            "last_result_age_seconds": 1.7735765180000271,
+            "registered": 1,
+            "track_id": null,
+            "enrollment": null
+          }
+        ]
+      }
+    },
+    {
+      "name": "select-hy memory",
+      "data": {
+        "memory": {
+          "MemAvailable": 254056,
+          "SwapFree": 137720,
+          "SwapTotal": 364536,
+          "oom_kill": 0
+        },
+        "models": [
+          {
+            "pid": 523,
+            "command": "/usr/bin/python3 -B /boot/labmate-control-v2/dashboard/vision_worker.py --root /boot/labmate-control-v2/LabMate_Vision_V2_20261022 --gallery /boot/labmate-control-v2/display-data/student-gallery-v2.json ",
+            "rss": "15988 kB",
+            "swap": "8372 kB"
+          }
+        ]
+      }
+    },
+    {
+      "name": "restored workflow",
+      "data": true
+    },
+    {
+      "name": "startup conversation empty and gallery unchanged",
+      "data": true
+    },
+    {
+      "name": "restored vision",
+      "data": {
+        "state": "running",
+        "age": 0.8158992619996752,
+        "seconds": 0.0,
+        "diagnostics": [
+          {
+            "phase": "waiting",
+            "reason": "no_person",
+            "capture_time": 2212.601748094,
+            "timing": {
+              "inference_ms": 1281.553324000015,
+              "frame_age_ms": 2058.216558999902
+            },
+            "identity": {
+              "state": "unconfirmed",
+              "reason": "no_person"
+            },
+            "verification": {
+              "state": "idle"
+            },
+            "boot_id": "fa2147af2bba49e99557f4d4e4f9b1eb",
+            "last_event_seq": 0,
+            "always_automatic": true,
+            "is_experiment_prerequisite": false,
+            "enrollment_samples": null,
+            "last_result_age_seconds": 0.8158992619996752,
+            "registered": 1,
+            "track_id": null,
+            "enrollment": null
+          }
+        ]
+      }
+    }
+  ],
+  "errors": [],
+  "samples": [
+    {
+      "stage": "select-local",
+      "at": 1738.6,
+      "MemAvailable": 185476,
+      "SwapFree": 188408,
+      "SwapTotal": 364536,
+      "oom_kill": 0
+    },
+    {
+      "stage": "select-local",
+      "at": 1739.6,
+      "MemAvailable": 198736,
+      "SwapFree": 185592,
+      "SwapTotal": 364536,
+      "oom_kill": 0
+    },
+    {
+      "stage": "select-local",
+      "at": 1740.6,
+      "MemAvailable": 191460,
+      "SwapFree": 185592,
+      "SwapTotal": 364536,
+      "oom_kill": 0
+    },
+    {
+      "stage": "select-local",
+      "at": 1741.6,
+      "MemAvailable": 193864,
+      "SwapFree": 184568,
+      "SwapTotal": 364536,
+      "oom_kill": 0
+    },
+    {
+      "stage": "select-local",
+      "at": 1742.6,
+      "MemAvailable": 193144,
+      "SwapFree": 184568,
+      "SwapTotal": 364536,
+      "oom_kill": 0
+    },
+    {
+      "stage": "select-local",
+      "at": 1743.6,
+      "MemAvailable": 193804,
+      "SwapFree": 184568,
+      "SwapTotal": 364536,
+      "oom_kill": 0
+    },
+    {
+      "stage": "select-local",
+      "at": 1744.6,
+      "MemAvailable": 193048,
+      "SwapFree": 184568,
+      "SwapTotal": 364536,
+      "oom_kill": 0
+    },
+    {
+      "stage": "select-local",
+      "at": 1745.7,
+      "MemAvailable": 192052,
+      "SwapFree": 184568,
+      "SwapTotal": 364536,
+      "oom_kill": 0
+    },
+    {
+      "stage": "select-local",
+      "at": 1746.7,
+      "MemAvailable": 188604,
+      "SwapFree": 181240,
+      "SwapTotal": 364536,
+      "oom_kill": 0
+    },
+    {
+      "stage": "select-local",
+      "at": 1747.7,
+      "MemAvailable": 186544,
+      "SwapFree": 180472,
+      "SwapTotal": 364536,
+      "oom_kill": 0
+    },
+    {
+      "stage": "select-local",
+      "at": 1748.7,
+      "MemAvailable": 175996,
+      "SwapFree": 176376,
+      "SwapTotal": 364536,
+      "oom_kill": 0
+    },
+    {
+      "stage": "select-local",
+      "at": 1749.7,
+      "MemAvailable": 166788,
+      "SwapFree": 176888,
+      "SwapTotal": 364536,
+      "oom_kill": 0
+    },
+    {
+      "stage": "select-local",
+      "at": 1750.7,
+      "MemAvailable": 155568,
+      "SwapFree": 178168,
+      "SwapTotal": 364536,
+      "oom_kill": 0
+    },
+    {
+      "stage": "select-local",
+      "at": 1751.7,
+      "MemAvailable": 141908,
+      "SwapFree": 178936,
+      "SwapTotal": 364536,
+      "oom_kill": 0
+    },
+    {
+      "stage": "select-local",
+      "at": 1752.7,
+      "MemAvailable": 133128,
+      "SwapFree": 178936,
+      "SwapTotal": 364536,
+      "oom_kill": 0
+    },
+    {
+      "stage": "select-local",
+      "at": 1753.7,
+      "MemAvailable": 137920,
+      "SwapFree": 178936,
+      "SwapTotal": 364536,
+      "oom_kill": 0
+    },
+    {
+      "stage": "select-local",
+      "at": 1754.7,
+      "MemAvailable": 124936,
+      "SwapFree": 179192,
+      "SwapTotal": 364536,
+      "oom_kill": 0
+    },
+    {
+      "stage": "select-local",
+      "at": 1755.7,
+      "MemAvailable": 124224,
+      "SwapFree": 179192,
+      "SwapTotal": 364536,
+      "oom_kill": 0
+    },
+    {
+      "stage": "select-local",
+      "at": 1756.7,
+      "MemAvailable": 124296,
+      "SwapFree": 179192,
+      "SwapTotal": 364536,
+      "oom_kill": 0
+    },
+    {
+      "stage": "select-local",
+      "at": 1757.7,
+      "MemAvailable": 120208,
+      "SwapFree": 175096,
+      "SwapTotal": 364536,
+      "oom_kill": 0
+    },
+    {
+      "stage": "select-local",
+      "at": 1758.7,
+      "MemAvailable": 120456,
+      "SwapFree": 175096,
+      "SwapTotal": 364536,
+      "oom_kill": 0
+    },
+    {
+      "stage": "select-local",
+      "at": 1759.7,
+      "MemAvailable": 120892,
+      "SwapFree": 175096,
+      "SwapTotal": 364536,
+      "oom_kill": 0
+    },
+    {
+      "stage": "recognize-local",
+      "at": 1760.7,
+      "MemAvailable": 134300,
+      "SwapFree": 175096,
+      "SwapTotal": 364536,
+      "oom_kill": 0
+    },
+    {
+      "stage": "recognize-local",
+      "at": 1761.7,
+      "MemAvailable": 118736,
+      "SwapFree": 173816,
+      "SwapTotal": 364536,
+      "oom_kill": 0
+    },
+    {
+      "stage": "recognize-local",
+      "at": 1762.7,
+      "MemAvailable": 117596,
+      "SwapFree": 173816,
+      "SwapTotal": 364536,
+      "oom_kill": 0
+    },
+    {
+      "stage": "recognize-local",
+      "at": 1763.7,
+      "MemAvailable": 117912,
+      "SwapFree": 173816,
+      "SwapTotal": 364536,
+      "oom_kill": 0
+    },
+    {
+      "stage": "recognize-local",
+      "at": 1764.7,
+      "MemAvailable": 117740,
+      "SwapFree": 173816,
+      "SwapTotal": 364536,
+      "oom_kill": 0
+    },
+    {
+      "stage": "recognize-local",
+      "at": 1765.7,
+      "MemAvailable": 117256,
+      "SwapFree": 173816,
+      "SwapTotal": 364536,
+      "oom_kill": 0
+    },
+    {
+      "stage": "recognize-local",
+      "at": 1766.7,
+      "MemAvailable": 141624,
+      "SwapFree": 174072,
+      "SwapTotal": 364536,
+      "oom_kill": 0
+    },
+    {
+      "stage": "recognize-local",
+      "at": 1767.7,
+      "MemAvailable": 142884,
+      "SwapFree": 174072,
+      "SwapTotal": 364536,
+      "oom_kill": 0
+    },
+    {
+      "stage": "recognize-local",
+      "at": 1768.7,
+      "MemAvailable": 142480,
+      "SwapFree": 174072,
+      "SwapTotal": 364536,
+      "oom_kill": 0
+    },
+    {
+      "stage": "recognize-local",
+      "at": 1769.8,
+      "MemAvailable": 142404,
+      "SwapFree": 174072,
+      "SwapTotal": 364536,
+      "oom_kill": 0
+    },
+    {
+      "stage": "recognize-local",
+      "at": 1770.8,
+      "MemAvailable": 141544,
+      "SwapFree": 174072,
+      "SwapTotal": 364536,
+      "oom_kill": 0
+    },
+    {
+      "stage": "recognize-local",
+      "at": 1771.8,
+      "MemAvailable": 141332,
+      "SwapFree": 174072,
+      "SwapTotal": 364536,
+      "oom_kill": 0
+    },
+    {
+      "stage": "recognize-local",
+      "at": 1772.8,
+      "MemAvailable": 141244,
+      "SwapFree": 174072,
+      "SwapTotal": 364536,
+      "oom_kill": 0
+    },
+    {
+      "stage": "recognize-local",
+      "at": 1773.8,
+      "MemAvailable": 142380,
+      "SwapFree": 174072,
+      "SwapTotal": 364536,
+      "oom_kill": 0
+    },
+    {
+      "stage": "recognize-local",
+      "at": 1774.8,
+      "MemAvailable": 141252,
+      "SwapFree": 174072,
+      "SwapTotal": 364536,
+      "oom_kill": 0
+    },
+    {
+      "stage": "recognize-local",
+      "at": 1775.8,
+      "MemAvailable": 140852,
+      "SwapFree": 174072,
+      "SwapTotal": 364536,
+      "oom_kill": 0
+    },
+    {
+      "stage": "recognize-local",
+      "at": 1776.8,
+      "MemAvailable": 140784,
+      "SwapFree": 174072,
+      "SwapTotal": 364536,
+      "oom_kill": 0
+    },
+    {
+      "stage": "recognize-local",
+      "at": 1777.8,
+      "MemAvailable": 141252,
+      "SwapFree": 174072,
+      "SwapTotal": 364536,
+      "oom_kill": 0
+    },
+    {
+      "stage": "recognize-local",
+      "at": 1778.8,
+      "MemAvailable": 139684,
+      "SwapFree": 174072,
+      "SwapTotal": 364536,
+      "oom_kill": 0
+    },
+    {
+      "stage": "recognize-local",
+      "at": 1779.8,
+      "MemAvailable": 138532,
+      "SwapFree": 174072,
+      "SwapTotal": 364536,
+      "oom_kill": 0
+    },
+    {
+      "stage": "recognize-local",
+      "at": 1780.8,
+      "MemAvailable": 138700,
+      "SwapFree": 174072,
+      "SwapTotal": 364536,
+      "oom_kill": 0
+    },
+    {
+      "stage": "recognize-local",
+      "at": 1781.8,
+      "MemAvailable": 138080,
+      "SwapFree": 174072,
+      "SwapTotal": 364536,
+      "oom_kill": 0
+    },
+    {
+      "stage": "recognize-local",
+      "at": 1782.8,
+      "MemAvailable": 136388,
+      "SwapFree": 174072,
+      "SwapTotal": 364536,
+      "oom_kill": 0
+    },
+    {
+      "stage": "recognize-local",
+      "at": 1783.8,
+      "MemAvailable": 135092,
+      "SwapFree": 172536,
+      "SwapTotal": 364536,
+      "oom_kill": 0
+    },
+    {
+      "stage": "recognize-local",
+      "at": 1784.8,
+      "MemAvailable": 142036,
+      "SwapFree": 172536,
+      "SwapTotal": 364536,
+      "oom_kill": 0
+    },
+    {
+      "stage": "recognize-local",
+      "at": 1785.8,
+      "MemAvailable": 128132,
+      "SwapFree": 172536,
+      "SwapTotal": 364536,
+      "oom_kill": 0
+    },
+    {
+      "stage": "recognize-local",
+      "at": 1786.8,
+      "MemAvailable": 127968,
+      "SwapFree": 172536,
+      "SwapTotal": 364536,
+      "oom_kill": 0
+    },
+    {
+      "stage": "recognize-local",
+      "at": 1787.8,
+      "MemAvailable": 128124,
+      "SwapFree": 172536,
+      "SwapTotal": 364536,
+      "oom_kill": 0
+    },
+    {
+      "stage": "recognize-local",
+      "at": 1788.8,
+      "MemAvailable": 127892,
+      "SwapFree": 172536,
+      "SwapTotal": 364536,
+      "oom_kill": 0
+    },
+    {
+      "stage": "recognize-local",
+      "at": 1789.8,
+      "MemAvailable": 122996,
+      "SwapFree": 172536,
+      "SwapTotal": 364536,
+      "oom_kill": 0
+    },
+    {
+      "stage": "recognize-local",
+      "at": 1790.8,
+      "MemAvailable": 123220,
+      "SwapFree": 172536,
+      "SwapTotal": 364536,
+      "oom_kill": 0
+    },
+    {
+      "stage": "select-hy",
+      "at": 1791.8,
+      "MemAvailable": 123076,
+      "SwapFree": 172280,
+      "SwapTotal": 364536,
+      "oom_kill": 0
+    },
+    {
+      "stage": "select-hy",
+      "at": 1792.8,
+      "MemAvailable": 211508,
+      "SwapFree": 172280,
+      "SwapTotal": 364536,
+      "oom_kill": 0
+    },
+    {
+      "stage": "select-local",
+      "at": 1793.8,
+      "MemAvailable": 205348,
+      "SwapFree": 172280,
+      "SwapTotal": 364536,
+      "oom_kill": 0
+    },
+    {
+      "stage": "select-local",
+      "at": 1794.9,
+      "MemAvailable": 219324,
+      "SwapFree": 172280,
+      "SwapTotal": 364536,
+      "oom_kill": 0
+    },
+    {
+      "stage": "select-local",
+      "at": 1795.9,
+      "MemAvailable": 210672,
+      "SwapFree": 172280,
+      "SwapTotal": 364536,
+      "oom_kill": 0
+    },
+    {
+      "stage": "select-local",
+      "at": 1796.9,
+      "MemAvailable": 209580,
+      "SwapFree": 172280,
+      "SwapTotal": 364536,
+      "oom_kill": 0
+    },
+    {
+      "stage": "select-local",
+      "at": 1797.9,
+      "MemAvailable": 209584,
+      "SwapFree": 172280,
+      "SwapTotal": 364536,
+      "oom_kill": 0
+    },
+    {
+      "stage": "select-local",
+      "at": 1798.9,
+      "MemAvailable": 210232,
+      "SwapFree": 172280,
+      "SwapTotal": 364536,
+      "oom_kill": 0
+    },
+    {
+      "stage": "select-local",
+      "at": 1799.9,
+      "MemAvailable": 208936,
+      "SwapFree": 172280,
+      "SwapTotal": 364536,
+      "oom_kill": 0
+    },
+    {
+      "stage": "select-local",
+      "at": 1800.9,
+      "MemAvailable": 208724,
+      "SwapFree": 172280,
+      "SwapTotal": 364536,
+      "oom_kill": 0
+    },
+    {
+      "stage": "select-local",
+      "at": 1801.9,
+      "MemAvailable": 194072,
+      "SwapFree": 172280,
+      "SwapTotal": 364536,
+      "oom_kill": 0
+    },
+    {
+      "stage": "select-local",
+      "at": 1802.9,
+      "MemAvailable": 178208,
+      "SwapFree": 172280,
+      "SwapTotal": 364536,
+      "oom_kill": 0
+    },
+    {
+      "stage": "select-local",
+      "at": 1803.9,
+      "MemAvailable": 165364,
+      "SwapFree": 167416,
+      "SwapTotal": 364536,
+      "oom_kill": 0
+    },
+    {
+      "stage": "select-local",
+      "at": 1804.9,
+      "MemAvailable": 161832,
+      "SwapFree": 163832,
+      "SwapTotal": 364536,
+      "oom_kill": 0
+    },
+    {
+      "stage": "select-local",
+      "at": 1805.9,
+      "MemAvailable": 153928,
+      "SwapFree": 163320,
+      "SwapTotal": 364536,
+      "oom_kill": 0
+    },
+    {
+      "stage": "select-local",
+      "at": 1806.9,
+      "MemAvailable": 148312,
+      "SwapFree": 160760,
+      "SwapTotal": 364536,
+      "oom_kill": 0
+    },
+    {
+      "stage": "select-local",
+      "at": 1807.9,
+      "MemAvailable": 152788,
+      "SwapFree": 160760,
+      "SwapTotal": 364536,
+      "oom_kill": 0
+    },
+    {
+      "stage": "select-local",
+      "at": 1808.9,
+      "MemAvailable": 143380,
+      "SwapFree": 157688,
+      "SwapTotal": 364536,
+      "oom_kill": 0
+    },
+    {
+      "stage": "select-local",
+      "at": 1809.9,
+      "MemAvailable": 142400,
+      "SwapFree": 157688,
+      "SwapTotal": 364536,
+      "oom_kill": 0
+    },
+    {
+      "stage": "select-local",
+      "at": 1810.9,
+      "MemAvailable": 143232,
+      "SwapFree": 157688,
+      "SwapTotal": 364536,
+      "oom_kill": 0
+    },
+    {
+      "stage": "select-local",
+      "at": 1811.9,
+      "MemAvailable": 140480,
+      "SwapFree": 156408,
+      "SwapTotal": 364536,
+      "oom_kill": 0
+    },
+    {
+      "stage": "select-local",
+      "at": 1812.9,
+      "MemAvailable": 143948,
+      "SwapFree": 156408,
+      "SwapTotal": 364536,
+      "oom_kill": 0
+    },
+    {
+      "stage": "select-local",
+      "at": 1813.9,
+      "MemAvailable": 138852,
+      "SwapFree": 156408,
+      "SwapTotal": 364536,
+      "oom_kill": 0
+    },
+    {
+      "stage": "recognize-local",
+      "at": 1814.9,
+      "MemAvailable": 137876,
+      "SwapFree": 156920,
+      "SwapTotal": 364536,
+      "oom_kill": 0
+    },
+    {
+      "stage": "recognize-local",
+      "at": 1815.9,
+      "MemAvailable": 137140,
+      "SwapFree": 154616,
+      "SwapTotal": 364536,
+      "oom_kill": 0
+    },
+    {
+      "stage": "recognize-local",
+      "at": 1816.9,
+      "MemAvailable": 137096,
+      "SwapFree": 154616,
+      "SwapTotal": 364536,
+      "oom_kill": 0
+    },
+    {
+      "stage": "recognize-local",
+      "at": 1817.9,
+      "MemAvailable": 137572,
+      "SwapFree": 154616,
+      "SwapTotal": 364536,
+      "oom_kill": 0
+    },
+    {
+      "stage": "recognize-local",
+      "at": 1818.9,
+      "MemAvailable": 136404,
+      "SwapFree": 154872,
+      "SwapTotal": 364536,
+      "oom_kill": 0
+    },
+    {
+      "stage": "recognize-local",
+      "at": 1819.9,
+      "MemAvailable": 137040,
+      "SwapFree": 154872,
+      "SwapTotal": 364536,
+      "oom_kill": 0
+    },
+    {
+      "stage": "recognize-local",
+      "at": 1820.9,
+      "MemAvailable": 153428,
+      "SwapFree": 155128,
+      "SwapTotal": 364536,
+      "oom_kill": 0
+    },
+    {
+      "stage": "recognize-local",
+      "at": 1822.0,
+      "MemAvailable": 151516,
+      "SwapFree": 155128,
+      "SwapTotal": 364536,
+      "oom_kill": 0
+    },
+    {
+      "stage": "recognize-local",
+      "at": 1823.0,
+      "MemAvailable": 159584,
+      "SwapFree": 155128,
+      "SwapTotal": 364536,
+      "oom_kill": 0
+    },
+    {
+      "stage": "recognize-local",
+      "at": 1824.0,
+      "MemAvailable": 159340,
+      "SwapFree": 155128,
+      "SwapTotal": 364536,
+      "oom_kill": 0
+    },
+    {
+      "stage": "recognize-local",
+      "at": 1825.0,
+      "MemAvailable": 159584,
+      "SwapFree": 155128,
+      "SwapTotal": 364536,
+      "oom_kill": 0
+    },
+    {
+      "stage": "recognize-local",
+      "at": 1826.0,
+      "MemAvailable": 159632,
+      "SwapFree": 155128,
+      "SwapTotal": 364536,
+      "oom_kill": 0
+    },
+    {
+      "stage": "recognize-local",
+      "at": 1827.0,
+      "MemAvailable": 160008,
+      "SwapFree": 155128,
+      "SwapTotal": 364536,
+      "oom_kill": 0
+    },
+    {
+      "stage": "recognize-local",
+      "at": 1828.0,
+      "MemAvailable": 159072,
+      "SwapFree": 155128,
+      "SwapTotal": 364536,
+      "oom_kill": 0
+    },
+    {
+      "stage": "recognize-local",
+      "at": 1829.0,
+      "MemAvailable": 158936,
+      "SwapFree": 155128,
+      "SwapTotal": 364536,
+      "oom_kill": 0
+    },
+    {
+      "stage": "recognize-local",
+      "at": 1830.0,
+      "MemAvailable": 158828,
+      "SwapFree": 155128,
+      "SwapTotal": 364536,
+      "oom_kill": 0
+    },
+    {
+      "stage": "recognize-local",
+      "at": 1831.0,
+      "MemAvailable": 158988,
+      "SwapFree": 155128,
+      "SwapTotal": 364536,
+      "oom_kill": 0
+    },
+    {
+      "stage": "recognize-local",
+      "at": 1832.0,
+      "MemAvailable": 158420,
+      "SwapFree": 155128,
+      "SwapTotal": 364536,
+      "oom_kill": 0
+    },
+    {
+      "stage": "recognize-local",
+      "at": 1833.0,
+      "MemAvailable": 158160,
+      "SwapFree": 155128,
+      "SwapTotal": 364536,
+      "oom_kill": 0
+    },
+    {
+      "stage": "recognize-local",
+      "at": 1834.0,
+      "MemAvailable": 157816,
+      "SwapFree": 155128,
+      "SwapTotal": 364536,
+      "oom_kill": 0
+    },
+    {
+      "stage": "recognize-local",
+      "at": 1835.0,
+      "MemAvailable": 157852,
+      "SwapFree": 155128,
+      "SwapTotal": 364536,
+      "oom_kill": 0
+    },
+    {
+      "stage": "recognize-local",
+      "at": 1836.0,
+      "MemAvailable": 156588,
+      "SwapFree": 155128,
+      "SwapTotal": 364536,
+      "oom_kill": 0
+    },
+    {
+      "stage": "recognize-local",
+      "at": 1837.0,
+      "MemAvailable": 162664,
+      "SwapFree": 153848,
+      "SwapTotal": 364536,
+      "oom_kill": 0
+    },
+    {
+      "stage": "recognize-local",
+      "at": 1838.0,
+      "MemAvailable": 149120,
+      "SwapFree": 153848,
+      "SwapTotal": 364536,
+      "oom_kill": 0
+    },
+    {
+      "stage": "recognize-local",
+      "at": 1839.0,
+      "MemAvailable": 148472,
+      "SwapFree": 153848,
+      "SwapTotal": 364536,
+      "oom_kill": 0
+    },
+    {
+      "stage": "recognize-local",
+      "at": 1840.0,
+      "MemAvailable": 148704,
+      "SwapFree": 153848,
+      "SwapTotal": 364536,
+      "oom_kill": 0
+    },
+    {
+      "stage": "recognize-local",
+      "at": 1841.0,
+      "MemAvailable": 147400,
+      "SwapFree": 153848,
+      "SwapTotal": 364536,
+      "oom_kill": 0
+    },
+    {
+      "stage": "recognize-local",
+      "at": 1842.0,
+      "MemAvailable": 144948,
+      "SwapFree": 153336,
+      "SwapTotal": 364536,
+      "oom_kill": 0
+    },
+    {
+      "stage": "recognize-local",
+      "at": 1843.0,
+      "MemAvailable": 145156,
+      "SwapFree": 153336,
+      "SwapTotal": 364536,
+      "oom_kill": 0
+    },
+    {
+      "stage": "recognize-local",
+      "at": 1844.0,
+      "MemAvailable": 143960,
+      "SwapFree": 153336,
+      "SwapTotal": 364536,
+      "oom_kill": 0
+    },
+    {
+      "stage": "select-hy",
+      "at": 1845.0,
+      "MemAvailable": 220288,
+      "SwapFree": 153336,
+      "SwapTotal": 364536,
+      "oom_kill": 0
+    },
+    {
+      "stage": "select-hy",
+      "at": 1846.0,
+      "MemAvailable": 231116,
+      "SwapFree": 153336,
+      "SwapTotal": 364536,
+      "oom_kill": 0
+    },
+    {
+      "stage": "select-local",
+      "at": 1847.0,
+      "MemAvailable": 235372,
+      "SwapFree": 153336,
+      "SwapTotal": 364536,
+      "oom_kill": 0
+    },
+    {
+      "stage": "select-local",
+      "at": 1848.0,
+      "MemAvailable": 243404,
+      "SwapFree": 153336,
+      "SwapTotal": 364536,
+      "oom_kill": 0
+    },
+    {
+      "stage": "select-local",
+      "at": 1849.0,
+      "MemAvailable": 237548,
+      "SwapFree": 153336,
+      "SwapTotal": 364536,
+      "oom_kill": 0
+    },
+    {
+      "stage": "select-local",
+      "at": 1850.1,
+      "MemAvailable": 235832,
+      "SwapFree": 153336,
+      "SwapTotal": 364536,
+      "oom_kill": 0
+    },
+    {
+      "stage": "select-local",
+      "at": 1851.1,
+      "MemAvailable": 237016,
+      "SwapFree": 153336,
+      "SwapTotal": 364536,
+      "oom_kill": 0
+    },
+    {
+      "stage": "select-local",
+      "at": 1852.1,
+      "MemAvailable": 237000,
+      "SwapFree": 153336,
+      "SwapTotal": 364536,
+      "oom_kill": 0
+    },
+    {
+      "stage": "select-local",
+      "at": 1853.1,
+      "MemAvailable": 236452,
+      "SwapFree": 153336,
+      "SwapTotal": 364536,
+      "oom_kill": 0
+    },
+    {
+      "stage": "select-local",
+      "at": 1854.1,
+      "MemAvailable": 235232,
+      "SwapFree": 153336,
+      "SwapTotal": 364536,
+      "oom_kill": 0
+    },
+    {
+      "stage": "select-local",
+      "at": 1855.1,
+      "MemAvailable": 222468,
+      "SwapFree": 153336,
+      "SwapTotal": 364536,
+      "oom_kill": 0
+    },
+    {
+      "stage": "select-local",
+      "at": 1856.1,
+      "MemAvailable": 191248,
+      "SwapFree": 153336,
+      "SwapTotal": 364536,
+      "oom_kill": 0
+    },
+    {
+      "stage": "select-local",
+      "at": 1857.1,
+      "MemAvailable": 166280,
+      "SwapFree": 145400,
+      "SwapTotal": 364536,
+      "oom_kill": 0
+    },
+    {
+      "stage": "select-local",
+      "at": 1858.1,
+      "MemAvailable": 168180,
+      "SwapFree": 145400,
+      "SwapTotal": 364536,
+      "oom_kill": 0
+    },
+    {
+      "stage": "select-local",
+      "at": 1859.1,
+      "MemAvailable": 167064,
+      "SwapFree": 145400,
+      "SwapTotal": 364536,
+      "oom_kill": 0
+    },
+    {
+      "stage": "select-local",
+      "at": 1860.1,
+      "MemAvailable": 160344,
+      "SwapFree": 141560,
+      "SwapTotal": 364536,
+      "oom_kill": 0
+    },
+    {
+      "stage": "select-local",
+      "at": 1861.1,
+      "MemAvailable": 162396,
+      "SwapFree": 141560,
+      "SwapTotal": 364536,
+      "oom_kill": 0
+    },
+    {
+      "stage": "select-local",
+      "at": 1862.1,
+      "MemAvailable": 161268,
+      "SwapFree": 141560,
+      "SwapTotal": 364536,
+      "oom_kill": 0
+    },
+    {
+      "stage": "select-local",
+      "at": 1863.1,
+      "MemAvailable": 162596,
+      "SwapFree": 141560,
+      "SwapTotal": 364536,
+      "oom_kill": 0
+    },
+    {
+      "stage": "select-local",
+      "at": 1864.1,
+      "MemAvailable": 158408,
+      "SwapFree": 135160,
+      "SwapTotal": 364536,
+      "oom_kill": 0
+    },
+    {
+      "stage": "select-local",
+      "at": 1865.1,
+      "MemAvailable": 164076,
+      "SwapFree": 135672,
+      "SwapTotal": 364536,
+      "oom_kill": 0
+    },
+    {
+      "stage": "recognize-local",
+      "at": 1866.1,
+      "MemAvailable": 157308,
+      "SwapFree": 135928,
+      "SwapTotal": 364536,
+      "oom_kill": 0
+    },
+    {
+      "stage": "recognize-local",
+      "at": 1867.1,
+      "MemAvailable": 144256,
+      "SwapFree": 135928,
+      "SwapTotal": 364536,
+      "oom_kill": 0
+    },
+    {
+      "stage": "recognize-local",
+      "at": 1868.1,
+      "MemAvailable": 156184,
+      "SwapFree": 135928,
+      "SwapTotal": 364536,
+      "oom_kill": 0
+    },
+    {
+      "stage": "recognize-local",
+      "at": 1869.1,
+      "MemAvailable": 156204,
+      "SwapFree": 135928,
+      "SwapTotal": 364536,
+      "oom_kill": 0
+    },
+    {
+      "stage": "recognize-local",
+      "at": 1870.1,
+      "MemAvailable": 157080,
+      "SwapFree": 136184,
+      "SwapTotal": 364536,
+      "oom_kill": 0
+    },
+    {
+      "stage": "recognize-local",
+      "at": 1871.1,
+      "MemAvailable": 156376,
+      "SwapFree": 136184,
+      "SwapTotal": 364536,
+      "oom_kill": 0
+    },
+    {
+      "stage": "recognize-local",
+      "at": 1872.1,
+      "MemAvailable": 169192,
+      "SwapFree": 136184,
+      "SwapTotal": 364536,
+      "oom_kill": 0
+    },
+    {
+      "stage": "recognize-local",
+      "at": 1873.1,
+      "MemAvailable": 172828,
+      "SwapFree": 136184,
+      "SwapTotal": 364536,
+      "oom_kill": 0
+    },
+    {
+      "stage": "recognize-local",
+      "at": 1874.2,
+      "MemAvailable": 178840,
+      "SwapFree": 136184,
+      "SwapTotal": 364536,
+      "oom_kill": 0
+    },
+    {
+      "stage": "recognize-local",
+      "at": 1875.2,
+      "MemAvailable": 178964,
+      "SwapFree": 136184,
+      "SwapTotal": 364536,
+      "oom_kill": 0
+    },
+    {
+      "stage": "recognize-local",
+      "at": 1876.2,
+      "MemAvailable": 178820,
+      "SwapFree": 136184,
+      "SwapTotal": 364536,
+      "oom_kill": 0
+    },
+    {
+      "stage": "recognize-local",
+      "at": 1877.2,
+      "MemAvailable": 178400,
+      "SwapFree": 136184,
+      "SwapTotal": 364536,
+      "oom_kill": 0
+    },
+    {
+      "stage": "recognize-local",
+      "at": 1878.2,
+      "MemAvailable": 178528,
+      "SwapFree": 136184,
+      "SwapTotal": 364536,
+      "oom_kill": 0
+    },
+    {
+      "stage": "recognize-local",
+      "at": 1879.2,
+      "MemAvailable": 178028,
+      "SwapFree": 136696,
+      "SwapTotal": 364536,
+      "oom_kill": 0
+    },
+    {
+      "stage": "recognize-local",
+      "at": 1880.2,
+      "MemAvailable": 177564,
+      "SwapFree": 136696,
+      "SwapTotal": 364536,
+      "oom_kill": 0
+    },
+    {
+      "stage": "recognize-local",
+      "at": 1881.2,
+      "MemAvailable": 177412,
+      "SwapFree": 136696,
+      "SwapTotal": 364536,
+      "oom_kill": 0
+    },
+    {
+      "stage": "recognize-local",
+      "at": 1882.2,
+      "MemAvailable": 177548,
+      "SwapFree": 136696,
+      "SwapTotal": 364536,
+      "oom_kill": 0
+    },
+    {
+      "stage": "recognize-local",
+      "at": 1883.2,
+      "MemAvailable": 177356,
+      "SwapFree": 136696,
+      "SwapTotal": 364536,
+      "oom_kill": 0
+    },
+    {
+      "stage": "recognize-local",
+      "at": 1884.2,
+      "MemAvailable": 176848,
+      "SwapFree": 136696,
+      "SwapTotal": 364536,
+      "oom_kill": 0
+    },
+    {
+      "stage": "recognize-local",
+      "at": 1885.2,
+      "MemAvailable": 176888,
+      "SwapFree": 136696,
+      "SwapTotal": 364536,
+      "oom_kill": 0
+    },
+    {
+      "stage": "recognize-local",
+      "at": 1886.2,
+      "MemAvailable": 176820,
+      "SwapFree": 136696,
+      "SwapTotal": 364536,
+      "oom_kill": 0
+    },
+    {
+      "stage": "recognize-local",
+      "at": 1887.2,
+      "MemAvailable": 174920,
+      "SwapFree": 136696,
+      "SwapTotal": 364536,
+      "oom_kill": 0
+    },
+    {
+      "stage": "recognize-local",
+      "at": 1888.2,
+      "MemAvailable": 176556,
+      "SwapFree": 136696,
+      "SwapTotal": 364536,
+      "oom_kill": 0
+    },
+    {
+      "stage": "recognize-local",
+      "at": 1889.2,
+      "MemAvailable": 180776,
+      "SwapFree": 136696,
+      "SwapTotal": 364536,
+      "oom_kill": 0
+    },
+    {
+      "stage": "recognize-local",
+      "at": 1890.2,
+      "MemAvailable": 166900,
+      "SwapFree": 136696,
+      "SwapTotal": 364536,
+      "oom_kill": 0
+    },
+    {
+      "stage": "recognize-local",
+      "at": 1891.2,
+      "MemAvailable": 167112,
+      "SwapFree": 136696,
+      "SwapTotal": 364536,
+      "oom_kill": 0
+    },
+    {
+      "stage": "recognize-local",
+      "at": 1892.2,
+      "MemAvailable": 166928,
+      "SwapFree": 136696,
+      "SwapTotal": 364536,
+      "oom_kill": 0
+    },
+    {
+      "stage": "recognize-local",
+      "at": 1893.2,
+      "MemAvailable": 161512,
+      "SwapFree": 136696,
+      "SwapTotal": 364536,
+      "oom_kill": 0
+    },
+    {
+      "stage": "recognize-local",
+      "at": 1894.2,
+      "MemAvailable": 167328,
+      "SwapFree": 136696,
+      "SwapTotal": 364536,
+      "oom_kill": 0
+    },
+    {
+      "stage": "recognize-local",
+      "at": 1895.2,
+      "MemAvailable": 161572,
+      "SwapFree": 136952,
+      "SwapTotal": 364536,
+      "oom_kill": 0
+    },
+    {
+      "stage": "recognize-local",
+      "at": 1896.3,
+      "MemAvailable": 166120,
+      "SwapFree": 136952,
+      "SwapTotal": 364536,
+      "oom_kill": 0
+    },
+    {
+      "stage": "both-models-soak",
+      "at": 1897.3,
+      "MemAvailable": 161236,
+      "SwapFree": 136952,
+      "SwapTotal": 364536,
+      "oom_kill": 0
+    },
+    {
+      "stage": "both-models-soak",
+      "at": 1898.3,
+      "MemAvailable": 161692,
+      "SwapFree": 136952,
+      "SwapTotal": 364536,
+      "oom_kill": 0
+    },
+    {
+      "stage": "both-models-soak",
+      "at": 1899.3,
+      "MemAvailable": 160860,
+      "SwapFree": 136952,
+      "SwapTotal": 364536,
+      "oom_kill": 0
+    },
+    {
+      "stage": "both-models-soak",
+      "at": 1900.3,
+      "MemAvailable": 160796,
+      "SwapFree": 136952,
+      "SwapTotal": 364536,
+      "oom_kill": 0
+    },
+    {
+      "stage": "both-models-soak",
+      "at": 1901.3,
+      "MemAvailable": 165040,
+      "SwapFree": 136952,
+      "SwapTotal": 364536,
+      "oom_kill": 0
+    },
+    {
+      "stage": "both-models-soak",
+      "at": 1902.3,
+      "MemAvailable": 161028,
+      "SwapFree": 136952,
+      "SwapTotal": 364536,
+      "oom_kill": 0
+    },
+    {
+      "stage": "both-models-soak",
+      "at": 1903.3,
+      "MemAvailable": 165436,
+      "SwapFree": 136952,
+      "SwapTotal": 364536,
+      "oom_kill": 0
+    },
+    {
+      "stage": "both-models-soak",
+      "at": 1904.3,
+      "MemAvailable": 160424,
+      "SwapFree": 136952,
+      "SwapTotal": 364536,
+      "oom_kill": 0
+    },
+    {
+      "stage": "both-models-soak",
+      "at": 1905.3,
+      "MemAvailable": 160356,
+      "SwapFree": 136952,
+      "SwapTotal": 364536,
+      "oom_kill": 0
+    },
+    {
+      "stage": "both-models-soak",
+      "at": 1906.3,
+      "MemAvailable": 163632,
+      "SwapFree": 136952,
+      "SwapTotal": 364536,
+      "oom_kill": 0
+    },
+    {
+      "stage": "both-models-soak",
+      "at": 1907.3,
+      "MemAvailable": 160464,
+      "SwapFree": 136952,
+      "SwapTotal": 364536,
+      "oom_kill": 0
+    },
+    {
+      "stage": "both-models-soak",
+      "at": 1908.3,
+      "MemAvailable": 164268,
+      "SwapFree": 136952,
+      "SwapTotal": 364536,
+      "oom_kill": 0
+    },
+    {
+      "stage": "both-models-soak",
+      "at": 1909.3,
+      "MemAvailable": 160188,
+      "SwapFree": 136952,
+      "SwapTotal": 364536,
+      "oom_kill": 0
+    },
+    {
+      "stage": "both-models-soak",
+      "at": 1910.3,
+      "MemAvailable": 164300,
+      "SwapFree": 136952,
+      "SwapTotal": 364536,
+      "oom_kill": 0
+    },
+    {
+      "stage": "both-models-soak",
+      "at": 1911.3,
+      "MemAvailable": 159416,
+      "SwapFree": 136952,
+      "SwapTotal": 364536,
+      "oom_kill": 0
+    },
+    {
+      "stage": "both-models-soak",
+      "at": 1912.3,
+      "MemAvailable": 159716,
+      "SwapFree": 136952,
+      "SwapTotal": 364536,
+      "oom_kill": 0
+    },
+    {
+      "stage": "both-models-soak",
+      "at": 1913.3,
+      "MemAvailable": 165520,
+      "SwapFree": 136952,
+      "SwapTotal": 364536,
+      "oom_kill": 0
+    },
+    {
+      "stage": "both-models-soak",
+      "at": 1914.3,
+      "MemAvailable": 158876,
+      "SwapFree": 136952,
+      "SwapTotal": 364536,
+      "oom_kill": 0
+    },
+    {
+      "stage": "both-models-soak",
+      "at": 1915.3,
+      "MemAvailable": 163220,
+      "SwapFree": 136952,
+      "SwapTotal": 364536,
+      "oom_kill": 0
+    },
+    {
+      "stage": "both-models-soak",
+      "at": 1916.3,
+      "MemAvailable": 158412,
+      "SwapFree": 136952,
+      "SwapTotal": 364536,
+      "oom_kill": 0
+    },
+    {
+      "stage": "both-models-soak",
+      "at": 1917.4,
+      "MemAvailable": 159064,
+      "SwapFree": 136952,
+      "SwapTotal": 364536,
+      "oom_kill": 0
+    },
+    {
+      "stage": "both-models-soak",
+      "at": 1918.4,
+      "MemAvailable": 165188,
+      "SwapFree": 136952,
+      "SwapTotal": 364536,
+      "oom_kill": 0
+    },
+    {
+      "stage": "both-models-soak",
+      "at": 1919.4,
+      "MemAvailable": 158084,
+      "SwapFree": 136952,
+      "SwapTotal": 364536,
+      "oom_kill": 0
+    },
+    {
+      "stage": "both-models-soak",
+      "at": 1920.4,
+      "MemAvailable": 162328,
+      "SwapFree": 136952,
+      "SwapTotal": 364536,
+      "oom_kill": 0
+    },
+    {
+      "stage": "both-models-soak",
+      "at": 1921.4,
+      "MemAvailable": 157960,
+      "SwapFree": 136952,
+      "SwapTotal": 364536,
+      "oom_kill": 0
+    },
+    {
+      "stage": "both-models-soak",
+      "at": 1922.4,
+      "MemAvailable": 160308,
+      "SwapFree": 136952,
+      "SwapTotal": 364536,
+      "oom_kill": 0
+    },
+    {
+      "stage": "both-models-soak",
+      "at": 1923.4,
+      "MemAvailable": 157380,
+      "SwapFree": 136952,
+      "SwapTotal": 364536,
+      "oom_kill": 0
+    },
+    {
+      "stage": "both-models-soak",
+      "at": 1924.4,
+      "MemAvailable": 158448,
+      "SwapFree": 136952,
+      "SwapTotal": 364536,
+      "oom_kill": 0
+    },
+    {
+      "stage": "both-models-soak",
+      "at": 1925.4,
+      "MemAvailable": 156976,
+      "SwapFree": 136952,
+      "SwapTotal": 364536,
+      "oom_kill": 0
+    },
+    {
+      "stage": "both-models-soak",
+      "at": 1926.4,
+      "MemAvailable": 165136,
+      "SwapFree": 136952,
+      "SwapTotal": 364536,
+      "oom_kill": 0
+    },
+    {
+      "stage": "both-models-soak",
+      "at": 1927.4,
+      "MemAvailable": 169516,
+      "SwapFree": 136952,
+      "SwapTotal": 364536,
+      "oom_kill": 0
+    },
+    {
+      "stage": "both-models-soak",
+      "at": 1928.4,
+      "MemAvailable": 164620,
+      "SwapFree": 136952,
+      "SwapTotal": 364536,
+      "oom_kill": 0
+    },
+    {
+      "stage": "both-models-soak",
+      "at": 1929.4,
+      "MemAvailable": 168620,
+      "SwapFree": 136952,
+      "SwapTotal": 364536,
+      "oom_kill": 0
+    },
+    {
+      "stage": "both-models-soak",
+      "at": 1930.4,
+      "MemAvailable": 164896,
+      "SwapFree": 136952,
+      "SwapTotal": 364536,
+      "oom_kill": 0
+    },
+    {
+      "stage": "both-models-soak",
+      "at": 1931.4,
+      "MemAvailable": 164668,
+      "SwapFree": 136952,
+      "SwapTotal": 364536,
+      "oom_kill": 0
+    },
+    {
+      "stage": "both-models-soak",
+      "at": 1932.4,
+      "MemAvailable": 169412,
+      "SwapFree": 136952,
+      "SwapTotal": 364536,
+      "oom_kill": 0
+    },
+    {
+      "stage": "both-models-soak",
+      "at": 1933.4,
+      "MemAvailable": 163844,
+      "SwapFree": 137208,
+      "SwapTotal": 364536,
+      "oom_kill": 0
+    },
+    {
+      "stage": "both-models-soak",
+      "at": 1934.4,
+      "MemAvailable": 168732,
+      "SwapFree": 137208,
+      "SwapTotal": 364536,
+      "oom_kill": 0
+    },
+    {
+      "stage": "both-models-soak",
+      "at": 1935.4,
+      "MemAvailable": 163796,
+      "SwapFree": 137208,
+      "SwapTotal": 364536,
+      "oom_kill": 0
+    },
+    {
+      "stage": "both-models-soak",
+      "at": 1936.4,
+      "MemAvailable": 163716,
+      "SwapFree": 137464,
+      "SwapTotal": 364536,
+      "oom_kill": 0
+    },
+    {
+      "stage": "both-models-soak",
+      "at": 1937.4,
+      "MemAvailable": 163084,
+      "SwapFree": 137464,
+      "SwapTotal": 364536,
+      "oom_kill": 0
+    },
+    {
+      "stage": "both-models-soak",
+      "at": 1938.4,
+      "MemAvailable": 163920,
+      "SwapFree": 137464,
+      "SwapTotal": 364536,
+      "oom_kill": 0
+    },
+    {
+      "stage": "both-models-soak",
+      "at": 1939.4,
+      "MemAvailable": 168036,
+      "SwapFree": 137464,
+      "SwapTotal": 364536,
+      "oom_kill": 0
+    },
+    {
+      "stage": "both-models-soak",
+      "at": 1940.4,
+      "MemAvailable": 162584,
+      "SwapFree": 137464,
+      "SwapTotal": 364536,
+      "oom_kill": 0
+    },
+    {
+      "stage": "both-models-soak",
+      "at": 1941.4,
+      "MemAvailable": 164192,
+      "SwapFree": 137464,
+      "SwapTotal": 364536,
+      "oom_kill": 0
+    },
+    {
+      "stage": "both-models-soak",
+      "at": 1942.5,
+      "MemAvailable": 162460,
+      "SwapFree": 137464,
+      "SwapTotal": 364536,
+      "oom_kill": 0
+    },
+    {
+      "stage": "both-models-soak",
+      "at": 1943.5,
+      "MemAvailable": 162200,
+      "SwapFree": 137464,
+      "SwapTotal": 364536,
+      "oom_kill": 0
+    },
+    {
+      "stage": "both-models-soak",
+      "at": 1944.5,
+      "MemAvailable": 166440,
+      "SwapFree": 137464,
+      "SwapTotal": 364536,
+      "oom_kill": 0
+    },
+    {
+      "stage": "both-models-soak",
+      "at": 1945.5,
+      "MemAvailable": 162036,
+      "SwapFree": 137464,
+      "SwapTotal": 364536,
+      "oom_kill": 0
+    },
+    {
+      "stage": "both-models-soak",
+      "at": 1946.5,
+      "MemAvailable": 165980,
+      "SwapFree": 137464,
+      "SwapTotal": 364536,
+      "oom_kill": 0
+    },
+    {
+      "stage": "both-models-soak",
+      "at": 1947.5,
+      "MemAvailable": 161472,
+      "SwapFree": 137464,
+      "SwapTotal": 364536,
+      "oom_kill": 0
+    },
+    {
+      "stage": "both-models-soak",
+      "at": 1948.5,
+      "MemAvailable": 162012,
+      "SwapFree": 137464,
+      "SwapTotal": 364536,
+      "oom_kill": 0
+    },
+    {
+      "stage": "both-models-soak",
+      "at": 1949.5,
+      "MemAvailable": 161772,
+      "SwapFree": 137464,
+      "SwapTotal": 364536,
+      "oom_kill": 0
+    },
+    {
+      "stage": "both-models-soak",
+      "at": 1950.5,
+      "MemAvailable": 161380,
+      "SwapFree": 137464,
+      "SwapTotal": 364536,
+      "oom_kill": 0
+    },
+    {
+      "stage": "both-models-soak",
+      "at": 1951.5,
+      "MemAvailable": 165288,
+      "SwapFree": 137464,
+      "SwapTotal": 364536,
+      "oom_kill": 0
+    },
+    {
+      "stage": "both-models-soak",
+      "at": 1952.5,
+      "MemAvailable": 160848,
+      "SwapFree": 137464,
+      "SwapTotal": 364536,
+      "oom_kill": 0
+    },
+    {
+      "stage": "both-models-soak",
+      "at": 1953.5,
+      "MemAvailable": 159444,
+      "SwapFree": 137464,
+      "SwapTotal": 364536,
+      "oom_kill": 0
+    },
+    {
+      "stage": "both-models-soak",
+      "at": 1954.5,
+      "MemAvailable": 158928,
+      "SwapFree": 137464,
+      "SwapTotal": 364536,
+      "oom_kill": 0
+    },
+    {
+      "stage": "both-models-soak",
+      "at": 1955.5,
+      "MemAvailable": 164596,
+      "SwapFree": 137464,
+      "SwapTotal": 364536,
+      "oom_kill": 0
+    },
+    {
+      "stage": "both-models-soak",
+      "at": 1956.5,
+      "MemAvailable": 160884,
+      "SwapFree": 137464,
+      "SwapTotal": 364536,
+      "oom_kill": 0
+    },
+    {
+      "stage": "both-models-soak",
+      "at": 1957.5,
+      "MemAvailable": 160908,
+      "SwapFree": 137464,
+      "SwapTotal": 364536,
+      "oom_kill": 0
+    },
+    {
+      "stage": "both-models-soak",
+      "at": 1958.5,
+      "MemAvailable": 167444,
+      "SwapFree": 137464,
+      "SwapTotal": 364536,
+      "oom_kill": 0
+    },
+    {
+      "stage": "both-models-soak",
+      "at": 1959.5,
+      "MemAvailable": 159616,
+      "SwapFree": 137464,
+      "SwapTotal": 364536,
+      "oom_kill": 0
+    },
+    {
+      "stage": "both-models-soak",
+      "at": 1960.5,
+      "MemAvailable": 164536,
+      "SwapFree": 137464,
+      "SwapTotal": 364536,
+      "oom_kill": 0
+    },
+    {
+      "stage": "both-models-soak",
+      "at": 1961.5,
+      "MemAvailable": 160072,
+      "SwapFree": 137464,
+      "SwapTotal": 364536,
+      "oom_kill": 0
+    },
+    {
+      "stage": "both-models-soak",
+      "at": 1962.5,
+      "MemAvailable": 162748,
+      "SwapFree": 137464,
+      "SwapTotal": 364536,
+      "oom_kill": 0
+    },
+    {
+      "stage": "both-models-soak",
+      "at": 1963.5,
+      "MemAvailable": 159612,
+      "SwapFree": 137464,
+      "SwapTotal": 364536,
+      "oom_kill": 0
+    },
+    {
+      "stage": "both-models-soak",
+      "at": 1964.5,
+      "MemAvailable": 159312,
+      "SwapFree": 137464,
+      "SwapTotal": 364536,
+      "oom_kill": 0
+    },
+    {
+      "stage": "both-models-soak",
+      "at": 1965.5,
+      "MemAvailable": 167160,
+      "SwapFree": 137464,
+      "SwapTotal": 364536,
+      "oom_kill": 0
+    },
+    {
+      "stage": "both-models-soak",
+      "at": 1966.5,
+      "MemAvailable": 159428,
+      "SwapFree": 137464,
+      "SwapTotal": 364536,
+      "oom_kill": 0
+    },
+    {
+      "stage": "both-models-soak",
+      "at": 1967.5,
+      "MemAvailable": 163692,
+      "SwapFree": 137464,
+      "SwapTotal": 364536,
+      "oom_kill": 0
+    },
+    {
+      "stage": "both-models-soak",
+      "at": 1968.5,
+      "MemAvailable": 158672,
+      "SwapFree": 137464,
+      "SwapTotal": 364536,
+      "oom_kill": 0
+    },
+    {
+      "stage": "both-models-soak",
+      "at": 1969.6,
+      "MemAvailable": 159248,
+      "SwapFree": 137464,
+      "SwapTotal": 364536,
+      "oom_kill": 0
+    },
+    {
+      "stage": "both-models-soak",
+      "at": 1970.6,
+      "MemAvailable": 158804,
+      "SwapFree": 137464,
+      "SwapTotal": 364536,
+      "oom_kill": 0
+    },
+    {
+      "stage": "both-models-soak",
+      "at": 1971.6,
+      "MemAvailable": 157904,
+      "SwapFree": 137464,
+      "SwapTotal": 364536,
+      "oom_kill": 0
+    },
+    {
+      "stage": "both-models-soak",
+      "at": 1972.6,
+      "MemAvailable": 162388,
+      "SwapFree": 137464,
+      "SwapTotal": 364536,
+      "oom_kill": 0
+    },
+    {
+      "stage": "both-models-soak",
+      "at": 1973.6,
+      "MemAvailable": 158132,
+      "SwapFree": 137464,
+      "SwapTotal": 364536,
+      "oom_kill": 0
+    },
+    {
+      "stage": "both-models-soak",
+      "at": 1974.6,
+      "MemAvailable": 162316,
+      "SwapFree": 137464,
+      "SwapTotal": 364536,
+      "oom_kill": 0
+    },
+    {
+      "stage": "both-models-soak",
+      "at": 1975.6,
+      "MemAvailable": 158036,
+      "SwapFree": 137464,
+      "SwapTotal": 364536,
+      "oom_kill": 0
+    },
+    {
+      "stage": "both-models-soak",
+      "at": 1976.6,
+      "MemAvailable": 158408,
+      "SwapFree": 137464,
+      "SwapTotal": 364536,
+      "oom_kill": 0
+    },
+    {
+      "stage": "both-models-soak",
+      "at": 1977.6,
+      "MemAvailable": 157428,
+      "SwapFree": 137464,
+      "SwapTotal": 364536,
+      "oom_kill": 0
+    },
+    {
+      "stage": "both-models-soak",
+      "at": 1978.6,
+      "MemAvailable": 157128,
+      "SwapFree": 137464,
+      "SwapTotal": 364536,
+      "oom_kill": 0
+    },
+    {
+      "stage": "both-models-soak",
+      "at": 1979.6,
+      "MemAvailable": 161804,
+      "SwapFree": 137464,
+      "SwapTotal": 364536,
+      "oom_kill": 0
+    },
+    {
+      "stage": "both-models-soak",
+      "at": 1980.6,
+      "MemAvailable": 163840,
+      "SwapFree": 137464,
+      "SwapTotal": 364536,
+      "oom_kill": 0
+    },
+    {
+      "stage": "both-models-soak",
+      "at": 1981.6,
+      "MemAvailable": 168020,
+      "SwapFree": 137464,
+      "SwapTotal": 364536,
+      "oom_kill": 0
+    },
+    {
+      "stage": "both-models-soak",
+      "at": 1982.6,
+      "MemAvailable": 163904,
+      "SwapFree": 137464,
+      "SwapTotal": 364536,
+      "oom_kill": 0
+    },
+    {
+      "stage": "both-models-soak",
+      "at": 1983.6,
+      "MemAvailable": 164432,
+      "SwapFree": 137464,
+      "SwapTotal": 364536,
+      "oom_kill": 0
+    },
+    {
+      "stage": "both-models-soak",
+      "at": 1984.6,
+      "MemAvailable": 172116,
+      "SwapFree": 137464,
+      "SwapTotal": 364536,
+      "oom_kill": 0
+    },
+    {
+      "stage": "both-models-soak",
+      "at": 1985.6,
+      "MemAvailable": 164200,
+      "SwapFree": 137464,
+      "SwapTotal": 364536,
+      "oom_kill": 0
+    },
+    {
+      "stage": "both-models-soak",
+      "at": 1986.6,
+      "MemAvailable": 171320,
+      "SwapFree": 137464,
+      "SwapTotal": 364536,
+      "oom_kill": 0
+    },
+    {
+      "stage": "both-models-soak",
+      "at": 1987.6,
+      "MemAvailable": 163604,
+      "SwapFree": 137464,
+      "SwapTotal": 364536,
+      "oom_kill": 0
+    },
+    {
+      "stage": "both-models-soak",
+      "at": 1988.6,
+      "MemAvailable": 167908,
+      "SwapFree": 137464,
+      "SwapTotal": 364536,
+      "oom_kill": 0
+    },
+    {
+      "stage": "both-models-soak",
+      "at": 1989.6,
+      "MemAvailable": 163128,
+      "SwapFree": 137464,
+      "SwapTotal": 364536,
+      "oom_kill": 0
+    },
+    {
+      "stage": "both-models-soak",
+      "at": 1990.6,
+      "MemAvailable": 163604,
+      "SwapFree": 137464,
+      "SwapTotal": 364536,
+      "oom_kill": 0
+    },
+    {
+      "stage": "both-models-soak",
+      "at": 1991.6,
+      "MemAvailable": 163008,
+      "SwapFree": 137464,
+      "SwapTotal": 364536,
+      "oom_kill": 0
+    },
+    {
+      "stage": "both-models-soak",
+      "at": 1992.6,
+      "MemAvailable": 162688,
+      "SwapFree": 137464,
+      "SwapTotal": 364536,
+      "oom_kill": 0
+    },
+    {
+      "stage": "both-models-soak",
+      "at": 1993.7,
+      "MemAvailable": 166924,
+      "SwapFree": 137464,
+      "SwapTotal": 364536,
+      "oom_kill": 0
+    },
+    {
+      "stage": "both-models-soak",
+      "at": 1994.7,
+      "MemAvailable": 162308,
+      "SwapFree": 137464,
+      "SwapTotal": 364536,
+      "oom_kill": 0
+    },
+    {
+      "stage": "both-models-soak",
+      "at": 1995.7,
+      "MemAvailable": 162912,
+      "SwapFree": 137464,
+      "SwapTotal": 364536,
+      "oom_kill": 0
+    },
+    {
+      "stage": "both-models-soak",
+      "at": 1996.7,
+      "MemAvailable": 162072,
+      "SwapFree": 137464,
+      "SwapTotal": 364536,
+      "oom_kill": 0
+    },
+    {
+      "stage": "both-models-soak",
+      "at": 1997.7,
+      "MemAvailable": 162336,
+      "SwapFree": 137464,
+      "SwapTotal": 364536,
+      "oom_kill": 0
+    },
+    {
+      "stage": "both-models-soak",
+      "at": 1998.7,
+      "MemAvailable": 166564,
+      "SwapFree": 137464,
+      "SwapTotal": 364536,
+      "oom_kill": 0
+    },
+    {
+      "stage": "both-models-soak",
+      "at": 1999.7,
+      "MemAvailable": 161648,
+      "SwapFree": 137464,
+      "SwapTotal": 364536,
+      "oom_kill": 0
+    },
+    {
+      "stage": "both-models-soak",
+      "at": 2000.7,
+      "MemAvailable": 161448,
+      "SwapFree": 137464,
+      "SwapTotal": 364536,
+      "oom_kill": 0
+    },
+    {
+      "stage": "both-models-soak",
+      "at": 2001.7,
+      "MemAvailable": 161804,
+      "SwapFree": 137464,
+      "SwapTotal": 364536,
+      "oom_kill": 0
+    },
+    {
+      "stage": "both-models-soak",
+      "at": 2002.7,
+      "MemAvailable": 161104,
+      "SwapFree": 137464,
+      "SwapTotal": 364536,
+      "oom_kill": 0
+    },
+    {
+      "stage": "both-models-soak",
+      "at": 2003.7,
+      "MemAvailable": 167760,
+      "SwapFree": 137464,
+      "SwapTotal": 364536,
+      "oom_kill": 0
+    },
+    {
+      "stage": "both-models-soak",
+      "at": 2004.7,
+      "MemAvailable": 160908,
+      "SwapFree": 137464,
+      "SwapTotal": 364536,
+      "oom_kill": 0
+    },
+    {
+      "stage": "both-models-soak",
+      "at": 2005.7,
+      "MemAvailable": 163400,
+      "SwapFree": 137464,
+      "SwapTotal": 364536,
+      "oom_kill": 0
+    },
+    {
+      "stage": "both-models-soak",
+      "at": 2006.7,
+      "MemAvailable": 158744,
+      "SwapFree": 137464,
+      "SwapTotal": 364536,
+      "oom_kill": 0
+    },
+    {
+      "stage": "both-models-soak",
+      "at": 2007.7,
+      "MemAvailable": 164428,
+      "SwapFree": 137464,
+      "SwapTotal": 364536,
+      "oom_kill": 0
+    },
+    {
+      "stage": "both-models-soak",
+      "at": 2008.7,
+      "MemAvailable": 160340,
+      "SwapFree": 137464,
+      "SwapTotal": 364536,
+      "oom_kill": 0
+    },
+    {
+      "stage": "both-models-soak",
+      "at": 2009.7,
+      "MemAvailable": 160368,
+      "SwapFree": 137464,
+      "SwapTotal": 364536,
+      "oom_kill": 0
+    },
+    {
+      "stage": "both-models-soak",
+      "at": 2010.7,
+      "MemAvailable": 159800,
+      "SwapFree": 137464,
+      "SwapTotal": 364536,
+      "oom_kill": 0
+    },
+    {
+      "stage": "both-models-soak",
+      "at": 2011.7,
+      "MemAvailable": 159824,
+      "SwapFree": 137464,
+      "SwapTotal": 364536,
+      "oom_kill": 0
+    },
+    {
+      "stage": "both-models-soak",
+      "at": 2012.8,
+      "MemAvailable": 164040,
+      "SwapFree": 137464,
+      "SwapTotal": 364536,
+      "oom_kill": 0
+    },
+    {
+      "stage": "both-models-soak",
+      "at": 2013.8,
+      "MemAvailable": 159740,
+      "SwapFree": 137464,
+      "SwapTotal": 364536,
+      "oom_kill": 0
+    },
+    {
+      "stage": "both-models-soak",
+      "at": 2014.8,
+      "MemAvailable": 163944,
+      "SwapFree": 137464,
+      "SwapTotal": 364536,
+      "oom_kill": 0
+    },
+    {
+      "stage": "both-models-soak",
+      "at": 2015.8,
+      "MemAvailable": 159396,
+      "SwapFree": 137464,
+      "SwapTotal": 364536,
+      "oom_kill": 0
+    },
+    {
+      "stage": "both-models-soak",
+      "at": 2016.8,
+      "MemAvailable": 160656,
+      "SwapFree": 137464,
+      "SwapTotal": 364536,
+      "oom_kill": 0
+    },
+    {
+      "stage": "both-models-soak",
+      "at": 2017.8,
+      "MemAvailable": 159632,
+      "SwapFree": 137464,
+      "SwapTotal": 364536,
+      "oom_kill": 0
+    },
+    {
+      "stage": "both-models-soak",
+      "at": 2018.8,
+      "MemAvailable": 158716,
+      "SwapFree": 137464,
+      "SwapTotal": 364536,
+      "oom_kill": 0
+    },
+    {
+      "stage": "both-models-soak",
+      "at": 2019.8,
+      "MemAvailable": 159084,
+      "SwapFree": 137464,
+      "SwapTotal": 364536,
+      "oom_kill": 0
+    },
+    {
+      "stage": "both-models-soak",
+      "at": 2020.8,
+      "MemAvailable": 158776,
+      "SwapFree": 137464,
+      "SwapTotal": 364536,
+      "oom_kill": 0
+    },
+    {
+      "stage": "both-models-soak",
+      "at": 2021.8,
+      "MemAvailable": 162444,
+      "SwapFree": 137464,
+      "SwapTotal": 364536,
+      "oom_kill": 0
+    },
+    {
+      "stage": "both-models-soak",
+      "at": 2022.8,
+      "MemAvailable": 158180,
+      "SwapFree": 137464,
+      "SwapTotal": 364536,
+      "oom_kill": 0
+    },
+    {
+      "stage": "both-models-soak",
+      "at": 2023.8,
+      "MemAvailable": 161996,
+      "SwapFree": 137464,
+      "SwapTotal": 364536,
+      "oom_kill": 0
+    },
+    {
+      "stage": "both-models-soak",
+      "at": 2024.8,
+      "MemAvailable": 158020,
+      "SwapFree": 137464,
+      "SwapTotal": 364536,
+      "oom_kill": 0
+    },
+    {
+      "stage": "both-models-soak",
+      "at": 2025.8,
+      "MemAvailable": 157768,
+      "SwapFree": 137464,
+      "SwapTotal": 364536,
+      "oom_kill": 0
+    },
+    {
+      "stage": "both-models-soak",
+      "at": 2026.8,
+      "MemAvailable": 162532,
+      "SwapFree": 137464,
+      "SwapTotal": 364536,
+      "oom_kill": 0
+    },
+    {
+      "stage": "both-models-soak",
+      "at": 2027.8,
+      "MemAvailable": 157424,
+      "SwapFree": 137464,
+      "SwapTotal": 364536,
+      "oom_kill": 0
+    },
+    {
+      "stage": "both-models-soak",
+      "at": 2028.8,
+      "MemAvailable": 161752,
+      "SwapFree": 137464,
+      "SwapTotal": 364536,
+      "oom_kill": 0
+    },
+    {
+      "stage": "both-models-soak",
+      "at": 2029.8,
+      "MemAvailable": 157188,
+      "SwapFree": 137464,
+      "SwapTotal": 364536,
+      "oom_kill": 0
+    },
+    {
+      "stage": "both-models-soak",
+      "at": 2030.8,
+      "MemAvailable": 157764,
+      "SwapFree": 137464,
+      "SwapTotal": 364536,
+      "oom_kill": 0
+    },
+    {
+      "stage": "both-models-soak",
+      "at": 2031.8,
+      "MemAvailable": 157036,
+      "SwapFree": 137464,
+      "SwapTotal": 364536,
+      "oom_kill": 0
+    },
+    {
+      "stage": "both-models-soak",
+      "at": 2032.9,
+      "MemAvailable": 156456,
+      "SwapFree": 137464,
+      "SwapTotal": 364536,
+      "oom_kill": 0
+    },
+    {
+      "stage": "both-models-soak",
+      "at": 2033.9,
+      "MemAvailable": 168664,
+      "SwapFree": 137464,
+      "SwapTotal": 364536,
+      "oom_kill": 0
+    },
+    {
+      "stage": "both-models-soak",
+      "at": 2034.9,
+      "MemAvailable": 164048,
+      "SwapFree": 137464,
+      "SwapTotal": 364536,
+      "oom_kill": 0
+    },
+    {
+      "stage": "both-models-soak",
+      "at": 2035.9,
+      "MemAvailable": 168524,
+      "SwapFree": 137464,
+      "SwapTotal": 364536,
+      "oom_kill": 0
+    },
+    {
+      "stage": "both-models-soak",
+      "at": 2036.9,
+      "MemAvailable": 164120,
+      "SwapFree": 137464,
+      "SwapTotal": 364536,
+      "oom_kill": 0
+    },
+    {
+      "stage": "both-models-soak",
+      "at": 2037.9,
+      "MemAvailable": 167272,
+      "SwapFree": 137464,
+      "SwapTotal": 364536,
+      "oom_kill": 0
+    },
+    {
+      "stage": "both-models-soak",
+      "at": 2038.9,
+      "MemAvailable": 163828,
+      "SwapFree": 137464,
+      "SwapTotal": 364536,
+      "oom_kill": 0
+    },
+    {
+      "stage": "both-models-soak",
+      "at": 2039.9,
+      "MemAvailable": 163968,
+      "SwapFree": 137464,
+      "SwapTotal": 364536,
+      "oom_kill": 0
+    },
+    {
+      "stage": "both-models-soak",
+      "at": 2040.9,
+      "MemAvailable": 171424,
+      "SwapFree": 137464,
+      "SwapTotal": 364536,
+      "oom_kill": 0
+    },
+    {
+      "stage": "both-models-soak",
+      "at": 2041.9,
+      "MemAvailable": 163908,
+      "SwapFree": 137464,
+      "SwapTotal": 364536,
+      "oom_kill": 0
+    },
+    {
+      "stage": "both-models-soak",
+      "at": 2042.9,
+      "MemAvailable": 168140,
+      "SwapFree": 137464,
+      "SwapTotal": 364536,
+      "oom_kill": 0
+    },
+    {
+      "stage": "both-models-soak",
+      "at": 2043.9,
+      "MemAvailable": 163092,
+      "SwapFree": 137464,
+      "SwapTotal": 364536,
+      "oom_kill": 0
+    },
+    {
+      "stage": "both-models-soak",
+      "at": 2044.9,
+      "MemAvailable": 167236,
+      "SwapFree": 137464,
+      "SwapTotal": 364536,
+      "oom_kill": 0
+    },
+    {
+      "stage": "both-models-soak",
+      "at": 2045.9,
+      "MemAvailable": 162936,
+      "SwapFree": 137464,
+      "SwapTotal": 364536,
+      "oom_kill": 0
+    },
+    {
+      "stage": "both-models-soak",
+      "at": 2046.9,
+      "MemAvailable": 163232,
+      "SwapFree": 137464,
+      "SwapTotal": 364536,
+      "oom_kill": 0
+    },
+    {
+      "stage": "both-models-soak",
+      "at": 2047.9,
+      "MemAvailable": 167052,
+      "SwapFree": 137464,
+      "SwapTotal": 364536,
+      "oom_kill": 0
+    },
+    {
+      "stage": "both-models-soak",
+      "at": 2048.9,
+      "MemAvailable": 162520,
+      "SwapFree": 137464,
+      "SwapTotal": 364536,
+      "oom_kill": 0
+    },
+    {
+      "stage": "both-models-soak",
+      "at": 2049.9,
+      "MemAvailable": 166168,
+      "SwapFree": 137464,
+      "SwapTotal": 364536,
+      "oom_kill": 0
+    },
+    {
+      "stage": "both-models-soak",
+      "at": 2050.9,
+      "MemAvailable": 161988,
+      "SwapFree": 137464,
+      "SwapTotal": 364536,
+      "oom_kill": 0
+    },
+    {
+      "stage": "both-models-soak",
+      "at": 2051.9,
+      "MemAvailable": 166000,
+      "SwapFree": 137464,
+      "SwapTotal": 364536,
+      "oom_kill": 0
+    },
+    {
+      "stage": "both-models-soak",
+      "at": 2052.9,
+      "MemAvailable": 161140,
+      "SwapFree": 137464,
+      "SwapTotal": 364536,
+      "oom_kill": 0
+    },
+    {
+      "stage": "both-models-soak",
+      "at": 2053.9,
+      "MemAvailable": 161692,
+      "SwapFree": 137464,
+      "SwapTotal": 364536,
+      "oom_kill": 0
+    },
+    {
+      "stage": "both-models-soak",
+      "at": 2055.0,
+      "MemAvailable": 161552,
+      "SwapFree": 137464,
+      "SwapTotal": 364536,
+      "oom_kill": 0
+    },
+    {
+      "stage": "both-models-soak",
+      "at": 2056.0,
+      "MemAvailable": 161796,
+      "SwapFree": 137464,
+      "SwapTotal": 364536,
+      "oom_kill": 0
+    },
+    {
+      "stage": "both-models-soak",
+      "at": 2057.0,
+      "MemAvailable": 165048,
+      "SwapFree": 137464,
+      "SwapTotal": 364536,
+      "oom_kill": 0
+    },
+    {
+      "stage": "both-models-soak",
+      "at": 2058.0,
+      "MemAvailable": 160748,
+      "SwapFree": 137464,
+      "SwapTotal": 364536,
+      "oom_kill": 0
+    },
+    {
+      "stage": "both-models-soak",
+      "at": 2059.0,
+      "MemAvailable": 162336,
+      "SwapFree": 137464,
+      "SwapTotal": 364536,
+      "oom_kill": 0
+    },
+    {
+      "stage": "both-models-soak",
+      "at": 2060.0,
+      "MemAvailable": 164728,
+      "SwapFree": 137464,
+      "SwapTotal": 364536,
+      "oom_kill": 0
+    },
+    {
+      "stage": "both-models-soak",
+      "at": 2061.0,
+      "MemAvailable": 160792,
+      "SwapFree": 137464,
+      "SwapTotal": 364536,
+      "oom_kill": 0
+    },
+    {
+      "stage": "both-models-soak",
+      "at": 2062.0,
+      "MemAvailable": 159748,
+      "SwapFree": 137464,
+      "SwapTotal": 364536,
+      "oom_kill": 0
+    },
+    {
+      "stage": "both-models-soak",
+      "at": 2063.0,
+      "MemAvailable": 160428,
+      "SwapFree": 137464,
+      "SwapTotal": 364536,
+      "oom_kill": 0
+    },
+    {
+      "stage": "both-models-soak",
+      "at": 2064.0,
+      "MemAvailable": 164356,
+      "SwapFree": 137464,
+      "SwapTotal": 364536,
+      "oom_kill": 0
+    },
+    {
+      "stage": "both-models-soak",
+      "at": 2065.0,
+      "MemAvailable": 160220,
+      "SwapFree": 137464,
+      "SwapTotal": 364536,
+      "oom_kill": 0
+    },
+    {
+      "stage": "both-models-soak",
+      "at": 2066.0,
+      "MemAvailable": 163336,
+      "SwapFree": 137464,
+      "SwapTotal": 364536,
+      "oom_kill": 0
+    },
+    {
+      "stage": "both-models-soak",
+      "at": 2067.0,
+      "MemAvailable": 159060,
+      "SwapFree": 137464,
+      "SwapTotal": 364536,
+      "oom_kill": 0
+    },
+    {
+      "stage": "both-models-soak",
+      "at": 2068.0,
+      "MemAvailable": 159304,
+      "SwapFree": 137464,
+      "SwapTotal": 364536,
+      "oom_kill": 0
+    },
+    {
+      "stage": "both-models-soak",
+      "at": 2069.0,
+      "MemAvailable": 162180,
+      "SwapFree": 137464,
+      "SwapTotal": 364536,
+      "oom_kill": 0
+    },
+    {
+      "stage": "both-models-soak",
+      "at": 2070.0,
+      "MemAvailable": 159076,
+      "SwapFree": 137464,
+      "SwapTotal": 364536,
+      "oom_kill": 0
+    },
+    {
+      "stage": "both-models-soak",
+      "at": 2071.0,
+      "MemAvailable": 163396,
+      "SwapFree": 137464,
+      "SwapTotal": 364536,
+      "oom_kill": 0
+    },
+    {
+      "stage": "both-models-soak",
+      "at": 2072.0,
+      "MemAvailable": 158896,
+      "SwapFree": 137464,
+      "SwapTotal": 364536,
+      "oom_kill": 0
+    },
+    {
+      "stage": "both-models-soak",
+      "at": 2073.0,
+      "MemAvailable": 161984,
+      "SwapFree": 137464,
+      "SwapTotal": 364536,
+      "oom_kill": 0
+    },
+    {
+      "stage": "both-models-soak",
+      "at": 2074.0,
+      "MemAvailable": 158140,
+      "SwapFree": 137464,
+      "SwapTotal": 364536,
+      "oom_kill": 0
+    },
+    {
+      "stage": "both-models-soak",
+      "at": 2075.0,
+      "MemAvailable": 158908,
+      "SwapFree": 137464,
+      "SwapTotal": 364536,
+      "oom_kill": 0
+    },
+    {
+      "stage": "both-models-soak",
+      "at": 2076.0,
+      "MemAvailable": 157964,
+      "SwapFree": 137464,
+      "SwapTotal": 364536,
+      "oom_kill": 0
+    },
+    {
+      "stage": "both-models-soak",
+      "at": 2077.0,
+      "MemAvailable": 158424,
+      "SwapFree": 137464,
+      "SwapTotal": 364536,
+      "oom_kill": 0
+    },
+    {
+      "stage": "both-models-soak",
+      "at": 2078.0,
+      "MemAvailable": 162120,
+      "SwapFree": 137464,
+      "SwapTotal": 364536,
+      "oom_kill": 0
+    },
+    {
+      "stage": "both-models-soak",
+      "at": 2079.0,
+      "MemAvailable": 157684,
+      "SwapFree": 137464,
+      "SwapTotal": 364536,
+      "oom_kill": 0
+    },
+    {
+      "stage": "both-models-soak",
+      "at": 2080.0,
+      "MemAvailable": 156488,
+      "SwapFree": 137464,
+      "SwapTotal": 364536,
+      "oom_kill": 0
+    },
+    {
+      "stage": "both-models-soak",
+      "at": 2081.0,
+      "MemAvailable": 164172,
+      "SwapFree": 137464,
+      "SwapTotal": 364536,
+      "oom_kill": 0
+    },
+    {
+      "stage": "both-models-soak",
+      "at": 2082.0,
+      "MemAvailable": 157016,
+      "SwapFree": 137464,
+      "SwapTotal": 364536,
+      "oom_kill": 0
+    },
+    {
+      "stage": "both-models-soak",
+      "at": 2083.1,
+      "MemAvailable": 161780,
+      "SwapFree": 137464,
+      "SwapTotal": 364536,
+      "oom_kill": 0
+    },
+    {
+      "stage": "both-models-soak",
+      "at": 2084.1,
+      "MemAvailable": 156896,
+      "SwapFree": 137464,
+      "SwapTotal": 364536,
+      "oom_kill": 0
+    },
+    {
+      "stage": "both-models-soak",
+      "at": 2085.1,
+      "MemAvailable": 157276,
+      "SwapFree": 137464,
+      "SwapTotal": 364536,
+      "oom_kill": 0
+    },
+    {
+      "stage": "both-models-soak",
+      "at": 2086.1,
+      "MemAvailable": 156672,
+      "SwapFree": 137464,
+      "SwapTotal": 364536,
+      "oom_kill": 0
+    },
+    {
+      "stage": "both-models-soak",
+      "at": 2087.1,
+      "MemAvailable": 156712,
+      "SwapFree": 137464,
+      "SwapTotal": 364536,
+      "oom_kill": 0
+    },
+    {
+      "stage": "both-models-soak",
+      "at": 2088.1,
+      "MemAvailable": 160604,
+      "SwapFree": 137464,
+      "SwapTotal": 364536,
+      "oom_kill": 0
+    },
+    {
+      "stage": "both-models-soak",
+      "at": 2089.1,
+      "MemAvailable": 163348,
+      "SwapFree": 137464,
+      "SwapTotal": 364536,
+      "oom_kill": 0
+    },
+    {
+      "stage": "both-models-soak",
+      "at": 2090.1,
+      "MemAvailable": 168312,
+      "SwapFree": 137464,
+      "SwapTotal": 364536,
+      "oom_kill": 0
+    },
+    {
+      "stage": "both-models-soak",
+      "at": 2091.1,
+      "MemAvailable": 163748,
+      "SwapFree": 137464,
+      "SwapTotal": 364536,
+      "oom_kill": 0
+    },
+    {
+      "stage": "both-models-soak",
+      "at": 2092.1,
+      "MemAvailable": 168112,
+      "SwapFree": 137464,
+      "SwapTotal": 364536,
+      "oom_kill": 0
+    },
+    {
+      "stage": "both-models-soak",
+      "at": 2093.1,
+      "MemAvailable": 163628,
+      "SwapFree": 137464,
+      "SwapTotal": 364536,
+      "oom_kill": 0
+    },
+    {
+      "stage": "both-models-soak",
+      "at": 2094.1,
+      "MemAvailable": 164056,
+      "SwapFree": 137464,
+      "SwapTotal": 364536,
+      "oom_kill": 0
+    },
+    {
+      "stage": "both-models-soak",
+      "at": 2095.1,
+      "MemAvailable": 171156,
+      "SwapFree": 137464,
+      "SwapTotal": 364536,
+      "oom_kill": 0
+    },
+    {
+      "stage": "both-models-soak",
+      "at": 2096.1,
+      "MemAvailable": 163032,
+      "SwapFree": 137464,
+      "SwapTotal": 364536,
+      "oom_kill": 0
+    },
+    {
+      "stage": "both-models-soak",
+      "at": 2097.1,
+      "MemAvailable": 167676,
+      "SwapFree": 137464,
+      "SwapTotal": 364536,
+      "oom_kill": 0
+    },
+    {
+      "stage": "both-models-soak",
+      "at": 2098.1,
+      "MemAvailable": 162804,
+      "SwapFree": 137464,
+      "SwapTotal": 364536,
+      "oom_kill": 0
+    },
+    {
+      "stage": "both-models-soak",
+      "at": 2099.1,
+      "MemAvailable": 165796,
+      "SwapFree": 137464,
+      "SwapTotal": 364536,
+      "oom_kill": 0
+    },
+    {
+      "stage": "both-models-soak",
+      "at": 2100.1,
+      "MemAvailable": 162556,
+      "SwapFree": 137464,
+      "SwapTotal": 364536,
+      "oom_kill": 0
+    },
+    {
+      "stage": "both-models-soak",
+      "at": 2101.1,
+      "MemAvailable": 162680,
+      "SwapFree": 137464,
+      "SwapTotal": 364536,
+      "oom_kill": 0
+    },
+    {
+      "stage": "both-models-soak",
+      "at": 2102.1,
+      "MemAvailable": 161968,
+      "SwapFree": 137464,
+      "SwapTotal": 364536,
+      "oom_kill": 0
+    },
+    {
+      "stage": "both-models-soak",
+      "at": 2103.1,
+      "MemAvailable": 162252,
+      "SwapFree": 137464,
+      "SwapTotal": 364536,
+      "oom_kill": 0
+    },
+    {
+      "stage": "both-models-soak",
+      "at": 2104.1,
+      "MemAvailable": 166524,
+      "SwapFree": 137464,
+      "SwapTotal": 364536,
+      "oom_kill": 0
+    },
+    {
+      "stage": "both-models-soak",
+      "at": 2105.1,
+      "MemAvailable": 162068,
+      "SwapFree": 137464,
+      "SwapTotal": 364536,
+      "oom_kill": 0
+    },
+    {
+      "stage": "both-models-soak",
+      "at": 2106.1,
+      "MemAvailable": 161792,
+      "SwapFree": 137464,
+      "SwapTotal": 364536,
+      "oom_kill": 0
+    },
+    {
+      "stage": "both-models-soak",
+      "at": 2107.2,
+      "MemAvailable": 161732,
+      "SwapFree": 137464,
+      "SwapTotal": 364536,
+      "oom_kill": 0
+    },
+    {
+      "stage": "both-models-soak",
+      "at": 2108.2,
+      "MemAvailable": 161612,
+      "SwapFree": 137464,
+      "SwapTotal": 364536,
+      "oom_kill": 0
+    },
+    {
+      "stage": "both-models-soak",
+      "at": 2109.2,
+      "MemAvailable": 165448,
+      "SwapFree": 137464,
+      "SwapTotal": 364536,
+      "oom_kill": 0
+    },
+    {
+      "stage": "both-models-soak",
+      "at": 2110.2,
+      "MemAvailable": 161196,
+      "SwapFree": 137464,
+      "SwapTotal": 364536,
+      "oom_kill": 0
+    },
+    {
+      "stage": "both-models-soak",
+      "at": 2111.2,
+      "MemAvailable": 165412,
+      "SwapFree": 137464,
+      "SwapTotal": 364536,
+      "oom_kill": 0
+    },
+    {
+      "stage": "both-models-soak",
+      "at": 2112.2,
+      "MemAvailable": 160644,
+      "SwapFree": 137464,
+      "SwapTotal": 364536,
+      "oom_kill": 0
+    },
+    {
+      "stage": "both-models-soak",
+      "at": 2113.2,
+      "MemAvailable": 161776,
+      "SwapFree": 137464,
+      "SwapTotal": 364536,
+      "oom_kill": 0
+    },
+    {
+      "stage": "both-models-soak",
+      "at": 2114.2,
+      "MemAvailable": 160600,
+      "SwapFree": 137464,
+      "SwapTotal": 364536,
+      "oom_kill": 0
+    },
+    {
+      "stage": "both-models-soak",
+      "at": 2115.2,
+      "MemAvailable": 160400,
+      "SwapFree": 137464,
+      "SwapTotal": 364536,
+      "oom_kill": 0
+    },
+    {
+      "stage": "both-models-soak",
+      "at": 2116.2,
+      "MemAvailable": 165236,
+      "SwapFree": 137464,
+      "SwapTotal": 364536,
+      "oom_kill": 0
+    },
+    {
+      "stage": "both-models-soak",
+      "at": 2117.2,
+      "MemAvailable": 158740,
+      "SwapFree": 137464,
+      "SwapTotal": 364536,
+      "oom_kill": 0
+    },
+    {
+      "stage": "both-models-soak",
+      "at": 2118.2,
+      "MemAvailable": 161440,
+      "SwapFree": 137464,
+      "SwapTotal": 364536,
+      "oom_kill": 0
+    },
+    {
+      "stage": "both-models-soak",
+      "at": 2119.2,
+      "MemAvailable": 157772,
+      "SwapFree": 137464,
+      "SwapTotal": 364536,
+      "oom_kill": 0
+    },
+    {
+      "stage": "both-models-soak",
+      "at": 2120.2,
+      "MemAvailable": 163576,
+      "SwapFree": 137464,
+      "SwapTotal": 364536,
+      "oom_kill": 0
+    },
+    {
+      "stage": "both-models-soak",
+      "at": 2121.2,
+      "MemAvailable": 158856,
+      "SwapFree": 137464,
+      "SwapTotal": 364536,
+      "oom_kill": 0
+    },
+    {
+      "stage": "both-models-soak",
+      "at": 2122.2,
+      "MemAvailable": 160648,
+      "SwapFree": 137464,
+      "SwapTotal": 364536,
+      "oom_kill": 0
+    },
+    {
+      "stage": "both-models-soak",
+      "at": 2123.2,
+      "MemAvailable": 159380,
+      "SwapFree": 137464,
+      "SwapTotal": 364536,
+      "oom_kill": 0
+    },
+    {
+      "stage": "both-models-soak",
+      "at": 2124.2,
+      "MemAvailable": 159632,
+      "SwapFree": 137464,
+      "SwapTotal": 364536,
+      "oom_kill": 0
+    },
+    {
+      "stage": "both-models-soak",
+      "at": 2125.2,
+      "MemAvailable": 167060,
+      "SwapFree": 137464,
+      "SwapTotal": 364536,
+      "oom_kill": 0
+    },
+    {
+      "stage": "both-models-soak",
+      "at": 2126.2,
+      "MemAvailable": 158428,
+      "SwapFree": 137464,
+      "SwapTotal": 364536,
+      "oom_kill": 0
+    },
+    {
+      "stage": "both-models-soak",
+      "at": 2127.2,
+      "MemAvailable": 163244,
+      "SwapFree": 137464,
+      "SwapTotal": 364536,
+      "oom_kill": 0
+    },
+    {
+      "stage": "both-models-soak",
+      "at": 2128.2,
+      "MemAvailable": 158304,
+      "SwapFree": 137464,
+      "SwapTotal": 364536,
+      "oom_kill": 0
+    },
+    {
+      "stage": "both-models-soak",
+      "at": 2129.2,
+      "MemAvailable": 162608,
+      "SwapFree": 137464,
+      "SwapTotal": 364536,
+      "oom_kill": 0
+    },
+    {
+      "stage": "both-models-soak",
+      "at": 2130.2,
+      "MemAvailable": 158492,
+      "SwapFree": 137464,
+      "SwapTotal": 364536,
+      "oom_kill": 0
+    },
+    {
+      "stage": "both-models-soak",
+      "at": 2131.2,
+      "MemAvailable": 158988,
+      "SwapFree": 137464,
+      "SwapTotal": 364536,
+      "oom_kill": 0
+    },
+    {
+      "stage": "both-models-soak",
+      "at": 2132.2,
+      "MemAvailable": 157968,
+      "SwapFree": 137464,
+      "SwapTotal": 364536,
+      "oom_kill": 0
+    },
+    {
+      "stage": "both-models-soak",
+      "at": 2133.3,
+      "MemAvailable": 157768,
+      "SwapFree": 137464,
+      "SwapTotal": 364536,
+      "oom_kill": 0
+    },
+    {
+      "stage": "both-models-soak",
+      "at": 2134.3,
+      "MemAvailable": 164704,
+      "SwapFree": 137464,
+      "SwapTotal": 364536,
+      "oom_kill": 0
+    },
+    {
+      "stage": "both-models-soak",
+      "at": 2135.3,
+      "MemAvailable": 157192,
+      "SwapFree": 137464,
+      "SwapTotal": 364536,
+      "oom_kill": 0
+    },
+    {
+      "stage": "both-models-soak",
+      "at": 2136.3,
+      "MemAvailable": 161592,
+      "SwapFree": 137464,
+      "SwapTotal": 364536,
+      "oom_kill": 0
+    },
+    {
+      "stage": "both-models-soak",
+      "at": 2137.3,
+      "MemAvailable": 156788,
+      "SwapFree": 137464,
+      "SwapTotal": 364536,
+      "oom_kill": 0
+    },
+    {
+      "stage": "both-models-soak",
+      "at": 2138.3,
+      "MemAvailable": 158408,
+      "SwapFree": 137464,
+      "SwapTotal": 364536,
+      "oom_kill": 0
+    },
+    {
+      "stage": "both-models-soak",
+      "at": 2139.3,
+      "MemAvailable": 157284,
+      "SwapFree": 137464,
+      "SwapTotal": 364536,
+      "oom_kill": 0
+    },
+    {
+      "stage": "both-models-soak",
+      "at": 2140.3,
+      "MemAvailable": 156436,
+      "SwapFree": 137464,
+      "SwapTotal": 364536,
+      "oom_kill": 0
+    },
+    {
+      "stage": "both-models-soak",
+      "at": 2141.3,
+      "MemAvailable": 160908,
+      "SwapFree": 137464,
+      "SwapTotal": 364536,
+      "oom_kill": 0
+    },
+    {
+      "stage": "both-models-soak",
+      "at": 2142.3,
+      "MemAvailable": 163604,
+      "SwapFree": 137464,
+      "SwapTotal": 364536,
+      "oom_kill": 0
+    },
+    {
+      "stage": "both-models-soak",
+      "at": 2143.3,
+      "MemAvailable": 167656,
+      "SwapFree": 137464,
+      "SwapTotal": 364536,
+      "oom_kill": 0
+    },
+    {
+      "stage": "both-models-soak",
+      "at": 2144.3,
+      "MemAvailable": 163944,
+      "SwapFree": 137464,
+      "SwapTotal": 364536,
+      "oom_kill": 0
+    },
+    {
+      "stage": "both-models-soak",
+      "at": 2145.3,
+      "MemAvailable": 167968,
+      "SwapFree": 137464,
+      "SwapTotal": 364536,
+      "oom_kill": 0
+    },
+    {
+      "stage": "both-models-soak",
+      "at": 2146.3,
+      "MemAvailable": 164248,
+      "SwapFree": 137464,
+      "SwapTotal": 364536,
+      "oom_kill": 0
+    },
+    {
+      "stage": "both-models-soak",
+      "at": 2147.3,
+      "MemAvailable": 163960,
+      "SwapFree": 137464,
+      "SwapTotal": 364536,
+      "oom_kill": 0
+    },
+    {
+      "stage": "both-models-soak",
+      "at": 2148.3,
+      "MemAvailable": 168656,
+      "SwapFree": 137464,
+      "SwapTotal": 364536,
+      "oom_kill": 0
+    },
+    {
+      "stage": "both-models-soak",
+      "at": 2149.3,
+      "MemAvailable": 163392,
+      "SwapFree": 137464,
+      "SwapTotal": 364536,
+      "oom_kill": 0
+    },
+    {
+      "stage": "both-models-soak",
+      "at": 2150.4,
+      "MemAvailable": 167988,
+      "SwapFree": 137464,
+      "SwapTotal": 364536,
+      "oom_kill": 0
+    },
+    {
+      "stage": "both-models-soak",
+      "at": 2151.4,
+      "MemAvailable": 163128,
+      "SwapFree": 137464,
+      "SwapTotal": 364536,
+      "oom_kill": 0
+    },
+    {
+      "stage": "both-models-soak",
+      "at": 2152.4,
+      "MemAvailable": 167032,
+      "SwapFree": 137464,
+      "SwapTotal": 364536,
+      "oom_kill": 0
+    },
+    {
+      "stage": "both-models-soak",
+      "at": 2153.4,
+      "MemAvailable": 163016,
+      "SwapFree": 137464,
+      "SwapTotal": 364536,
+      "oom_kill": 0
+    },
+    {
+      "stage": "both-models-soak",
+      "at": 2154.4,
+      "MemAvailable": 163080,
+      "SwapFree": 137464,
+      "SwapTotal": 364536,
+      "oom_kill": 0
+    },
+    {
+      "stage": "both-models-soak",
+      "at": 2155.4,
+      "MemAvailable": 165880,
+      "SwapFree": 137464,
+      "SwapTotal": 364536,
+      "oom_kill": 0
+    },
+    {
+      "stage": "both-models-soak",
+      "at": 2156.4,
+      "MemAvailable": 162732,
+      "SwapFree": 137464,
+      "SwapTotal": 364536,
+      "oom_kill": 0
+    },
+    {
+      "stage": "both-models-soak",
+      "at": 2157.4,
+      "MemAvailable": 166388,
+      "SwapFree": 137464,
+      "SwapTotal": 364536,
+      "oom_kill": 0
+    },
+    {
+      "stage": "both-models-soak",
+      "at": 2158.4,
+      "MemAvailable": 162320,
+      "SwapFree": 137464,
+      "SwapTotal": 364536,
+      "oom_kill": 0
+    },
+    {
+      "stage": "both-models-soak",
+      "at": 2159.4,
+      "MemAvailable": 166052,
+      "SwapFree": 137464,
+      "SwapTotal": 364536,
+      "oom_kill": 0
+    },
+    {
+      "stage": "both-models-soak",
+      "at": 2160.4,
+      "MemAvailable": 160784,
+      "SwapFree": 137464,
+      "SwapTotal": 364536,
+      "oom_kill": 0
+    },
+    {
+      "stage": "both-models-soak",
+      "at": 2161.4,
+      "MemAvailable": 161616,
+      "SwapFree": 137464,
+      "SwapTotal": 364536,
+      "oom_kill": 0
+    },
+    {
+      "stage": "both-models-soak",
+      "at": 2162.4,
+      "MemAvailable": 161360,
+      "SwapFree": 137464,
+      "SwapTotal": 364536,
+      "oom_kill": 0
+    },
+    {
+      "stage": "both-models-soak",
+      "at": 2163.4,
+      "MemAvailable": 162152,
+      "SwapFree": 137464,
+      "SwapTotal": 364536,
+      "oom_kill": 0
+    },
+    {
+      "stage": "both-models-soak",
+      "at": 2164.4,
+      "MemAvailable": 165416,
+      "SwapFree": 137464,
+      "SwapTotal": 364536,
+      "oom_kill": 0
+    },
+    {
+      "stage": "both-models-soak",
+      "at": 2165.4,
+      "MemAvailable": 161080,
+      "SwapFree": 137720,
+      "SwapTotal": 364536,
+      "oom_kill": 0
+    },
+    {
+      "stage": "both-models-soak",
+      "at": 2166.4,
+      "MemAvailable": 163408,
+      "SwapFree": 137720,
+      "SwapTotal": 364536,
+      "oom_kill": 0
+    },
+    {
+      "stage": "both-models-soak",
+      "at": 2167.4,
+      "MemAvailable": 159968,
+      "SwapFree": 137720,
+      "SwapTotal": 364536,
+      "oom_kill": 0
+    },
+    {
+      "stage": "both-models-soak",
+      "at": 2168.4,
+      "MemAvailable": 159544,
+      "SwapFree": 137720,
+      "SwapTotal": 364536,
+      "oom_kill": 0
+    },
+    {
+      "stage": "both-models-soak",
+      "at": 2169.4,
+      "MemAvailable": 163872,
+      "SwapFree": 137720,
+      "SwapTotal": 364536,
+      "oom_kill": 0
+    },
+    {
+      "stage": "both-models-soak",
+      "at": 2170.4,
+      "MemAvailable": 158180,
+      "SwapFree": 137720,
+      "SwapTotal": 364536,
+      "oom_kill": 0
+    },
+    {
+      "stage": "both-models-soak",
+      "at": 2171.4,
+      "MemAvailable": 159488,
+      "SwapFree": 137720,
+      "SwapTotal": 364536,
+      "oom_kill": 0
+    },
+    {
+      "stage": "both-models-soak",
+      "at": 2172.4,
+      "MemAvailable": 159116,
+      "SwapFree": 137720,
+      "SwapTotal": 364536,
+      "oom_kill": 0
+    },
+    {
+      "stage": "both-models-soak",
+      "at": 2173.4,
+      "MemAvailable": 167972,
+      "SwapFree": 137720,
+      "SwapTotal": 364536,
+      "oom_kill": 0
+    },
+    {
+      "stage": "both-models-soak",
+      "at": 2174.4,
+      "MemAvailable": 159072,
+      "SwapFree": 137720,
+      "SwapTotal": 364536,
+      "oom_kill": 0
+    },
+    {
+      "stage": "both-models-soak",
+      "at": 2175.4,
+      "MemAvailable": 163388,
+      "SwapFree": 137720,
+      "SwapTotal": 364536,
+      "oom_kill": 0
+    },
+    {
+      "stage": "both-models-soak",
+      "at": 2176.5,
+      "MemAvailable": 159712,
+      "SwapFree": 137720,
+      "SwapTotal": 364536,
+      "oom_kill": 0
+    },
+    {
+      "stage": "both-models-soak",
+      "at": 2177.5,
+      "MemAvailable": 162020,
+      "SwapFree": 137720,
+      "SwapTotal": 364536,
+      "oom_kill": 0
+    },
+    {
+      "stage": "both-models-soak",
+      "at": 2178.5,
+      "MemAvailable": 158676,
+      "SwapFree": 137720,
+      "SwapTotal": 364536,
+      "oom_kill": 0
+    },
+    {
+      "stage": "both-models-soak",
+      "at": 2179.5,
+      "MemAvailable": 159132,
+      "SwapFree": 137720,
+      "SwapTotal": 364536,
+      "oom_kill": 0
+    },
+    {
+      "stage": "both-models-soak",
+      "at": 2180.5,
+      "MemAvailable": 163036,
+      "SwapFree": 137720,
+      "SwapTotal": 364536,
+      "oom_kill": 0
+    },
+    {
+      "stage": "both-models-soak",
+      "at": 2181.5,
+      "MemAvailable": 158308,
+      "SwapFree": 137720,
+      "SwapTotal": 364536,
+      "oom_kill": 0
+    },
+    {
+      "stage": "both-models-soak",
+      "at": 2182.5,
+      "MemAvailable": 163244,
+      "SwapFree": 137720,
+      "SwapTotal": 364536,
+      "oom_kill": 0
+    },
+    {
+      "stage": "both-models-soak",
+      "at": 2183.5,
+      "MemAvailable": 158304,
+      "SwapFree": 137720,
+      "SwapTotal": 364536,
+      "oom_kill": 0
+    },
+    {
+      "stage": "both-models-soak",
+      "at": 2184.5,
+      "MemAvailable": 158388,
+      "SwapFree": 137720,
+      "SwapTotal": 364536,
+      "oom_kill": 0
+    },
+    {
+      "stage": "both-models-soak",
+      "at": 2185.5,
+      "MemAvailable": 157732,
+      "SwapFree": 137720,
+      "SwapTotal": 364536,
+      "oom_kill": 0
+    },
+    {
+      "stage": "both-models-soak",
+      "at": 2186.5,
+      "MemAvailable": 158596,
+      "SwapFree": 137720,
+      "SwapTotal": 364536,
+      "oom_kill": 0
+    },
+    {
+      "stage": "both-models-soak",
+      "at": 2187.5,
+      "MemAvailable": 160496,
+      "SwapFree": 137720,
+      "SwapTotal": 364536,
+      "oom_kill": 0
+    },
+    {
+      "stage": "both-models-soak",
+      "at": 2188.5,
+      "MemAvailable": 157936,
+      "SwapFree": 137720,
+      "SwapTotal": 364536,
+      "oom_kill": 0
+    },
+    {
+      "stage": "both-models-soak",
+      "at": 2189.5,
+      "MemAvailable": 161584,
+      "SwapFree": 137720,
+      "SwapTotal": 364536,
+      "oom_kill": 0
+    },
+    {
+      "stage": "both-models-soak",
+      "at": 2190.5,
+      "MemAvailable": 157592,
+      "SwapFree": 137720,
+      "SwapTotal": 364536,
+      "oom_kill": 0
+    },
+    {
+      "stage": "both-models-soak",
+      "at": 2191.5,
+      "MemAvailable": 157376,
+      "SwapFree": 137720,
+      "SwapTotal": 364536,
+      "oom_kill": 0
+    },
+    {
+      "stage": "both-models-soak",
+      "at": 2192.5,
+      "MemAvailable": 161332,
+      "SwapFree": 137720,
+      "SwapTotal": 364536,
+      "oom_kill": 0
+    },
+    {
+      "stage": "both-models-soak",
+      "at": 2193.5,
+      "MemAvailable": 156716,
+      "SwapFree": 137720,
+      "SwapTotal": 364536,
+      "oom_kill": 0
+    },
+    {
+      "stage": "both-models-soak",
+      "at": 2194.5,
+      "MemAvailable": 160852,
+      "SwapFree": 137720,
+      "SwapTotal": 364536,
+      "oom_kill": 0
+    },
+    {
+      "stage": "both-models-soak",
+      "at": 2195.5,
+      "MemAvailable": 156264,
+      "SwapFree": 137720,
+      "SwapTotal": 364536,
+      "oom_kill": 0
+    },
+    {
+      "stage": "both-models-soak",
+      "at": 2196.5,
+      "MemAvailable": 167616,
+      "SwapFree": 137720,
+      "SwapTotal": 364536,
+      "oom_kill": 0
+    },
+    {
+      "stage": "both-models-soak",
+      "at": 2197.5,
+      "MemAvailable": 163636,
+      "SwapFree": 137720,
+      "SwapTotal": 364536,
+      "oom_kill": 0
+    },
+    {
+      "stage": "both-models-soak",
+      "at": 2198.5,
+      "MemAvailable": 164900,
+      "SwapFree": 137720,
+      "SwapTotal": 364536,
+      "oom_kill": 0
+    },
+    {
+      "stage": "select-hy",
+      "at": 2199.6,
+      "MemAvailable": 249292,
+      "SwapFree": 137720,
+      "SwapTotal": 364536,
+      "oom_kill": 0
+    },
+    {
+      "stage": "select-hy",
+      "at": 2200.6,
+      "MemAvailable": 253740,
+      "SwapFree": 137720,
+      "SwapTotal": 364536,
+      "oom_kill": 0
+    },
+    {
+      "stage": "select-hy",
+      "at": 2201.6,
+      "MemAvailable": 259320,
+      "SwapFree": 160248,
+      "SwapTotal": 364536,
+      "oom_kill": 0
+    },
+    {
+      "stage": "select-hy",
+      "at": 2202.6,
+      "MemAvailable": 316212,
+      "SwapFree": 168440,
+      "SwapTotal": 364536,
+      "oom_kill": 0
+    },
+    {
+      "stage": "select-hy",
+      "at": 2203.6,
+      "MemAvailable": 320164,
+      "SwapFree": 170744,
+      "SwapTotal": 364536,
+      "oom_kill": 0
+    },
+    {
+      "stage": "select-hy",
+      "at": 2204.6,
+      "MemAvailable": 321136,
+      "SwapFree": 174840,
+      "SwapTotal": 364536,
+      "oom_kill": 0
+    },
+    {
+      "stage": "select-hy",
+      "at": 2205.6,
+      "MemAvailable": 317360,
+      "SwapFree": 174840,
+      "SwapTotal": 364536,
+      "oom_kill": 0
+    },
+    {
+      "stage": "select-hy",
+      "at": 2206.6,
+      "MemAvailable": 314164,
+      "SwapFree": 174840,
+      "SwapTotal": 364536,
+      "oom_kill": 0
+    },
+    {
+      "stage": "select-hy",
+      "at": 2207.6,
+      "MemAvailable": 306032,
+      "SwapFree": 175096,
+      "SwapTotal": 364536,
+      "oom_kill": 0
+    },
+    {
+      "stage": "select-hy",
+      "at": 2208.6,
+      "MemAvailable": 313868,
+      "SwapFree": 175352,
+      "SwapTotal": 364536,
+      "oom_kill": 0
+    },
+    {
+      "stage": "select-hy",
+      "at": 2209.6,
+      "MemAvailable": 310880,
+      "SwapFree": 175864,
+      "SwapTotal": 364536,
+      "oom_kill": 0
+    },
+    {
+      "stage": "select-hy",
+      "at": 2210.6,
+      "MemAvailable": 279100,
+      "SwapFree": 175864,
+      "SwapTotal": 364536,
+      "oom_kill": 0
+    },
+    {
+      "stage": "select-hy",
+      "at": 2211.6,
+      "MemAvailable": 256416,
+      "SwapFree": 175864,
+      "SwapTotal": 364536,
+      "oom_kill": 0
+    },
+    {
+      "stage": "select-hy",
+      "at": 2212.6,
+      "MemAvailable": 254864,
+      "SwapFree": 175864,
+      "SwapTotal": 364536,
+      "oom_kill": 0
+    },
+    {
+      "stage": "select-hy",
+      "at": 2213.6,
+      "MemAvailable": 239256,
+      "SwapFree": 175864,
+      "SwapTotal": 364536,
+      "oom_kill": 0
+    },
+    {
+      "stage": "select-hy",
+      "at": 2214.6,
+      "MemAvailable": 237848,
+      "SwapFree": 175864,
+      "SwapTotal": 364536,
+      "oom_kill": 0
+    },
+    {
+      "stage": "select-hy",
+      "at": 2215.6,
+      "MemAvailable": 236508,
+      "SwapFree": 175864,
+      "SwapTotal": 364536,
+      "oom_kill": 0
+    }
+  ],
+  "initial": {
+    "MemAvailable": 192068,
+    "SwapFree": 188664,
+    "SwapTotal": 364536,
+    "oom_kill": 0
+  },
+  "final": {
+    "MemAvailable": 236420,
+    "SwapFree": 175864,
+    "SwapTotal": 364536,
+    "oom_kill": 0
+  },
+  "minimum": {
+    "MemAvailable": 117256,
+    "SwapFree": 135160
+  },
+  "finished": true
+}

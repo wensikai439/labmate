@@ -1,0 +1,132 @@
+{
+  "execution": "QEMU ARMv7, Cortex-A9 CPU model; instruction compatibility and output check only",
+  "real_board_latency_verified": false,
+  "real_microphone_verified": false,
+  "comparisons": [
+    {
+      "id": "v2p-da8c8bab31859418--v2voice-31",
+      "same_output": true,
+      "baseline": {
+        "transcript": "请把频率改成五十赫兹",
+        "decoder": "offline_ctc_context_prefix",
+        "backend": "PS_CPU_ONNX_INT8_native",
+        "intent_proposal": "CMD_SET_SIGNAL_FREQ",
+        "frequency_hz": 50,
+        "confirmation_required": true,
+        "instrument_control_executed": false,
+        "parser": "constrained_zh_rules_v6r2_native",
+        "reason": "single_supported_command_proposal",
+        "frequency_requires_instrument_range_validation": true,
+        "board_runtime_verified": false
+      },
+      "resident": {
+        "transcript": "请把频率改成五十赫兹",
+        "decoder": "offline_ctc_context_prefix",
+        "backend": "PS_CPU_ONNX_INT8_resident",
+        "intent_proposal": "CMD_SET_SIGNAL_FREQ",
+        "frequency_hz": 50,
+        "confirmation_required": true,
+        "instrument_control_executed": false,
+        "parser": "constrained_zh_rules_v6r2_native",
+        "reason": "single_supported_command_proposal",
+        "frequency_requires_instrument_range_validation": true,
+        "board_runtime_verified": false,
+        "timing_ms": {
+          "frontend": 38.2575,
+          "encoder": 4928,
+          "ctc_decode": 121.579,
+          "total": 5088.73
+        },
+        "process_peak_rss_kib": 179412
+      },
+      "baseline_source": "recorded_original_x86_64_native",
+      "original_ARM_returncode": 1,
+      "original_ARM_stderr": "",
+      "emulation_elapsed_seconds": 5.092265860992484
+    },
+    {
+      "id": "v2p-de026b2e5cd1ad1e--v2voice-11",
+      "same_output": true,
+      "baseline": {
+        "transcript": "读取RMS测量值",
+        "decoder": "offline_ctc_context_prefix",
+        "backend": "PS_CPU_ONNX_INT8_native",
+        "intent_proposal": "CMD_MEASURE_RMS",
+        "frequency_hz": null,
+        "confirmation_required": true,
+        "instrument_control_executed": false,
+        "parser": "constrained_zh_rules_v6r2_native",
+        "reason": "single_supported_command_proposal",
+        "board_runtime_verified": false
+      },
+      "resident": {
+        "transcript": "读取RMS测量值",
+        "decoder": "offline_ctc_context_prefix",
+        "backend": "PS_CPU_ONNX_INT8_resident",
+        "intent_proposal": "CMD_MEASURE_RMS",
+        "frequency_hz": null,
+        "confirmation_required": true,
+        "instrument_control_executed": false,
+        "parser": "constrained_zh_rules_v6r2_native",
+        "reason": "single_supported_command_proposal",
+        "board_runtime_verified": false,
+        "timing_ms": {
+          "frontend": 39.9265,
+          "encoder": 5247.57,
+          "ctc_decode": 111.211,
+          "total": 5398.77
+        },
+        "process_peak_rss_kib": 181828
+      },
+      "baseline_source": "recorded_original_x86_64_native",
+      "original_ARM_returncode": 1,
+      "original_ARM_stderr": "",
+      "emulation_elapsed_seconds": 5.401187877054326
+    },
+    {
+      "id": "v2p-4445f9827e95b6b1--v2voice-31",
+      "same_output": true,
+      "baseline": {
+        "transcript": "这台设备需要叫准吗",
+        "decoder": "offline_ctc_context_prefix",
+        "backend": "PS_CPU_ONNX_INT8_native",
+        "intent_proposal": "UNMATCHED",
+        "frequency_hz": null,
+        "confirmation_required": true,
+        "instrument_control_executed": false,
+        "parser": "constrained_zh_rules_v6r2_native",
+        "reason": "multiple_or_unsupported_intents",
+        "board_runtime_verified": false
+      },
+      "resident": {
+        "transcript": "这台设备需要叫准吗",
+        "decoder": "offline_ctc_context_prefix",
+        "backend": "PS_CPU_ONNX_INT8_resident",
+        "intent_proposal": "UNMATCHED",
+        "frequency_hz": null,
+        "confirmation_required": true,
+        "instrument_control_executed": false,
+        "parser": "constrained_zh_rules_v6r2_native",
+        "reason": "multiple_or_unsupported_intents",
+        "board_runtime_verified": false,
+        "timing_ms": {
+          "frontend": 31.7733,
+          "encoder": 4204.33,
+          "ctc_decode": 92.2198,
+          "total": 4328.4
+        },
+        "process_peak_rss_kib": 181828
+      },
+      "baseline_source": "recorded_original_x86_64_native",
+      "original_ARM_returncode": 1,
+      "original_ARM_stderr": "",
+      "emulation_elapsed_seconds": 4.330967849004082
+    }
+  ],
+  "ready": {
+    "type": "ready",
+    "model_load_ms": 1711.99
+  },
+  "endpoint_ARM_host_byte_agreement": true,
+  "passed": true
+}

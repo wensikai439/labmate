@@ -1,0 +1,54 @@
+[
+  {
+    "id": "v2p-aa2e3761b1f67db7--v2voice-00",
+    "audio": "/home/wsk/qiansai/audio/v8_1_20261022/build/replay16k/v2p-aa2e3761b1f67db7--v2voice-00.wav",
+    "text": "读取波形频率",
+    "raw_text": "读取波形频率。",
+    "intent": "CMD_MEASURE_FREQ",
+    "slots": {},
+    "partition": "dev",
+    "speaker": "synthetic:v2voice-00",
+    "duration_s": 1.52,
+    "source": "qwen3_tts_diverse_v2",
+    "source_audio": "/home/wsk/asr_v7/data/audio/qwen3_v2_pending_qa/v2p-aa2e3761b1f67db7--v2voice-00.wav"
+  },
+  {
+    "id": "v2p-2bc4f0e936dd481c--v2voice-00",
+    "audio": "/home/wsk/qiansai/audio/v8_1_20261022/build/replay16k/v2p-2bc4f0e936dd481c--v2voice-00.wav",
+    "text": "请查询信号发生器的型号",
+    "raw_text": "请查询信号发生器的型号。",
+    "intent": "CMD_IDENTIFY_INSTRUMENT",
+    "slots": {},
+    "partition": "dev",
+    "speaker": "synthetic:v2voice-00",
+    "duration_s": 2.48,
+    "source": "qwen3_tts_diverse_v2",
+    "source_audio": "/home/wsk/asr_v7/data/audio/qwen3_v2_pending_qa/v2p-2bc4f0e936dd481c--v2voice-00.wav"
+  },
+  {
+    "id": "v2p-bbd5fd87d385d623--v2voice-11",
+    "audio": "/home/wsk/qiansai/audio/v8_1_20261022/build/replay16k/v2p-bbd5fd87d385d623--v2voice-11.wav",
+    "text": "嗯老师刚才讲了峰峰值的含义",
+    "raw_text": "嗯，老师刚才讲了峰峰值的含义。",
+    "intent": null,
+    "slots": {},
+    "partition": "dev",
+    "speaker": "synthetic:v2voice-11",
+    "duration_s": 4.0,
+    "source": "qwen3_tts_diverse_v2",
+    "source_audio": "/home/wsk/asr_v7/data/audio/qwen3_v2_pending_qa/v2p-bbd5fd87d385d623--v2voice-11.wav"
+  },
+  {
+    "id": "v2p-bbd5fd87d385d623--v2voice-11",
+    "audio": "/home/wsk/qiansai/audio/v8_1_20261022/build/replay16k/v2p-bbd5fd87d385d623--v2voice-11.wav",
+    "text": "嗯老师刚才讲了峰峰值的含义",
+    "raw_text": "嗯，老师刚才讲了峰峰值的含义。",
+    "intent": null,
+    "slots": {},
+    "partition": "dev",
+    "speaker": "synthetic:v2voice-11",
+    "duration_s": 4.0,
+    "source": "qwen3_tts_diverse_v2",
+    "source_audio": "/home/wsk/asr_v7/data/audio/qwen3_v2_pending_qa/v2p-bbd5fd87d385d623--v2voice-11.wav"
+  }
+]

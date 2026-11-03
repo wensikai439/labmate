@@ -1,0 +1,16 @@
+{
+  "encoder.quant.onnx": {
+    "all_initializer_values_identical": true,
+    "original_bytes": 94687935,
+    "graph_bytes": 749583,
+    "weights_bytes": 93970944,
+    "sha256": "1a8a12e402605681aa2a374086cd53a982abb07fb2af22516fe05a8da71f2467"
+  },
+  "ctc.quant.onnx": {
+    "all_initializer_values_identical": true,
+    "original_bytes": 2189086,
+    "graph_bytes": 1368,
+    "weights_bytes": 2187840,
+    "sha256": "d48a65e3344e63516c4e5c74ceec876f98611715f072786e8022d49104f91dd4"
+  }
+}

@@ -1,0 +1,2103 @@
+{
+  "checks": [
+    {
+      "name": "selected local",
+      "data": {
+        "ready": true,
+        "memory": {
+          "MemAvailable": 133236,
+          "SwapFree": 183032,
+          "oom_kill": 0
+        }
+      }
+    },
+    {
+      "name": "recording replay local",
+      "data": {
+        "id": "f09f585c23aa4503a8e6b55a5048a5de",
+        "state": "ready",
+        "result": {
+          "intent": "UNMATCHED",
+          "label": "需要澄清",
+          "transcript": "你好这是语音识别速度测试",
+          "frequency_hz": null,
+          "proposal": "需要澄清",
+          "confirmation_required": true,
+          "instrument_control_executed": false,
+          "route": "V8.2 resident ASR",
+          "asr_engine": "local",
+          "timing_ms": {
+            "ctc_decode": 472.818,
+            "encoder": 22394.7,
+            "frontend": 90.9357,
+            "total": 22960.1
+          },
+          "memory": {
+            "process_rss_kib": 106676,
+            "process_swap_kib": 0,
+            "system_available_kib": 132736
+          },
+          "service_model_load_ms": 11506.452942,
+          "asr_service_pid": 21654,
+          "cloud_required": false,
+          "voice_mode": null
+        },
+        "error": null,
+        "cloud_required": false,
+        "voice_mode": null,
+        "wake_only": true,
+        "asr_engine": "local",
+        "capture_stage": "pausing_camera",
+        "resource_busy": false,
+        "asr_requested": "local",
+        "asr_switching": false,
+        "asr_ready": true,
+        "asr_error": null,
+        "asr_button": "BTN8 / PB1 / MIO50",
+        "asr_button_available": true,
+        "asr_button_error": null,
+        "asr_button_presses": 0,
+        "handsfree": {},
+        "available": true,
+        "record_available": true,
+        "microphone": {
+          "available": true,
+          "message": "XVF3800 已识别，开始录音后验证音频数据",
+          "card": 3,
+          "card_id": "Array",
+          "device": 0,
+          "channels": 2,
+          "name": "3 [Array          ]: USB-Audio - reSpeaker XVF3800 4-Mic Array",
+          "alsa": "plughw:CARD=Array,DEV=0",
+          "channel": 1
+        },
+        "record_seconds": 6,
+        "record_mode": "toggle",
+        "wake_only_supported": true,
+        "model_version": "SmartBox V8.2",
+        "recognition_mode": "capture-preview-final",
+        "message": "XVF3800 已识别，开始录音后验证音频数据"
+      }
+    },
+    {
+      "name": "vision resumed",
+      "data": {
+        "state": "running",
+        "age": 0.7440860999995493,
+        "registered": 1
+      }
+    },
+    {
+      "name": "DS-guide-.docx",
+      "data": {
+        "job": {
+          "id": "a22d4d6ffcf14465855ff430fea8e421",
+          "state": "completed",
+          "message": "指导图已更新，进度已重置到准备开始",
+          "active": false,
+          "filename": "联调示例_20261027.docx",
+          "revision": 9,
+          "warnings": [
+            "图像及复杂公式未解析；涉及原图的步骤请对照原指导书核对。"
+          ],
+          "resources": {
+            "state": "idle",
+            "message": "识别已恢复；本地语音模型按需加载",
+            "available_mib": 302
+          },
+          "demo": false,
+          "workspace_revision": 10
+        },
+        "transitions": [
+          [
+            "queued",
+            "releasing"
+          ],
+          [
+            "extracting",
+            "held"
+          ],
+          [
+            "planning",
+            "held"
+          ],
+          [
+            "completed",
+            "idle"
+          ]
+        ],
+        "workflow": {
+          "title": "信号观察示例",
+          "steps": [
+            {
+              "id": "prepare",
+              "kind": "prepare",
+              "title": "检查输出关闭",
+              "detail": "按指导书要求在接线前关闭信号源输出，再进行连接操作。",
+              "check": "确认信号源输出已关闭后可继续接线。",
+              "quote": "接线前关闭输出。",
+              "wiring": null
+            },
+            {
+              "id": "connect",
+              "kind": "connect",
+              "title": "连接信号源与示波器",
+              "detail": "将信号源 CH1 连接至示波器 CH1；地线连接关系按原图核对，正文未给出具体接地方式。",
+              "check": "核对信号源 CH1 到示波器 CH1 的连接，并按原图确认地线连接关系。",
+              "quote": "信号源 CH1 连接示波器 CH1。",
+              "wiring": {
+                "template": "wiring-v1",
+                "components": [
+                  {
+                    "id": "generator",
+                    "kind": "instrument",
+                    "label": "信号源 CH1"
+                  },
+                  {
+                    "id": "scope",
+                    "kind": "instrument",
+                    "label": "示波器 CH1"
+                  }
+                ],
+                "wires": [
+                  {
+                    "source": "generator",
+                    "target": "scope",
+                    "label": "CH1 → CH1；地线按原图核对"
+                  }
+                ]
+              }
+            },
+            {
+              "id": "measure",
+              "kind": "measure",
+              "title": "观察波形并记录",
+              "detail": "按指导书要求观察波形并记录测量结果。",
+              "check": "完成波形观察并记录结果。",
+              "quote": "观察波形并记录结果。",
+              "wiring": null
+            }
+          ],
+          "current": 0,
+          "phase": "ready",
+          "source": "deepseek",
+          "guide": {
+            "template": "procedure-v1",
+            "edges": [
+              {
+                "source": "prepare",
+                "target": "connect"
+              },
+              {
+                "source": "connect",
+                "target": "measure"
+              }
+            ]
+          },
+          "provider_model": "deepseek-flash"
+        }
+      }
+    },
+    {
+      "name": "vision after guide",
+      "data": {
+        "state": "running",
+        "age": 0.03339775299991743,
+        "registered": 1
+      }
+    },
+    {
+      "name": "recording replay local",
+      "data": {
+        "id": "6f38c6a4ce204222ab5b88f9ca8ddd91",
+        "state": "ready",
+        "result": {
+          "intent": "UNMATCHED",
+          "label": "需要澄清",
+          "transcript": "你好这是语音识别速度测试",
+          "frequency_hz": null,
+          "proposal": "需要澄清",
+          "confirmation_required": true,
+          "instrument_control_executed": false,
+          "route": "V8.2 resident ASR",
+          "asr_engine": "local",
+          "timing_ms": {
+            "ctc_decode": 651.305,
+            "encoder": 21955.8,
+            "frontend": 126.302,
+            "total": 22735.1
+          },
+          "memory": {
+            "process_rss_kib": 108400,
+            "process_swap_kib": 0,
+            "system_available_kib": 177548
+          },
+          "service_model_load_ms": 11909.387498,
+          "asr_service_pid": 22637,
+          "cloud_required": false,
+          "voice_mode": null
+        },
+        "error": null,
+        "cloud_required": false,
+        "voice_mode": null,
+        "wake_only": true,
+        "asr_engine": "local",
+        "capture_stage": "pausing_camera",
+        "resource_busy": false,
+        "asr_requested": "local",
+        "asr_switching": false,
+        "asr_ready": true,
+        "asr_error": null,
+        "asr_button": "BTN8 / PB1 / MIO50",
+        "asr_button_available": true,
+        "asr_button_error": null,
+        "asr_button_presses": 0,
+        "handsfree": {},
+        "available": true,
+        "record_available": true,
+        "microphone": {
+          "available": true,
+          "message": "XVF3800 已识别，开始录音后验证音频数据",
+          "card": 3,
+          "card_id": "Array",
+          "device": 0,
+          "channels": 2,
+          "name": "3 [Array          ]: USB-Audio - reSpeaker XVF3800 4-Mic Array",
+          "alsa": "plughw:CARD=Array,DEV=0",
+          "channel": 1
+        },
+        "record_seconds": 6,
+        "record_mode": "toggle",
+        "wake_only_supported": true,
+        "model_version": "SmartBox V8.2",
+        "recognition_mode": "capture-preview-final",
+        "message": "XVF3800 已识别，开始录音后验证音频数据"
+      }
+    },
+    {
+      "name": "vision resumed",
+      "data": {
+        "state": "running",
+        "age": 0.746935361999931,
+        "registered": 1
+      }
+    },
+    {
+      "name": "DS-guide-.pdf",
+      "data": {
+        "job": {
+          "id": "7d4936088fa64eb789a976245c25d336",
+          "state": "completed",
+          "message": "指导图已更新，进度已重置到准备开始",
+          "active": false,
+          "filename": "联调示例_20261027.pdf",
+          "revision": 10,
+          "warnings": [
+            "图像及复杂公式未解析；涉及原图的步骤请对照原指导书核对。"
+          ],
+          "resources": {
+            "state": "idle",
+            "message": "识别已恢复；本地语音模型按需加载",
+            "available_mib": 317
+          },
+          "demo": false,
+          "workspace_revision": 11
+        },
+        "transitions": [
+          [
+            "queued",
+            "releasing"
+          ],
+          [
+            "extracting",
+            "held"
+          ],
+          [
+            "planning",
+            "held"
+          ],
+          [
+            "completed",
+            "idle"
+          ]
+        ],
+        "workflow": {
+          "title": "波形测量示例",
+          "steps": [
+            {
+              "id": "prepare",
+              "kind": "prepare",
+              "title": "断开输出后再接线",
+              "detail": "接线前先关闭信号源输出，确认没有信号送出后再进行连接。",
+              "check": "确认信号源输出已关闭。",
+              "quote": "Disable outputs before connecting.",
+              "wiring": null
+            },
+            {
+              "id": "connect",
+              "kind": "connect",
+              "title": "连接信号源与示波器",
+              "detail": "将信号源 CH1 连接到示波器 CH1；地线与极性关系请按原图核对。",
+              "check": "核对信号源 CH1 到示波器 CH1 的连接，以及原图接地关系。",
+              "quote": "Connect signal generator CH1 to oscilloscope CH1.",
+              "wiring": {
+                "template": "wiring-v1",
+                "components": [
+                  {
+                    "id": "siggen_ch1",
+                    "kind": "instrument",
+                    "label": "信号源 CH1"
+                  },
+                  {
+                    "id": "scope_ch1",
+                    "kind": "instrument",
+                    "label": "示波器 CH1"
+                  }
+                ],
+                "wires": [
+                  {
+                    "source": "siggen_ch1",
+                    "target": "scope_ch1",
+                    "label": "信号源 CH1 → 示波器 CH1；接地按原图核对"
+                  }
+                ]
+              }
+            },
+            {
+              "id": "observe",
+              "kind": "measure",
+              "title": "观察波形并记录",
+              "detail": "观察示波器上的波形，记录峰峰值电压和频率；参数与单位按实际读数记录。",
+              "check": "已记录峰峰值电压和频率两项结果。",
+              "quote": "Observe waveform. Record peak to peak voltage and frequency.",
+              "wiring": null
+            },
+            {
+              "id": "finish",
+              "kind": "finish",
+              "title": "完成后关闭信号输出",
+              "detail": "测量结束后关闭信号输出。",
+              "check": "确认信号输出已关闭。",
+              "quote": "Disable signal output when finished.",
+              "wiring": null
+            }
+          ],
+          "current": 0,
+          "phase": "ready",
+          "source": "deepseek",
+          "guide": {
+            "template": "procedure-v1",
+            "edges": [
+              {
+                "source": "prepare",
+                "target": "connect"
+              },
+              {
+                "source": "connect",
+                "target": "observe"
+              },
+              {
+                "source": "observe",
+                "target": "finish"
+              }
+            ]
+          },
+          "provider_model": "deepseek-flash"
+        }
+      }
+    },
+    {
+      "name": "vision after guide",
+      "data": {
+        "state": "running",
+        "age": 0.8080591600000844,
+        "registered": 1
+      }
+    },
+    {
+      "name": "recording replay local",
+      "data": {
+        "id": "21d899deee3d412b8869309dd8f773ba",
+        "state": "ready",
+        "result": {
+          "intent": "UNMATCHED",
+          "label": "需要澄清",
+          "transcript": "你好这是语音识别速度测试",
+          "frequency_hz": null,
+          "proposal": "需要澄清",
+          "confirmation_required": true,
+          "instrument_control_executed": false,
+          "route": "V8.2 resident ASR",
+          "asr_engine": "local",
+          "timing_ms": {
+            "ctc_decode": 646.09,
+            "encoder": 21350.6,
+            "frontend": 141.091,
+            "total": 22139.4
+          },
+          "memory": {
+            "process_rss_kib": 106640,
+            "process_swap_kib": 0,
+            "system_available_kib": 178148
+          },
+          "service_model_load_ms": 9114.132614,
+          "asr_service_pid": 23683,
+          "cloud_required": false,
+          "voice_mode": null
+        },
+        "error": null,
+        "cloud_required": false,
+        "voice_mode": null,
+        "wake_only": true,
+        "asr_engine": "local",
+        "capture_stage": "pausing_camera",
+        "resource_busy": false,
+        "asr_requested": "local",
+        "asr_switching": false,
+        "asr_ready": true,
+        "asr_error": null,
+        "asr_button": "BTN8 / PB1 / MIO50",
+        "asr_button_available": true,
+        "asr_button_error": null,
+        "asr_button_presses": 0,
+        "handsfree": {},
+        "available": true,
+        "record_available": true,
+        "microphone": {
+          "available": true,
+          "message": "XVF3800 已识别，开始录音后验证音频数据",
+          "card": 3,
+          "card_id": "Array",
+          "device": 0,
+          "channels": 2,
+          "name": "3 [Array          ]: USB-Audio - reSpeaker XVF3800 4-Mic Array",
+          "alsa": "plughw:CARD=Array,DEV=0",
+          "channel": 1
+        },
+        "record_seconds": 6,
+        "record_mode": "toggle",
+        "wake_only_supported": true,
+        "model_version": "SmartBox V8.2",
+        "recognition_mode": "capture-preview-final",
+        "message": "XVF3800 已识别，开始录音后验证音频数据"
+      }
+    },
+    {
+      "name": "vision resumed",
+      "data": {
+        "state": "running",
+        "age": 0.3881158609992781,
+        "registered": 1
+      }
+    },
+    {
+      "name": "real DS experiment explanation",
+      "data": {
+        "reply": "信号不稳定（波形左右漂移、抖动或忽隐忽现）最常见的原因是**触发没同步**，所以先检查这几项，按顺序看：\n\n**1. 触发源是否正确（最先看）**\n- 触发源是否接在你实际观察的那一路上。你现在是 CH1，正好也是触发源 CH1，这一条没问题。\n- 如果信号接在 CH2 却仍触发 CH1，示波器抓不到波形起点，画面就会乱跑。\n\n**2. 触发电平是否落在波形范围内**\n- 你现在是 CH1、电平 0.012 V、上升沿。如果信号幅度很小或偏置把波形整体抬离这个电平，就会触发不到，AUTO 模式下波形持续滑动。\n- 调整幅度或偏置后，触发电平要跟着重新对准波形中间。\n\n**3. 触发模式是否合适**\n- AUTO：没触发时会自由扫描，波形看起来在漂移；只适合快速找到信号。\n- NORMAL：正常触发才稳定，稳不住时容易什么都不显示。\n- 观察稳定周期信号建议 NORMAL，把电平设准。\n\n**4. 时基是否与信号频率匹配**\n- 你现在 4e-08 s/div（40 ns/格），对应很窄的窗口。2 kHz、1 kHz 这种信号在这个时基下只会看到一小段，极易显得不稳。\n- 一般让屏幕上出现 2～3 个完整周期最稳定。\n\n**5. 幅度/垂直刻度是否合适**\n- 当前 0.1 V/div，信号 2 Vpp 左右会严重超出屏幕，被裁掉后触发点也随之丢失。\n\n**6. 信号源侧**：确认波形是 SIN、CW/FIXED 模式，输出开启且接线牢靠；幅度和偏置是否符合预期。\n\n优先动作：先确认触发源=观察通道，再把触发电平调进波形幅度范围，最后看时基和垂直刻度是否与信号匹配。\n\n需要我按你的 2 Vpp、2 kHz 信号，帮忙把时基、垂直刻度和触发电平算成合适值并生成操作卡吗？",
+        "model": "deepseek-flash",
+        "instrument_control_executed": false,
+        "memory_warning": null
+      }
+    },
+    {
+      "name": "real DS automatic completion summary",
+      "data": {
+        "state": "completed",
+        "text": "本次实验旨在观察信号源输出波形，并按流程完成接线、观察与关闭输出。步骤清单显示各步骤已逐项确认完成，但回执中没有已验证的操作记录，因此实际的接线检查与物理操作无法据此证实，波形测量也未形成记录。\n\n仪器当前状态显示：信号发生器两通道输出均为OFF；示波器CH1、CH2垂直刻度均为0.1 V/div，水平刻度4e-08 s/div，触发为AUTO、CH1上升沿、电平0.012 V。这些均为设置或缓存状态，不是波形实测结果；本次未记录任何波形幅度、频率、误差等实测数值。\n\n综上，可确认的是流程记录与仪器设置状态，不能据此得出测量成功或输出已物理关闭的结论。建议后续补充已验证的操作回执和实测数据，再作结果判定。",
+        "source": "deepseek",
+        "operations": [],
+        "model": "deepseek-flash",
+        "id": "133ca315397146a1987120c104c9bdfc"
+      }
+    },
+    {
+      "name": "one-click restart clears old summary",
+      "data": true
+    },
+    {
+      "name": "selected hy",
+      "data": {
+        "ready": true,
+        "memory": {
+          "MemAvailable": 246356,
+          "SwapFree": 160420,
+          "oom_kill": 0
+        }
+      }
+    },
+    {
+      "name": "recording replay hy",
+      "data": {
+        "id": "f1e90d063903420ebebc1bda12ee06a1",
+        "state": "ready",
+        "result": {
+          "intent": "UNMATCHED",
+          "label": "需要澄清",
+          "transcript": "你好，这是语音识别速度测试。",
+          "frequency_hz": null,
+          "proposal": "需要澄清",
+          "confirmation_required": true,
+          "instrument_control_executed": false,
+          "route": "Hy ASR 3.0 Preview / PC relay",
+          "asr_engine": "hy",
+          "timing_ms": {
+            "encode": 1383,
+            "relay_and_api": 5352,
+            "provider": 1520,
+            "total": 6735
+          },
+          "memory": {},
+          "service_model_load_ms": null,
+          "asr_service_pid": null,
+          "cloud_required": false,
+          "voice_mode": null
+        },
+        "error": null,
+        "cloud_required": false,
+        "voice_mode": null,
+        "wake_only": true,
+        "asr_engine": "hy",
+        "capture_stage": "pausing_camera",
+        "resource_busy": false,
+        "asr_requested": "hy",
+        "asr_switching": false,
+        "asr_ready": true,
+        "asr_error": null,
+        "asr_button": "BTN8 / PB1 / MIO50",
+        "asr_button_available": true,
+        "asr_button_error": null,
+        "asr_button_presses": 0,
+        "handsfree": {},
+        "available": true,
+        "record_available": true,
+        "microphone": {
+          "available": true,
+          "message": "XVF3800 已识别，开始录音后验证音频数据",
+          "card": 3,
+          "card_id": "Array",
+          "device": 0,
+          "channels": 2,
+          "name": "3 [Array          ]: USB-Audio - reSpeaker XVF3800 4-Mic Array",
+          "alsa": "plughw:CARD=Array,DEV=0",
+          "channel": 1
+        },
+        "record_seconds": 6,
+        "record_mode": "toggle",
+        "wake_only_supported": true,
+        "model_version": "Hy ASR 3.0 Preview",
+        "recognition_mode": "cloud-final",
+        "message": "XVF3800 已识别，开始录音后验证音频数据"
+      }
+    },
+    {
+      "name": "vision resumed",
+      "data": {
+        "state": "running",
+        "age": 0.8154945400001452,
+        "registered": 1
+      }
+    },
+    {
+      "name": "DS channel plan, not executed",
+      "data": {
+        "reply": "已整理操作卡，请核对后确认执行。",
+        "model": "deepseek-flash",
+        "proposal": {
+          "id": "8859764ae4b6416dba9f7c577fcd6e78",
+          "name": "set_scope_vertical",
+          "args": {
+            "channel": 2,
+            "volts_per_div": 0.2
+          },
+          "description": "Tek 所选通道纵向刻度；保留时基及探头倍率",
+          "source": "cloud",
+          "created": 5498.3663343,
+          "state": "proposed",
+          "result": null,
+          "preview": false,
+          "requires_output_confirmation": false,
+          "target": {
+            "model": "MSO22",
+            "identity": "TEKTRONIX,MSO22,C014364,CF:91.1CT FV:1.46.18.839",
+            "target": "TEKTRONIX,MSO22,C014364,CF:91.1CT FV:1.46.18.839|192.168.50.20:4000",
+            "connection": "LAN"
+          },
+          "workflow_run": "eb62c51f8db447ad862488f190268ce8"
+        },
+        "instrument_control_executed": false,
+        "memory_warning": null
+      }
+    },
+    {
+      "name": "DS channel plan, not executed",
+      "data": {
+        "reply": "已整理操作卡，请核对后确认执行。",
+        "model": "deepseek-flash",
+        "proposal": {
+          "id": "b49c6279730a4eb2ae11db81ed07c99a",
+          "name": "set_scope_vertical",
+          "args": {
+            "channel": 2,
+            "volts_per_div": 0.4
+          },
+          "description": "Tek 所选通道纵向刻度；保留时基及探头倍率",
+          "source": "cloud",
+          "created": 5503.914115577,
+          "state": "proposed",
+          "result": null,
+          "preview": false,
+          "requires_output_confirmation": false,
+          "target": {
+            "model": "MSO22",
+            "identity": "TEKTRONIX,MSO22,C014364,CF:91.1CT FV:1.46.18.839",
+            "target": "TEKTRONIX,MSO22,C014364,CF:91.1CT FV:1.46.18.839|192.168.50.20:4000",
+            "connection": "LAN"
+          },
+          "workflow_run": "eb62c51f8db447ad862488f190268ce8"
+        },
+        "instrument_control_executed": false,
+        "memory_warning": null
+      }
+    },
+    {
+      "name": "new conversation defaults CH1",
+      "data": {
+        "reply": "已整理操作卡，请核对后确认执行。",
+        "model": "deepseek-flash",
+        "proposal": {
+          "id": "d5f0963766f84f359a989d6441be2193",
+          "name": "set_scope_vertical",
+          "args": {
+            "channel": 1,
+            "volts_per_div": 0.2
+          },
+          "description": "Tek 所选通道纵向刻度；保留时基及探头倍率",
+          "source": "cloud",
+          "created": 5513.044453986,
+          "state": "proposed",
+          "result": null,
+          "preview": false,
+          "requires_output_confirmation": false,
+          "target": {
+            "model": "MSO22",
+            "identity": "TEKTRONIX,MSO22,C014364,CF:91.1CT FV:1.46.18.839",
+            "target": "TEKTRONIX,MSO22,C014364,CF:91.1CT FV:1.46.18.839|192.168.50.20:4000",
+            "connection": "LAN"
+          },
+          "workflow_run": "eb62c51f8db447ad862488f190268ce8"
+        },
+        "instrument_control_executed": false,
+        "memory_warning": null
+      }
+    },
+    {
+      "name": "selected hy",
+      "data": {
+        "ready": true,
+        "memory": {
+          "MemAvailable": 245688,
+          "SwapFree": 161188,
+          "oom_kill": 0
+        }
+      }
+    },
+    {
+      "name": "original workflow restored; fresh conversation; gallery unchanged",
+      "data": true
+    },
+    {
+      "name": "final vision",
+      "data": {
+        "state": "running",
+        "age": 0.05686343900015345,
+        "registered": 1
+      }
+    }
+  ],
+  "errors": [],
+  "samples": [
+    {
+      "stage": "local-models",
+      "MemAvailable": 215400,
+      "SwapFree": 183032,
+      "oom_kill": 0
+    },
+    {
+      "stage": "local-models",
+      "MemAvailable": 206408,
+      "SwapFree": 183032,
+      "oom_kill": 0
+    },
+    {
+      "stage": "local-models",
+      "MemAvailable": 204444,
+      "SwapFree": 183032,
+      "oom_kill": 0
+    },
+    {
+      "stage": "local-models",
+      "MemAvailable": 204468,
+      "SwapFree": 183032,
+      "oom_kill": 0
+    },
+    {
+      "stage": "local-models",
+      "MemAvailable": 203400,
+      "SwapFree": 183032,
+      "oom_kill": 0
+    },
+    {
+      "stage": "local-models",
+      "MemAvailable": 203680,
+      "SwapFree": 183032,
+      "oom_kill": 0
+    },
+    {
+      "stage": "local-models",
+      "MemAvailable": 203324,
+      "SwapFree": 183032,
+      "oom_kill": 0
+    },
+    {
+      "stage": "local-models",
+      "MemAvailable": 198436,
+      "SwapFree": 183032,
+      "oom_kill": 0
+    },
+    {
+      "stage": "local-models",
+      "MemAvailable": 190628,
+      "SwapFree": 183032,
+      "oom_kill": 0
+    },
+    {
+      "stage": "local-models",
+      "MemAvailable": 175444,
+      "SwapFree": 183032,
+      "oom_kill": 0
+    },
+    {
+      "stage": "local-models",
+      "MemAvailable": 158872,
+      "SwapFree": 183032,
+      "oom_kill": 0
+    },
+    {
+      "stage": "local-models",
+      "MemAvailable": 147992,
+      "SwapFree": 183032,
+      "oom_kill": 0
+    },
+    {
+      "stage": "local-models",
+      "MemAvailable": 133248,
+      "SwapFree": 183032,
+      "oom_kill": 0
+    },
+    {
+      "stage": "local-models",
+      "MemAvailable": 119708,
+      "SwapFree": 160964,
+      "oom_kill": 0
+    },
+    {
+      "stage": "local-models",
+      "MemAvailable": 129428,
+      "SwapFree": 160964,
+      "oom_kill": 0
+    },
+    {
+      "stage": "local-models",
+      "MemAvailable": 115800,
+      "SwapFree": 160964,
+      "oom_kill": 0
+    },
+    {
+      "stage": "local-models",
+      "MemAvailable": 117228,
+      "SwapFree": 161220,
+      "oom_kill": 0
+    },
+    {
+      "stage": "local-models",
+      "MemAvailable": 115924,
+      "SwapFree": 161220,
+      "oom_kill": 0
+    },
+    {
+      "stage": "local-models",
+      "MemAvailable": 116576,
+      "SwapFree": 161220,
+      "oom_kill": 0
+    },
+    {
+      "stage": "local-models",
+      "MemAvailable": 130924,
+      "SwapFree": 161220,
+      "oom_kill": 0
+    },
+    {
+      "stage": "local-models",
+      "MemAvailable": 133008,
+      "SwapFree": 161220,
+      "oom_kill": 0
+    },
+    {
+      "stage": "local-models",
+      "MemAvailable": 130716,
+      "SwapFree": 161220,
+      "oom_kill": 0
+    },
+    {
+      "stage": "local-models",
+      "MemAvailable": 131292,
+      "SwapFree": 161220,
+      "oom_kill": 0
+    },
+    {
+      "stage": "local-models",
+      "MemAvailable": 132380,
+      "SwapFree": 161220,
+      "oom_kill": 0
+    },
+    {
+      "stage": "local-models",
+      "MemAvailable": 130776,
+      "SwapFree": 161220,
+      "oom_kill": 0
+    },
+    {
+      "stage": "local-models",
+      "MemAvailable": 131620,
+      "SwapFree": 161220,
+      "oom_kill": 0
+    },
+    {
+      "stage": "local-models",
+      "MemAvailable": 131556,
+      "SwapFree": 161220,
+      "oom_kill": 0
+    },
+    {
+      "stage": "local-models",
+      "MemAvailable": 131476,
+      "SwapFree": 161220,
+      "oom_kill": 0
+    },
+    {
+      "stage": "local-models",
+      "MemAvailable": 131480,
+      "SwapFree": 161220,
+      "oom_kill": 0
+    },
+    {
+      "stage": "local-models",
+      "MemAvailable": 131208,
+      "SwapFree": 161220,
+      "oom_kill": 0
+    },
+    {
+      "stage": "local-models",
+      "MemAvailable": 130416,
+      "SwapFree": 161220,
+      "oom_kill": 0
+    },
+    {
+      "stage": "local-models",
+      "MemAvailable": 130808,
+      "SwapFree": 161220,
+      "oom_kill": 0
+    },
+    {
+      "stage": "local-models",
+      "MemAvailable": 131464,
+      "SwapFree": 161220,
+      "oom_kill": 0
+    },
+    {
+      "stage": "local-models",
+      "MemAvailable": 130664,
+      "SwapFree": 161220,
+      "oom_kill": 0
+    },
+    {
+      "stage": "local-models",
+      "MemAvailable": 131036,
+      "SwapFree": 161220,
+      "oom_kill": 0
+    },
+    {
+      "stage": "local-models",
+      "MemAvailable": 130160,
+      "SwapFree": 161220,
+      "oom_kill": 0
+    },
+    {
+      "stage": "local-models",
+      "MemAvailable": 137340,
+      "SwapFree": 162756,
+      "oom_kill": 0
+    },
+    {
+      "stage": "local-models",
+      "MemAvailable": 122832,
+      "SwapFree": 162756,
+      "oom_kill": 0
+    },
+    {
+      "stage": "local-models",
+      "MemAvailable": 123072,
+      "SwapFree": 162756,
+      "oom_kill": 0
+    },
+    {
+      "stage": "local-models",
+      "MemAvailable": 122944,
+      "SwapFree": 162756,
+      "oom_kill": 0
+    },
+    {
+      "stage": "local-models",
+      "MemAvailable": 118744,
+      "SwapFree": 163524,
+      "oom_kill": 0
+    },
+    {
+      "stage": "local-models",
+      "MemAvailable": 118500,
+      "SwapFree": 168132,
+      "oom_kill": 0
+    },
+    {
+      "stage": "DS-guide-.docx",
+      "MemAvailable": 117524,
+      "SwapFree": 168132,
+      "oom_kill": 0
+    },
+    {
+      "stage": "DS-guide-.docx",
+      "MemAvailable": 201904,
+      "SwapFree": 172484,
+      "oom_kill": 0
+    },
+    {
+      "stage": "DS-guide-.docx",
+      "MemAvailable": 305116,
+      "SwapFree": 173508,
+      "oom_kill": 0
+    },
+    {
+      "stage": "DS-guide-.docx",
+      "MemAvailable": 308280,
+      "SwapFree": 173508,
+      "oom_kill": 0
+    },
+    {
+      "stage": "DS-guide-.docx",
+      "MemAvailable": 310892,
+      "SwapFree": 173764,
+      "oom_kill": 0
+    },
+    {
+      "stage": "DS-guide-.docx",
+      "MemAvailable": 311424,
+      "SwapFree": 173764,
+      "oom_kill": 0
+    },
+    {
+      "stage": "DS-guide-.docx",
+      "MemAvailable": 312216,
+      "SwapFree": 173764,
+      "oom_kill": 0
+    },
+    {
+      "stage": "DS-guide-.docx",
+      "MemAvailable": 311108,
+      "SwapFree": 173764,
+      "oom_kill": 0
+    },
+    {
+      "stage": "DS-guide-.docx",
+      "MemAvailable": 309908,
+      "SwapFree": 173764,
+      "oom_kill": 0
+    },
+    {
+      "stage": "DS-guide-.docx",
+      "MemAvailable": 303624,
+      "SwapFree": 174020,
+      "oom_kill": 0
+    },
+    {
+      "stage": "DS-guide-.docx",
+      "MemAvailable": 300900,
+      "SwapFree": 174276,
+      "oom_kill": 0
+    },
+    {
+      "stage": "DS-guide-.docx",
+      "MemAvailable": 276696,
+      "SwapFree": 174276,
+      "oom_kill": 0
+    },
+    {
+      "stage": "DS-guide-.docx",
+      "MemAvailable": 255472,
+      "SwapFree": 174276,
+      "oom_kill": 0
+    },
+    {
+      "stage": "DS-guide-.docx",
+      "MemAvailable": 250428,
+      "SwapFree": 174276,
+      "oom_kill": 0
+    },
+    {
+      "stage": "DS-guide-.docx",
+      "MemAvailable": 250628,
+      "SwapFree": 174788,
+      "oom_kill": 0
+    },
+    {
+      "stage": "DS-guide-.docx",
+      "MemAvailable": 250860,
+      "SwapFree": 174788,
+      "oom_kill": 0
+    },
+    {
+      "stage": "DS-guide-.docx",
+      "MemAvailable": 232980,
+      "SwapFree": 174788,
+      "oom_kill": 0
+    },
+    {
+      "stage": "DS-guide-.docx",
+      "MemAvailable": 237756,
+      "SwapFree": 174788,
+      "oom_kill": 0
+    },
+    {
+      "stage": "DS-guide-.docx",
+      "MemAvailable": 243928,
+      "SwapFree": 175044,
+      "oom_kill": 0
+    },
+    {
+      "stage": "DS-guide-.docx",
+      "MemAvailable": 234196,
+      "SwapFree": 175044,
+      "oom_kill": 0
+    },
+    {
+      "stage": "DS-guide-.docx",
+      "MemAvailable": 233452,
+      "SwapFree": 175044,
+      "oom_kill": 0
+    },
+    {
+      "stage": "DS-guide-.docx",
+      "MemAvailable": 233160,
+      "SwapFree": 175044,
+      "oom_kill": 0
+    },
+    {
+      "stage": "DS-guide-.docx",
+      "MemAvailable": 232932,
+      "SwapFree": 175044,
+      "oom_kill": 0
+    },
+    {
+      "stage": "DS-guide-.docx",
+      "MemAvailable": 232480,
+      "SwapFree": 175044,
+      "oom_kill": 0
+    },
+    {
+      "stage": "DS-guide-.docx",
+      "MemAvailable": 231992,
+      "SwapFree": 175044,
+      "oom_kill": 0
+    },
+    {
+      "stage": "DS-guide-.docx",
+      "MemAvailable": 225020,
+      "SwapFree": 175044,
+      "oom_kill": 0
+    },
+    {
+      "stage": "DS-guide-.docx",
+      "MemAvailable": 207880,
+      "SwapFree": 175044,
+      "oom_kill": 0
+    },
+    {
+      "stage": "DS-guide-.docx",
+      "MemAvailable": 197596,
+      "SwapFree": 175044,
+      "oom_kill": 0
+    },
+    {
+      "stage": "DS-guide-.docx",
+      "MemAvailable": 192672,
+      "SwapFree": 169512,
+      "oom_kill": 0
+    },
+    {
+      "stage": "DS-guide-.docx",
+      "MemAvailable": 185112,
+      "SwapFree": 165300,
+      "oom_kill": 0
+    },
+    {
+      "stage": "DS-guide-.docx",
+      "MemAvailable": 179952,
+      "SwapFree": 163820,
+      "oom_kill": 0
+    },
+    {
+      "stage": "DS-guide-.docx",
+      "MemAvailable": 151568,
+      "SwapFree": 163820,
+      "oom_kill": 0
+    },
+    {
+      "stage": "DS-guide-.docx",
+      "MemAvailable": 158496,
+      "SwapFree": 163820,
+      "oom_kill": 0
+    },
+    {
+      "stage": "DS-guide-.docx",
+      "MemAvailable": 156476,
+      "SwapFree": 163820,
+      "oom_kill": 0
+    },
+    {
+      "stage": "DS-guide-.docx",
+      "MemAvailable": 156076,
+      "SwapFree": 163820,
+      "oom_kill": 0
+    },
+    {
+      "stage": "DS-guide-.docx",
+      "MemAvailable": 156356,
+      "SwapFree": 163820,
+      "oom_kill": 0
+    },
+    {
+      "stage": "DS-guide-.docx",
+      "MemAvailable": 156244,
+      "SwapFree": 164076,
+      "oom_kill": 0
+    },
+    {
+      "stage": "DS-guide-.docx",
+      "MemAvailable": 173660,
+      "SwapFree": 164076,
+      "oom_kill": 0
+    },
+    {
+      "stage": "DS-guide-.docx",
+      "MemAvailable": 173276,
+      "SwapFree": 164076,
+      "oom_kill": 0
+    },
+    {
+      "stage": "DS-guide-.docx",
+      "MemAvailable": 172476,
+      "SwapFree": 164076,
+      "oom_kill": 0
+    },
+    {
+      "stage": "DS-guide-.docx",
+      "MemAvailable": 171212,
+      "SwapFree": 164076,
+      "oom_kill": 0
+    },
+    {
+      "stage": "DS-guide-.docx",
+      "MemAvailable": 172788,
+      "SwapFree": 164076,
+      "oom_kill": 0
+    },
+    {
+      "stage": "DS-guide-.docx",
+      "MemAvailable": 172224,
+      "SwapFree": 164076,
+      "oom_kill": 0
+    },
+    {
+      "stage": "DS-guide-.docx",
+      "MemAvailable": 171788,
+      "SwapFree": 164076,
+      "oom_kill": 0
+    },
+    {
+      "stage": "DS-guide-.docx",
+      "MemAvailable": 171108,
+      "SwapFree": 164076,
+      "oom_kill": 0
+    },
+    {
+      "stage": "DS-guide-.docx",
+      "MemAvailable": 172236,
+      "SwapFree": 164076,
+      "oom_kill": 0
+    },
+    {
+      "stage": "DS-guide-.docx",
+      "MemAvailable": 172020,
+      "SwapFree": 164076,
+      "oom_kill": 0
+    },
+    {
+      "stage": "DS-guide-.docx",
+      "MemAvailable": 171868,
+      "SwapFree": 164076,
+      "oom_kill": 0
+    },
+    {
+      "stage": "DS-guide-.docx",
+      "MemAvailable": 170560,
+      "SwapFree": 164332,
+      "oom_kill": 0
+    },
+    {
+      "stage": "DS-guide-.docx",
+      "MemAvailable": 171464,
+      "SwapFree": 164332,
+      "oom_kill": 0
+    },
+    {
+      "stage": "DS-guide-.docx",
+      "MemAvailable": 170672,
+      "SwapFree": 164332,
+      "oom_kill": 0
+    },
+    {
+      "stage": "DS-guide-.docx",
+      "MemAvailable": 170588,
+      "SwapFree": 164332,
+      "oom_kill": 0
+    },
+    {
+      "stage": "DS-guide-.docx",
+      "MemAvailable": 171180,
+      "SwapFree": 164332,
+      "oom_kill": 0
+    },
+    {
+      "stage": "DS-guide-.docx",
+      "MemAvailable": 176776,
+      "SwapFree": 164332,
+      "oom_kill": 0
+    },
+    {
+      "stage": "DS-guide-.docx",
+      "MemAvailable": 176212,
+      "SwapFree": 164332,
+      "oom_kill": 0
+    },
+    {
+      "stage": "DS-guide-.docx",
+      "MemAvailable": 180532,
+      "SwapFree": 164332,
+      "oom_kill": 0
+    },
+    {
+      "stage": "DS-guide-.docx",
+      "MemAvailable": 167036,
+      "SwapFree": 164332,
+      "oom_kill": 0
+    },
+    {
+      "stage": "DS-guide-.docx",
+      "MemAvailable": 166660,
+      "SwapFree": 164332,
+      "oom_kill": 0
+    },
+    {
+      "stage": "DS-guide-.docx",
+      "MemAvailable": 166248,
+      "SwapFree": 164332,
+      "oom_kill": 0
+    },
+    {
+      "stage": "DS-guide-.docx",
+      "MemAvailable": 161748,
+      "SwapFree": 164332,
+      "oom_kill": 0
+    },
+    {
+      "stage": "DS-guide-.docx",
+      "MemAvailable": 161428,
+      "SwapFree": 164332,
+      "oom_kill": 0
+    },
+    {
+      "stage": "DS-guide-.pdf",
+      "MemAvailable": 161192,
+      "SwapFree": 164332,
+      "oom_kill": 0
+    },
+    {
+      "stage": "DS-guide-.pdf",
+      "MemAvailable": 242468,
+      "SwapFree": 164332,
+      "oom_kill": 0
+    },
+    {
+      "stage": "DS-guide-.pdf",
+      "MemAvailable": 324576,
+      "SwapFree": 164332,
+      "oom_kill": 0
+    },
+    {
+      "stage": "DS-guide-.pdf",
+      "MemAvailable": 321864,
+      "SwapFree": 164332,
+      "oom_kill": 0
+    },
+    {
+      "stage": "DS-guide-.pdf",
+      "MemAvailable": 325520,
+      "SwapFree": 164332,
+      "oom_kill": 0
+    },
+    {
+      "stage": "DS-guide-.pdf",
+      "MemAvailable": 325476,
+      "SwapFree": 164332,
+      "oom_kill": 0
+    },
+    {
+      "stage": "DS-guide-.pdf",
+      "MemAvailable": 325364,
+      "SwapFree": 164332,
+      "oom_kill": 0
+    },
+    {
+      "stage": "DS-guide-.pdf",
+      "MemAvailable": 324668,
+      "SwapFree": 164332,
+      "oom_kill": 0
+    },
+    {
+      "stage": "DS-guide-.pdf",
+      "MemAvailable": 324600,
+      "SwapFree": 164332,
+      "oom_kill": 0
+    },
+    {
+      "stage": "DS-guide-.pdf",
+      "MemAvailable": 322744,
+      "SwapFree": 164332,
+      "oom_kill": 0
+    },
+    {
+      "stage": "DS-guide-.pdf",
+      "MemAvailable": 317916,
+      "SwapFree": 164332,
+      "oom_kill": 0
+    },
+    {
+      "stage": "DS-guide-.pdf",
+      "MemAvailable": 312724,
+      "SwapFree": 164332,
+      "oom_kill": 0
+    },
+    {
+      "stage": "DS-guide-.pdf",
+      "MemAvailable": 278500,
+      "SwapFree": 164332,
+      "oom_kill": 0
+    },
+    {
+      "stage": "DS-guide-.pdf",
+      "MemAvailable": 265204,
+      "SwapFree": 164332,
+      "oom_kill": 0
+    },
+    {
+      "stage": "DS-guide-.pdf",
+      "MemAvailable": 264768,
+      "SwapFree": 164332,
+      "oom_kill": 0
+    },
+    {
+      "stage": "DS-guide-.pdf",
+      "MemAvailable": 264912,
+      "SwapFree": 164332,
+      "oom_kill": 0
+    },
+    {
+      "stage": "DS-guide-.pdf",
+      "MemAvailable": 262396,
+      "SwapFree": 164332,
+      "oom_kill": 0
+    },
+    {
+      "stage": "DS-guide-.pdf",
+      "MemAvailable": 247088,
+      "SwapFree": 164332,
+      "oom_kill": 0
+    },
+    {
+      "stage": "DS-guide-.pdf",
+      "MemAvailable": 249224,
+      "SwapFree": 164588,
+      "oom_kill": 0
+    },
+    {
+      "stage": "DS-guide-.pdf",
+      "MemAvailable": 242728,
+      "SwapFree": 164588,
+      "oom_kill": 0
+    },
+    {
+      "stage": "DS-guide-.pdf",
+      "MemAvailable": 251324,
+      "SwapFree": 164588,
+      "oom_kill": 0
+    },
+    {
+      "stage": "DS-guide-.pdf",
+      "MemAvailable": 247848,
+      "SwapFree": 164588,
+      "oom_kill": 0
+    },
+    {
+      "stage": "DS-guide-.pdf",
+      "MemAvailable": 247224,
+      "SwapFree": 164588,
+      "oom_kill": 0
+    },
+    {
+      "stage": "DS-guide-.pdf",
+      "MemAvailable": 246672,
+      "SwapFree": 164588,
+      "oom_kill": 0
+    },
+    {
+      "stage": "DS-guide-.pdf",
+      "MemAvailable": 247056,
+      "SwapFree": 164588,
+      "oom_kill": 0
+    },
+    {
+      "stage": "DS-guide-.pdf",
+      "MemAvailable": 246752,
+      "SwapFree": 164588,
+      "oom_kill": 0
+    },
+    {
+      "stage": "DS-guide-.pdf",
+      "MemAvailable": 245432,
+      "SwapFree": 164588,
+      "oom_kill": 0
+    },
+    {
+      "stage": "DS-guide-.pdf",
+      "MemAvailable": 216088,
+      "SwapFree": 164588,
+      "oom_kill": 0
+    },
+    {
+      "stage": "DS-guide-.pdf",
+      "MemAvailable": 189748,
+      "SwapFree": 163200,
+      "oom_kill": 0
+    },
+    {
+      "stage": "DS-guide-.pdf",
+      "MemAvailable": 174452,
+      "SwapFree": 163200,
+      "oom_kill": 0
+    },
+    {
+      "stage": "DS-guide-.pdf",
+      "MemAvailable": 157364,
+      "SwapFree": 163040,
+      "oom_kill": 0
+    },
+    {
+      "stage": "DS-guide-.pdf",
+      "MemAvailable": 156640,
+      "SwapFree": 163040,
+      "oom_kill": 0
+    },
+    {
+      "stage": "DS-guide-.pdf",
+      "MemAvailable": 156384,
+      "SwapFree": 163296,
+      "oom_kill": 0
+    },
+    {
+      "stage": "DS-guide-.pdf",
+      "MemAvailable": 156448,
+      "SwapFree": 163296,
+      "oom_kill": 0
+    },
+    {
+      "stage": "DS-guide-.pdf",
+      "MemAvailable": 155792,
+      "SwapFree": 163296,
+      "oom_kill": 0
+    },
+    {
+      "stage": "DS-guide-.pdf",
+      "MemAvailable": 173072,
+      "SwapFree": 163296,
+      "oom_kill": 0
+    },
+    {
+      "stage": "DS-guide-.pdf",
+      "MemAvailable": 173196,
+      "SwapFree": 163296,
+      "oom_kill": 0
+    },
+    {
+      "stage": "DS-guide-.pdf",
+      "MemAvailable": 171744,
+      "SwapFree": 163296,
+      "oom_kill": 0
+    },
+    {
+      "stage": "DS-guide-.pdf",
+      "MemAvailable": 171148,
+      "SwapFree": 163296,
+      "oom_kill": 0
+    },
+    {
+      "stage": "DS-guide-.pdf",
+      "MemAvailable": 170024,
+      "SwapFree": 163552,
+      "oom_kill": 0
+    },
+    {
+      "stage": "DS-guide-.pdf",
+      "MemAvailable": 170800,
+      "SwapFree": 163552,
+      "oom_kill": 0
+    },
+    {
+      "stage": "DS-guide-.pdf",
+      "MemAvailable": 177472,
+      "SwapFree": 163552,
+      "oom_kill": 0
+    },
+    {
+      "stage": "DS-guide-.pdf",
+      "MemAvailable": 177716,
+      "SwapFree": 163552,
+      "oom_kill": 0
+    },
+    {
+      "stage": "DS-guide-.pdf",
+      "MemAvailable": 178156,
+      "SwapFree": 163552,
+      "oom_kill": 0
+    },
+    {
+      "stage": "DS-guide-.pdf",
+      "MemAvailable": 177788,
+      "SwapFree": 163552,
+      "oom_kill": 0
+    },
+    {
+      "stage": "DS-guide-.pdf",
+      "MemAvailable": 177648,
+      "SwapFree": 163552,
+      "oom_kill": 0
+    },
+    {
+      "stage": "DS-guide-.pdf",
+      "MemAvailable": 177828,
+      "SwapFree": 163552,
+      "oom_kill": 0
+    },
+    {
+      "stage": "DS-guide-.pdf",
+      "MemAvailable": 177148,
+      "SwapFree": 163552,
+      "oom_kill": 0
+    },
+    {
+      "stage": "DS-guide-.pdf",
+      "MemAvailable": 176984,
+      "SwapFree": 163552,
+      "oom_kill": 0
+    },
+    {
+      "stage": "DS-guide-.pdf",
+      "MemAvailable": 176700,
+      "SwapFree": 163552,
+      "oom_kill": 0
+    },
+    {
+      "stage": "DS-guide-.pdf",
+      "MemAvailable": 176884,
+      "SwapFree": 163552,
+      "oom_kill": 0
+    },
+    {
+      "stage": "DS-guide-.pdf",
+      "MemAvailable": 177720,
+      "SwapFree": 163552,
+      "oom_kill": 0
+    },
+    {
+      "stage": "DS-guide-.pdf",
+      "MemAvailable": 180808,
+      "SwapFree": 163552,
+      "oom_kill": 0
+    },
+    {
+      "stage": "DS-guide-.pdf",
+      "MemAvailable": 167348,
+      "SwapFree": 163552,
+      "oom_kill": 0
+    },
+    {
+      "stage": "DS-guide-.pdf",
+      "MemAvailable": 167204,
+      "SwapFree": 163552,
+      "oom_kill": 0
+    },
+    {
+      "stage": "DS-guide-.pdf",
+      "MemAvailable": 166912,
+      "SwapFree": 163552,
+      "oom_kill": 0
+    },
+    {
+      "stage": "DS-guide-.pdf",
+      "MemAvailable": 165928,
+      "SwapFree": 163552,
+      "oom_kill": 0
+    },
+    {
+      "stage": "DS-guide-.pdf",
+      "MemAvailable": 161376,
+      "SwapFree": 164064,
+      "oom_kill": 0
+    },
+    {
+      "stage": "DS-guide-.pdf",
+      "MemAvailable": 163220,
+      "SwapFree": 164064,
+      "oom_kill": 0
+    },
+    {
+      "stage": "AI-question",
+      "MemAvailable": 160132,
+      "SwapFree": 164064,
+      "oom_kill": 0
+    },
+    {
+      "stage": "AI-question",
+      "MemAvailable": 162084,
+      "SwapFree": 164064,
+      "oom_kill": 0
+    },
+    {
+      "stage": "AI-question",
+      "MemAvailable": 160948,
+      "SwapFree": 164064,
+      "oom_kill": 0
+    },
+    {
+      "stage": "AI-question",
+      "MemAvailable": 160524,
+      "SwapFree": 164064,
+      "oom_kill": 0
+    },
+    {
+      "stage": "AI-question",
+      "MemAvailable": 164148,
+      "SwapFree": 164064,
+      "oom_kill": 0
+    },
+    {
+      "stage": "AI-question",
+      "MemAvailable": 160388,
+      "SwapFree": 164064,
+      "oom_kill": 0
+    },
+    {
+      "stage": "AI-question",
+      "MemAvailable": 162272,
+      "SwapFree": 164064,
+      "oom_kill": 0
+    },
+    {
+      "stage": "AI-question",
+      "MemAvailable": 159692,
+      "SwapFree": 164064,
+      "oom_kill": 0
+    },
+    {
+      "stage": "AI-question",
+      "MemAvailable": 159508,
+      "SwapFree": 164320,
+      "oom_kill": 0
+    },
+    {
+      "stage": "progress-and-summary",
+      "MemAvailable": 159132,
+      "SwapFree": 164320,
+      "oom_kill": 0
+    },
+    {
+      "stage": "progress-and-summary",
+      "MemAvailable": 158936,
+      "SwapFree": 164320,
+      "oom_kill": 0
+    },
+    {
+      "stage": "progress-and-summary",
+      "MemAvailable": 160320,
+      "SwapFree": 160164,
+      "oom_kill": 0
+    },
+    {
+      "stage": "progress-and-summary",
+      "MemAvailable": 162084,
+      "SwapFree": 160164,
+      "oom_kill": 0
+    },
+    {
+      "stage": "progress-and-summary",
+      "MemAvailable": 160428,
+      "SwapFree": 160164,
+      "oom_kill": 0
+    },
+    {
+      "stage": "progress-and-summary",
+      "MemAvailable": 159812,
+      "SwapFree": 160164,
+      "oom_kill": 0
+    },
+    {
+      "stage": "progress-and-summary",
+      "MemAvailable": 159952,
+      "SwapFree": 160164,
+      "oom_kill": 0
+    },
+    {
+      "stage": "progress-and-summary",
+      "MemAvailable": 159732,
+      "SwapFree": 160420,
+      "oom_kill": 0
+    },
+    {
+      "stage": "Hy-recording",
+      "MemAvailable": 232720,
+      "SwapFree": 160420,
+      "oom_kill": 0
+    },
+    {
+      "stage": "Hy-recording",
+      "MemAvailable": 260328,
+      "SwapFree": 160676,
+      "oom_kill": 0
+    },
+    {
+      "stage": "Hy-recording",
+      "MemAvailable": 257572,
+      "SwapFree": 160676,
+      "oom_kill": 0
+    },
+    {
+      "stage": "Hy-recording",
+      "MemAvailable": 259540,
+      "SwapFree": 160676,
+      "oom_kill": 0
+    },
+    {
+      "stage": "Hy-recording",
+      "MemAvailable": 259812,
+      "SwapFree": 160676,
+      "oom_kill": 0
+    },
+    {
+      "stage": "Hy-recording",
+      "MemAvailable": 260356,
+      "SwapFree": 160676,
+      "oom_kill": 0
+    },
+    {
+      "stage": "Hy-recording",
+      "MemAvailable": 260440,
+      "SwapFree": 160676,
+      "oom_kill": 0
+    },
+    {
+      "stage": "Hy-recording",
+      "MemAvailable": 260188,
+      "SwapFree": 160676,
+      "oom_kill": 0
+    },
+    {
+      "stage": "Hy-recording",
+      "MemAvailable": 257108,
+      "SwapFree": 160676,
+      "oom_kill": 0
+    },
+    {
+      "stage": "Hy-recording",
+      "MemAvailable": 254900,
+      "SwapFree": 160676,
+      "oom_kill": 0
+    },
+    {
+      "stage": "Hy-recording",
+      "MemAvailable": 259680,
+      "SwapFree": 160676,
+      "oom_kill": 0
+    },
+    {
+      "stage": "Hy-recording",
+      "MemAvailable": 245712,
+      "SwapFree": 160676,
+      "oom_kill": 0
+    },
+    {
+      "stage": "Hy-recording",
+      "MemAvailable": 246064,
+      "SwapFree": 160676,
+      "oom_kill": 0
+    },
+    {
+      "stage": "Hy-recording",
+      "MemAvailable": 245540,
+      "SwapFree": 160676,
+      "oom_kill": 0
+    },
+    {
+      "stage": "Hy-recording",
+      "MemAvailable": 240416,
+      "SwapFree": 160676,
+      "oom_kill": 0
+    },
+    {
+      "stage": "Hy-recording",
+      "MemAvailable": 240076,
+      "SwapFree": 160676,
+      "oom_kill": 0
+    },
+    {
+      "stage": "Hy-recording",
+      "MemAvailable": 247796,
+      "SwapFree": 160676,
+      "oom_kill": 0
+    },
+    {
+      "stage": "channels",
+      "MemAvailable": 247208,
+      "SwapFree": 160676,
+      "oom_kill": 0
+    },
+    {
+      "stage": "channels",
+      "MemAvailable": 247716,
+      "SwapFree": 160676,
+      "oom_kill": 0
+    },
+    {
+      "stage": "channels",
+      "MemAvailable": 251272,
+      "SwapFree": 160676,
+      "oom_kill": 0
+    },
+    {
+      "stage": "channels",
+      "MemAvailable": 247128,
+      "SwapFree": 160676,
+      "oom_kill": 0
+    },
+    {
+      "stage": "channels",
+      "MemAvailable": 247300,
+      "SwapFree": 160676,
+      "oom_kill": 0
+    },
+    {
+      "stage": "channels",
+      "MemAvailable": 246604,
+      "SwapFree": 161188,
+      "oom_kill": 0
+    },
+    {
+      "stage": "channels",
+      "MemAvailable": 246396,
+      "SwapFree": 161188,
+      "oom_kill": 0
+    },
+    {
+      "stage": "channels",
+      "MemAvailable": 251496,
+      "SwapFree": 161188,
+      "oom_kill": 0
+    },
+    {
+      "stage": "channels",
+      "MemAvailable": 246252,
+      "SwapFree": 161188,
+      "oom_kill": 0
+    },
+    {
+      "stage": "channels",
+      "MemAvailable": 249992,
+      "SwapFree": 161188,
+      "oom_kill": 0
+    },
+    {
+      "stage": "channels",
+      "MemAvailable": 246564,
+      "SwapFree": 161188,
+      "oom_kill": 0
+    },
+    {
+      "stage": "channels",
+      "MemAvailable": 246100,
+      "SwapFree": 161188,
+      "oom_kill": 0
+    },
+    {
+      "stage": "channels",
+      "MemAvailable": 245172,
+      "SwapFree": 161188,
+      "oom_kill": 0
+    },
+    {
+      "stage": "channels",
+      "MemAvailable": 245464,
+      "SwapFree": 161188,
+      "oom_kill": 0
+    },
+    {
+      "stage": "channels",
+      "MemAvailable": 249652,
+      "SwapFree": 161188,
+      "oom_kill": 0
+    },
+    {
+      "stage": "channels",
+      "MemAvailable": 245128,
+      "SwapFree": 161188,
+      "oom_kill": 0
+    },
+    {
+      "stage": "channels",
+      "MemAvailable": 247992,
+      "SwapFree": 161188,
+      "oom_kill": 0
+    },
+    {
+      "stage": "channels",
+      "MemAvailable": 245256,
+      "SwapFree": 161188,
+      "oom_kill": 0
+    },
+    {
+      "stage": "channels",
+      "MemAvailable": 244528,
+      "SwapFree": 161188,
+      "oom_kill": 0
+    },
+    {
+      "stage": "channels",
+      "MemAvailable": 248120,
+      "SwapFree": 161188,
+      "oom_kill": 0
+    },
+    {
+      "stage": "restore",
+      "MemAvailable": 243912,
+      "SwapFree": 161444,
+      "oom_kill": 0
+    },
+    {
+      "stage": "restore",
+      "MemAvailable": 311520,
+      "SwapFree": 173988,
+      "oom_kill": 0
+    },
+    {
+      "stage": "restore",
+      "MemAvailable": 318664,
+      "SwapFree": 177572,
+      "oom_kill": 0
+    },
+    {
+      "stage": "restore",
+      "MemAvailable": 313628,
+      "SwapFree": 177572,
+      "oom_kill": 0
+    },
+    {
+      "stage": "restore",
+      "MemAvailable": 307764,
+      "SwapFree": 177572,
+      "oom_kill": 0
+    },
+    {
+      "stage": "restore",
+      "MemAvailable": 299688,
+      "SwapFree": 177828,
+      "oom_kill": 0
+    },
+    {
+      "stage": "restore",
+      "MemAvailable": 292908,
+      "SwapFree": 177828,
+      "oom_kill": 0
+    },
+    {
+      "stage": "restore",
+      "MemAvailable": 271524,
+      "SwapFree": 177828,
+      "oom_kill": 0
+    },
+    {
+      "stage": "restore",
+      "MemAvailable": 252332,
+      "SwapFree": 177828,
+      "oom_kill": 0
+    },
+    {
+      "stage": "restore",
+      "MemAvailable": 249756,
+      "SwapFree": 177828,
+      "oom_kill": 0
+    },
+    {
+      "stage": "restore",
+      "MemAvailable": 242232,
+      "SwapFree": 177828,
+      "oom_kill": 0
+    },
+    {
+      "stage": "restore",
+      "MemAvailable": 231916,
+      "SwapFree": 177828,
+      "oom_kill": 0
+    }
+  ],
+  "initial_memory": {
+    "MemAvailable": 202320,
+    "SwapFree": 183032,
+    "oom_kill": 0
+  },
+  "final_memory": {
+    "MemAvailable": 237588,
+    "SwapFree": 177828,
+    "oom_kill": 0
+  },
+  "minimum": {
+    "MemAvailable": 115800,
+    "SwapFree": 160164
+  },
+  "finished": true
+}

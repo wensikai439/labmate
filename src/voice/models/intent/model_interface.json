@@ -1,0 +1,161 @@
+{
+  "default_entry": "sh start.sh",
+  "default_execution": "Zynq ARM PS native binary",
+  "feature_frontend": "logmel_cmvn_v4",
+  "feature_layout": "40 mel channels by time_bins, C row-major flattened; not waveform samples",
+  "time_bins": 256,
+  "label_order": [
+    "UNMATCHED",
+    "SILENCE_NOISE",
+    "CMD_IDENTIFY_INSTRUMENT",
+    "CMD_SET_SIGNAL_FREQ",
+    "CMD_MEASURE_FREQ",
+    "CMD_MEASURE_VPP",
+    "CMD_MEASURE_RMS",
+    "CMD_OUTPUT_ON",
+    "CMD_OUTPUT_OFF",
+    "CMD_NEXT"
+  ],
+  "neural_cost": {
+    "neural_weights": 57728,
+    "neural_macs": 6492800,
+    "convolution_context_frames_before_global_pool": 60,
+    "pool_bn_frontend_cost_excluded": true
+  },
+  "precision": "w4a4",
+  "theoretical_packed_neural_weight_bytes": 28864,
+  "ARM_C_weights_stored_as_int8": true,
+  "checkpoint_sha256": "b9840be74e2cfbbebb6975a340ccdfefd1b80980836cdad6914092d503e20971",
+  "graph_interfaces": [
+    {
+      "file": "smartbox_intent.integer.finn.onnx",
+      "sha256": "86aeb88653292b4038edbf4f96f635943c925e586534ca7d521aa991346fd20e",
+      "required_inputs": [
+        {
+          "name": "features",
+          "dtype": "FLOAT",
+          "shape": [
+            1,
+            10240
+          ]
+        }
+      ],
+      "initializer_inputs_with_defaults": [],
+      "outputs": [
+        {
+          "name": "logits",
+          "dtype": "FLOAT",
+          "shape": [
+            1,
+            10
+          ]
+        }
+      ],
+      "external_data_files": [],
+      "packaged_companion_files": [],
+      "input_values": "int8 codes in float32 ONNX storage, no division"
+    },
+    {
+      "file": "smartbox_intent.qcdq.onnx",
+      "sha256": "7ff745f71a946531465eef56131887c965f5dc5553db5a3056737d1cc7f8780b",
+      "required_inputs": [
+        {
+          "name": "values",
+          "dtype": "FLOAT",
+          "shape": [
+            1,
+            10240
+          ]
+        }
+      ],
+      "initializer_inputs_with_defaults": [
+        "network.2.weight",
+        "network.2.bias",
+        "network.6.weight",
+        "network.6.bias",
+        "network.10.weight",
+        "network.10.bias",
+        "network.15.weight",
+        "network.15.bias",
+        "network.2.running_mean",
+        "network.2.running_var",
+        "network.6.running_mean",
+        "network.6.running_var",
+        "network.10.running_mean",
+        "network.10.running_var",
+        "network.15.running_mean",
+        "network.15.running_var",
+        "network.1.weight_quant.export_handler.lifted_tensor_4",
+        "network.1.weight_quant.export_handler.lifted_tensor_5",
+        "network.1.weight_quant.export_handler.lifted_tensor_6",
+        "network.1.weight_quant.export_handler.lifted_tensor_7",
+        "network.5.weight_quant.export_handler.lifted_tensor_16",
+        "network.9.weight_quant.export_handler.lifted_tensor_28",
+        "network.14.weight_quant.export_handler.lifted_tensor_40",
+        "network.17.weight_quant.export_handler.lifted_tensor_52",
+        "network.0.act_quant.export_handler.lifted_tensor_0",
+        "network.3.act_quant.export_handler.lifted_tensor_10",
+        "network.3.act_quant.export_handler.lifted_tensor_11",
+        "network.3.act_quant.export_handler.lifted_tensor_13",
+        "network.1.weight",
+        "network.5.weight",
+        "network.9.weight",
+        "val_5",
+        "val_80",
+        "slice_4",
+        "slice_5"
+      ],
+      "outputs": [
+        {
+          "name": "linear_1",
+          "dtype": "FLOAT",
+          "shape": [
+            1,
+            10
+          ]
+        }
+      ],
+      "external_data_files": [],
+      "packaged_companion_files": [
+        "smartbox_intent.qcdq.onnx.data"
+      ],
+      "input_values": "float32(int8 feature codes)/128"
+    },
+    {
+      "file": "smartbox_intent.qonnx.onnx",
+      "sha256": "b9901a7328d3f9dfad473b5e3cef667db2f0298b2528cc9e1015605627cabea4",
+      "required_inputs": [
+        {
+          "name": "global_in",
+          "dtype": "FLOAT",
+          "shape": [
+            1,
+            10240
+          ]
+        }
+      ],
+      "initializer_inputs_with_defaults": [],
+      "outputs": [
+        {
+          "name": "global_out",
+          "dtype": "FLOAT",
+          "shape": [
+            1,
+            10
+          ]
+        }
+      ],
+      "external_data_files": [],
+      "packaged_companion_files": [
+        "smartbox_intent.qonnx.onnx.data"
+      ],
+      "input_values": "float32(int8 feature codes)/128"
+    }
+  ],
+  "native_integer_logit_scale": 0.024346052472979607,
+  "native_policy_header": "fpga/source/voice_policy.h",
+  "frontend_source": "fpga/source/voice_native.cpp",
+  "hardware_synthesis_complete": false,
+  "PS_PL_driver_included": false,
+  "source_graph_report": "reports/graph_export.json"
+}

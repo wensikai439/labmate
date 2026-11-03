@@ -1,0 +1,20 @@
+{
+  "started": 1659720427.3545756,
+  "before": {
+    "/boot/labmate-control-v2/display-data/workspace.json": "fac09ce05f0a81be1f882cf0dd560f1b6703a02fc009ad16a520cfcb8ecc5de1",
+    "/boot/labmate-control-v2/display-data/conversation.json": "e884500afdeb7c11d76a94303dfc455b0dc96acb64ad7c1356b8415e0765f558"
+  },
+  "instrument_control_executed": false,
+  "ok": true,
+  "replies": [
+    "LABMATE_LINK_OK_20261030",
+    "LABMATE_LINK_OK_20261030",
+    "LABMATE_LINK_OK_20261030"
+  ],
+  "after": {
+    "/boot/labmate-control-v2/display-data/workspace.json": "fac09ce05f0a81be1f882cf0dd560f1b6703a02fc009ad16a520cfcb8ecc5de1",
+    "/boot/labmate-control-v2/display-data/conversation.json": "e884500afdeb7c11d76a94303dfc455b0dc96acb64ad7c1356b8415e0765f558"
+  },
+  "display": "active",
+  "finished": 1659720470.1271784
+}

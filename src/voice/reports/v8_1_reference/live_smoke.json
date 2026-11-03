@@ -1,0 +1,110 @@
+{
+  "alias_and_rejection_cases": {
+    "passed": true,
+    "n": 11
+  },
+  "resident_pipeline_file": {
+    "passed": true,
+    "result": {
+      "backend": "PS_CPU_ONNX_INT8_resident",
+      "board_runtime_verified": false,
+      "cascade_route": "asr_only",
+      "confirmation_required": true,
+      "decoder": "offline_ctc_context_prefix",
+      "frequency_hz": null,
+      "instrument_control_executed": false,
+      "intent_proposal": "CMD_IDENTIFY_INSTRUMENT",
+      "parser": "constrained_zh_rules_v6r2_native",
+      "parser_board_verified": false,
+      "pipeline_ms": 128.47407,
+      "process_peak_rss_kib": 198180,
+      "reason": "single_supported_command_proposal",
+      "timing_ms": {
+        "ctc_decode": 4.76206,
+        "encoder": 121.492,
+        "frontend": 2.09017,
+        "total": 128.35
+      },
+      "transcript": "查询信号发生器的型号"
+    }
+  },
+  "VAD_auto_ASR_guard": {
+    "passed": true,
+    "result": {
+      "backend": "PS_CPU_ONNX_INT8_resident",
+      "board_runtime_verified": false,
+      "capture_duration_ms": 2980.0,
+      "cascade_route": "vad_asr_guarded",
+      "confirmation_required": true,
+      "decoder": "offline_ctc_context_prefix",
+      "endpoint_tail_ms": 800,
+      "endpoint_to_result_ms": 203.33492,
+      "frequency_hz": null,
+      "instrument_control_executed": false,
+      "intent_proposal": "CMD_IDENTIFY_INSTRUMENT",
+      "parser": "constrained_zh_rules_v6r2_native",
+      "parser_board_verified": false,
+      "pipeline_ms": 194.99163,
+      "process_peak_rss_kib": 198228,
+      "reason": "single_supported_command_proposal",
+      "timing_ms": {
+        "ctc_decode": 7.71059,
+        "encoder": 176.918,
+        "frontend": 10.219,
+        "total": 194.869
+      },
+      "transcript": "查询信号发生器的型号"
+    }
+  },
+  "endpoint": {
+    "returncode": 0,
+    "results": [
+      {
+        "backend": "PS_integer_reference",
+        "calibration_scope": "separate_synthetic_voice_profiles_v6",
+        "capture_duration_ms": 2980.0,
+        "cascade_route": "fast_only",
+        "confirmation_required": true,
+        "endpoint_tail_ms": 800,
+        "endpoint_to_result_ms": 24.424333,
+        "frequency_hz": null,
+        "instrument_control_executed": false,
+        "intent_proposal": "UNMATCHED",
+        "pipeline_ms": 19.786118,
+        "score": 0.72050232,
+        "score_is_calibrated": true,
+        "top_class": "CMD_IDENTIFY_INSTRUMENT"
+      }
+    ]
+  },
+  "fixed4": {
+    "returncode": 0,
+    "results": [
+      {
+        "backend": "PS_integer_reference",
+        "calibration_scope": "separate_synthetic_voice_profiles_v6",
+        "capture_duration_ms": 4000.0,
+        "cascade_route": "fast_only",
+        "confirmation_required": true,
+        "endpoint_tail_ms": 0,
+        "endpoint_to_result_ms": 28.088401,
+        "frequency_hz": null,
+        "instrument_control_executed": false,
+        "intent_proposal": "UNMATCHED",
+        "pipeline_ms": 21.707714,
+        "score": 0.46512631,
+        "score_is_calibrated": true,
+        "top_class": "CMD_OUTPUT_ON"
+      }
+    ]
+  },
+  "signal_shutdown": {
+    "returncode": 0,
+    "passed": true
+  },
+  "microphone_failure": {
+    "returncode": 2,
+    "output": "{\"error\":\"microphone_stream_closed\",\"message\":\"Recording ended unexpectedly; check the ALSA device\"}\n"
+  },
+  "passed": true
+}

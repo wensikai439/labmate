@@ -1,0 +1,1113 @@
+{
+  "events": [
+    [
+      6045.513,
+      "WRITE",
+      "*IDN?"
+    ],
+    [
+      6045.867,
+      "REPLY",
+      "TEKTRONIX,AFG1062,2011130,SCPI:99.0 FV:V1.0.9"
+    ],
+    [
+      6045.867,
+      "WRITE",
+      "OUTPut1:STATe?"
+    ],
+    [
+      6046.222,
+      "REPLY",
+      "0"
+    ],
+    [
+      6046.222,
+      "WRITE",
+      "OUTPut1:IMPedance?"
+    ],
+    [
+      6046.575,
+      "REPLY",
+      "9.9E+37"
+    ],
+    [
+      6046.575,
+      "WRITE",
+      "SOURce1:FUNCtion:SHAPe?"
+    ],
+    [
+      6046.928,
+      "REPLY",
+      "SIN"
+    ],
+    [
+      6046.929,
+      "WRITE",
+      "SOURce1:FREQuency:MODE?"
+    ],
+    [
+      6047.281,
+      "REPLY",
+      "CW"
+    ],
+    [
+      6047.281,
+      "WRITE",
+      "SOURce1:FREQuency:FIXed?"
+    ],
+    [
+      6047.634,
+      "REPLY",
+      "1.000000e+03"
+    ],
+    [
+      6047.634,
+      "WRITE",
+      "SOURce1:VOLTage:LEVel:IMMediate:AMPLitude?"
+    ],
+    [
+      6047.987,
+      "REPLY",
+      "1.000000e+00"
+    ],
+    [
+      6047.987,
+      "WRITE",
+      "SOURce1:VOLTage:LEVel:IMMediate:OFFSet?"
+    ],
+    [
+      6048.34,
+      "REPLY",
+      "0.000000e+00"
+    ],
+    [
+      6048.34,
+      "WRITE",
+      "*WAI"
+    ],
+    [
+      6049.192,
+      "WRITE",
+      "SYST:ERR?"
+    ],
+    [
+      6049.545,
+      "REPLY",
+      "0,\"No error\""
+    ],
+    [
+      6049.545,
+      "WRITE",
+      "SOURce1:AM:STATe?"
+    ],
+    [
+      6049.898,
+      "REPLY",
+      "0"
+    ],
+    [
+      6049.899,
+      "WRITE",
+      "SOURce1:FM:STATe?"
+    ],
+    [
+      6050.251,
+      "REPLY",
+      "0"
+    ],
+    [
+      6050.251,
+      "WRITE",
+      "SOURce1:PM:STATe?"
+    ],
+    [
+      6050.603,
+      "REPLY",
+      "0"
+    ],
+    [
+      6050.604,
+      "WRITE",
+      "SOURce1:FSK:STATe?"
+    ],
+    [
+      6050.956,
+      "REPLY",
+      "0"
+    ],
+    [
+      6050.956,
+      "WRITE",
+      "SOURce1:PWM:STATe?"
+    ],
+    [
+      6051.308,
+      "REPLY",
+      "0"
+    ],
+    [
+      6051.308,
+      "WRITE",
+      "SOURce1:BURSt:STATe?"
+    ],
+    [
+      6051.661,
+      "REPLY",
+      "0"
+    ],
+    [
+      6051.661,
+      "WRITE",
+      "SOURce1:ASKey:STATe?"
+    ],
+    [
+      6052.015,
+      "REPLY",
+      "0"
+    ],
+    [
+      6052.015,
+      "WRITE",
+      "SOURce1:PSKey:STATe?"
+    ],
+    [
+      6052.367,
+      "REPLY",
+      "0"
+    ],
+    [
+      6052.368,
+      "WRITE",
+      "*WAI"
+    ],
+    [
+      6053.22,
+      "WRITE",
+      "SYST:ERR?"
+    ],
+    [
+      6053.573,
+      "REPLY",
+      "0,\"No error\""
+    ],
+    [
+      6053.573,
+      "WRITE",
+      "SOURce1:FREQuency:CONCurrent?"
+    ],
+    [
+      6053.926,
+      "REPLY",
+      "0"
+    ],
+    [
+      6053.926,
+      "WRITE",
+      "OUTPut2:STATe?"
+    ],
+    [
+      6054.278,
+      "REPLY",
+      "0"
+    ],
+    [
+      6054.279,
+      "WRITE",
+      "OUTPut2:IMPedance?"
+    ],
+    [
+      6054.631,
+      "REPLY",
+      "2000"
+    ],
+    [
+      6054.631,
+      "WRITE",
+      "SOURce2:FUNCtion:SHAPe?"
+    ],
+    [
+      6054.984,
+      "REPLY",
+      "SIN"
+    ],
+    [
+      6054.984,
+      "WRITE",
+      "SOURce2:FREQuency:MODE?"
+    ],
+    [
+      6055.336,
+      "REPLY",
+      "CW"
+    ],
+    [
+      6055.336,
+      "WRITE",
+      "SOURce2:FREQuency:FIXed?"
+    ],
+    [
+      6055.689,
+      "REPLY",
+      "1.000000e+05"
+    ],
+    [
+      6055.689,
+      "WRITE",
+      "SOURce2:VOLTage:LEVel:IMMediate:AMPLitude?"
+    ],
+    [
+      6056.042,
+      "REPLY",
+      "4.000000e+00"
+    ],
+    [
+      6056.042,
+      "WRITE",
+      "SOURce2:VOLTage:LEVel:IMMediate:OFFSet?"
+    ],
+    [
+      6056.394,
+      "REPLY",
+      "0.000000e+00"
+    ],
+    [
+      6056.394,
+      "WRITE",
+      "*WAI"
+    ],
+    [
+      6057.246,
+      "WRITE",
+      "SYST:ERR?"
+    ],
+    [
+      6057.599,
+      "REPLY",
+      "0,\"No error\""
+    ],
+    [
+      6057.599,
+      "WRITE",
+      "SOURce2:AM:STATe?"
+    ],
+    [
+      6057.952,
+      "REPLY",
+      "0"
+    ],
+    [
+      6057.952,
+      "WRITE",
+      "SOURce2:FM:STATe?"
+    ],
+    [
+      6058.304,
+      "REPLY",
+      "0"
+    ],
+    [
+      6058.304,
+      "WRITE",
+      "SOURce2:PM:STATe?"
+    ],
+    [
+      6058.657,
+      "REPLY",
+      "0"
+    ],
+    [
+      6058.657,
+      "WRITE",
+      "SOURce2:FSK:STATe?"
+    ],
+    [
+      6059.009,
+      "REPLY",
+      "0"
+    ],
+    [
+      6059.01,
+      "WRITE",
+      "SOURce2:PWM:STATe?"
+    ],
+    [
+      6059.362,
+      "REPLY",
+      "0"
+    ],
+    [
+      6059.362,
+      "WRITE",
+      "SOURce2:BURSt:STATe?"
+    ],
+    [
+      6059.714,
+      "REPLY",
+      "0"
+    ],
+    [
+      6059.715,
+      "WRITE",
+      "SOURce2:ASKey:STATe?"
+    ],
+    [
+      6060.067,
+      "REPLY",
+      "0"
+    ],
+    [
+      6060.067,
+      "WRITE",
+      "SOURce2:PSKey:STATe?"
+    ],
+    [
+      6060.419,
+      "REPLY",
+      "0"
+    ],
+    [
+      6060.419,
+      "WRITE",
+      "*WAI"
+    ],
+    [
+      6061.272,
+      "WRITE",
+      "SYST:ERR?"
+    ],
+    [
+      6061.624,
+      "REPLY",
+      "0,\"No error\""
+    ],
+    [
+      6061.624,
+      "WRITE",
+      "SOURce2:FREQuency:CONCurrent?"
+    ],
+    [
+      6061.981,
+      "REPLY",
+      "0"
+    ],
+    [
+      6061.981,
+      "WRITE",
+      "*WAI"
+    ],
+    [
+      6062.833,
+      "WRITE",
+      "SYST:ERR?"
+    ],
+    [
+      6063.185,
+      "REPLY",
+      "0,\"No error\""
+    ],
+    [
+      6063.523,
+      "WRITE",
+      "SOURce1:FUNCtion:SHAPe SQU"
+    ],
+    [
+      6063.875,
+      "WRITE",
+      "*WAI"
+    ],
+    [
+      6064.727,
+      "WRITE",
+      "SYST:ERR?"
+    ],
+    [
+      6065.079,
+      "REPLY",
+      "0,\"No error\""
+    ],
+    [
+      6065.08,
+      "WRITE",
+      "SOURce1:FUNCtion:SHAPe?"
+    ],
+    [
+      6065.432,
+      "REPLY",
+      "SQU"
+    ],
+    [
+      6076.617,
+      "OLD_NATIVE",
+      1,
+      "AFG_CONTROL_REV 20261026-channel-parity-r1\nAFG_USB_POLICY command_gap_ms=250 query_delay_ms=100 error_quiet_ms=500 read_timeout_ms=10000; no blind retry\nWRITE: *IDN?\nREPLY: TEKTRONIX,AFG1062,2011130,SCPI:99.0 FV:V1.0.9\nWRITE: OUTPut1:STATe?\nREPLY: 0\nWRITE: OUTPut2:STATe?\nREPLY: 0\nWRITE: SYST:ERR?\nREPLY: 0,\"No error\"\nWRITE: SOURce1:FREQuency:CONCurrent?\nREPLY: 0\nWRITE: SOURce2:FREQuency:CONCurrent?\nREPLY: 0\nWRITE: SYST:ERR?\nREPLY: 0,\"No error\"\nWRITE: SOURce1:AM:STATe?\nREPLY: 0\nWRITE: SOURce1:FM:STATe?\nREPLY: 0\nWRITE: SOURce1:PM:STATe?\nREPLY: 0\nWRITE: SOURce1:FSK:STATe?\nREPLY: 0\nWRITE: SOURce1:PWM:STATe?\nREPLY: 0\nWRITE: SOURce1:BURSt:STATe?\nREPLY: 0\nWRITE: SOURce1:ASKey:STATe?\nREPLY: 0\nWRITE: SOURce1:PSKey:STATe?\nREPLY: 0\nWRITE: SYST:ERR?\nREPLY: 0,\"No error\"\nAFG_MODES_OFF_VERIFIED CH1\nWRITE: OUTPut1:IMPedance INFinity\nWRITE: SOURce1:FREQuency:MODE CW\nWRITE: SOURce1:FUNCtion:SHAPe SIN\nWRITE: SOURce1:VOLTage:LEVel:IMMediate:AMPLitude 0.002Vpp\nWRITE: SOURce1:VOLTage:LEVel:IMMediate:OFFSet 0V\nWRITE: SOURce1:FREQuency:FIXed 1000Hz\nWRITE: SOURce1:VOLTage:LEVel:IMMediate:AMPLitude 2Vpp\nWRITE: SOURce1:VOLTage:LEVel:IMMediate:OFFSet 0V\nWRITE: *WAI\nWRITE: SYST:ERR?\nREPLY: 0,\"No error\"\nWRITE: SOURce1:FUNCtion:SHAPe?\nREPLY: SQU\nWRITE: OUTPut1:STATe OFF\nWRITE: OUTPut1:STATe?\nREPLY: 0\nOUTPUT_OFF_VERIFIED CH1\nFAIL: preserve log; settings may be partially changed. Verify selected channel OFF at panel.\n"
+    ],
+    [
+      6076.953,
+      "WRITE",
+      "*WAI"
+    ],
+    [
+      6077.805,
+      "WRITE",
+      "SYST:ERR?"
+    ],
+    [
+      6078.158,
+      "REPLY",
+      "0,\"No error\""
+    ],
+    [
+      6078.158,
+      "WRITE",
+      "SOURce1:FUNCtion:SHAPe?"
+    ],
+    [
+      6078.51,
+      "REPLY",
+      "SQU"
+    ],
+    [
+      6078.51,
+      "WRITE",
+      "SOURce1:FUNCtion:SHAPe SIN"
+    ],
+    [
+      6078.862,
+      "WRITE",
+      "*WAI"
+    ],
+    [
+      6079.714,
+      "WRITE",
+      "SYST:ERR?"
+    ],
+    [
+      6080.066,
+      "REPLY",
+      "0,\"No error\""
+    ],
+    [
+      6080.067,
+      "WRITE",
+      "SOURce1:FUNCtion:SHAPe?"
+    ],
+    [
+      6080.419,
+      "REPLY",
+      "SIN"
+    ],
+    [
+      6080.419,
+      "WRITE",
+      "SOURce1:FUNCtion SIN"
+    ],
+    [
+      6080.77,
+      "WRITE",
+      "*WAI"
+    ],
+    [
+      6081.626,
+      "WRITE",
+      "SYST:ERR?"
+    ],
+    [
+      6081.978,
+      "REPLY",
+      "0,\"No error\""
+    ],
+    [
+      6081.978,
+      "WRITE",
+      "SOURce1:FUNCtion:SHAPe?"
+    ],
+    [
+      6082.332,
+      "REPLY",
+      "SIN"
+    ],
+    [
+      6082.663,
+      "WRITE",
+      "*IDN?"
+    ],
+    [
+      6083.017,
+      "REPLY",
+      "TEKTRONIX,AFG1062,2011130,SCPI:99.0 FV:V1.0.9"
+    ],
+    [
+      6083.017,
+      "WRITE",
+      "OUTPut1:STATe OFF"
+    ],
+    [
+      6083.369,
+      "WRITE",
+      "OUTPut1:STATe?"
+    ],
+    [
+      6083.721,
+      "REPLY",
+      "0"
+    ],
+    [
+      6083.722,
+      "WRITE",
+      "SOURce1:VOLTage:LEVel:IMMediate:AMPLitude 0.002Vpp"
+    ],
+    [
+      6084.073,
+      "WRITE",
+      "SOURce1:VOLTage:LEVel:IMMediate:OFFSet 0V"
+    ],
+    [
+      6084.425,
+      "WRITE",
+      "SOURce1:FUNCtion SIN"
+    ],
+    [
+      6084.776,
+      "WRITE",
+      "*WAI"
+    ],
+    [
+      6085.628,
+      "WRITE",
+      "SYST:ERR?"
+    ],
+    [
+      6085.981,
+      "REPLY",
+      "0,\"No error\""
+    ],
+    [
+      6085.981,
+      "WRITE",
+      "SOURce1:FREQuency:MODE CW"
+    ],
+    [
+      6086.333,
+      "WRITE",
+      "OUTPut1:IMPedance INFinity"
+    ],
+    [
+      6086.684,
+      "WRITE",
+      "SOURce1:FREQuency:FIXed 1.000000e+03Hz"
+    ],
+    [
+      6087.036,
+      "WRITE",
+      "SOURce1:VOLTage:LEVel:IMMediate:AMPLitude 1.000000e+00Vpp"
+    ],
+    [
+      6087.388,
+      "WRITE",
+      "SOURce1:VOLTage:LEVel:IMMediate:OFFSet 0.000000e+00V"
+    ],
+    [
+      6087.739,
+      "WRITE",
+      "*WAI"
+    ],
+    [
+      6088.591,
+      "WRITE",
+      "SYST:ERR?"
+    ],
+    [
+      6088.944,
+      "REPLY",
+      "0,\"No error\""
+    ],
+    [
+      6088.944,
+      "WRITE",
+      "*IDN?"
+    ],
+    [
+      6089.296,
+      "REPLY",
+      "TEKTRONIX,AFG1062,2011130,SCPI:99.0 FV:V1.0.9"
+    ],
+    [
+      6089.297,
+      "WRITE",
+      "OUTPut1:STATe?"
+    ],
+    [
+      6089.649,
+      "REPLY",
+      "0"
+    ],
+    [
+      6089.649,
+      "WRITE",
+      "OUTPut1:IMPedance?"
+    ],
+    [
+      6090.001,
+      "REPLY",
+      "9.9E+37"
+    ],
+    [
+      6090.002,
+      "WRITE",
+      "SOURce1:FUNCtion:SHAPe?"
+    ],
+    [
+      6090.354,
+      "REPLY",
+      "SIN"
+    ],
+    [
+      6090.354,
+      "WRITE",
+      "SOURce1:FREQuency:MODE?"
+    ],
+    [
+      6090.707,
+      "REPLY",
+      "CW"
+    ],
+    [
+      6090.707,
+      "WRITE",
+      "SOURce1:FREQuency:FIXed?"
+    ],
+    [
+      6091.059,
+      "REPLY",
+      "1.000000e+03"
+    ],
+    [
+      6091.059,
+      "WRITE",
+      "SOURce1:VOLTage:LEVel:IMMediate:AMPLitude?"
+    ],
+    [
+      6091.412,
+      "REPLY",
+      "1.000000e+00"
+    ],
+    [
+      6091.412,
+      "WRITE",
+      "SOURce1:VOLTage:LEVel:IMMediate:OFFSet?"
+    ],
+    [
+      6091.764,
+      "REPLY",
+      "0.000000e+00"
+    ],
+    [
+      6091.764,
+      "WRITE",
+      "*WAI"
+    ],
+    [
+      6092.616,
+      "WRITE",
+      "SYST:ERR?"
+    ],
+    [
+      6092.969,
+      "REPLY",
+      "0,\"No error\""
+    ],
+    [
+      6092.969,
+      "WRITE",
+      "SOURce1:AM:STATe?"
+    ],
+    [
+      6093.322,
+      "REPLY",
+      "0"
+    ],
+    [
+      6093.322,
+      "WRITE",
+      "SOURce1:FM:STATe?"
+    ],
+    [
+      6093.675,
+      "REPLY",
+      "0"
+    ],
+    [
+      6093.675,
+      "WRITE",
+      "SOURce1:PM:STATe?"
+    ],
+    [
+      6094.027,
+      "REPLY",
+      "0"
+    ],
+    [
+      6094.028,
+      "WRITE",
+      "SOURce1:FSK:STATe?"
+    ],
+    [
+      6094.38,
+      "REPLY",
+      "0"
+    ],
+    [
+      6094.38,
+      "WRITE",
+      "SOURce1:PWM:STATe?"
+    ],
+    [
+      6094.732,
+      "REPLY",
+      "0"
+    ],
+    [
+      6094.732,
+      "WRITE",
+      "SOURce1:BURSt:STATe?"
+    ],
+    [
+      6095.085,
+      "REPLY",
+      "0"
+    ],
+    [
+      6095.085,
+      "WRITE",
+      "SOURce1:ASKey:STATe?"
+    ],
+    [
+      6095.437,
+      "REPLY",
+      "0"
+    ],
+    [
+      6095.438,
+      "WRITE",
+      "SOURce1:PSKey:STATe?"
+    ],
+    [
+      6095.79,
+      "REPLY",
+      "0"
+    ],
+    [
+      6095.79,
+      "WRITE",
+      "*WAI"
+    ],
+    [
+      6096.642,
+      "WRITE",
+      "SYST:ERR?"
+    ],
+    [
+      6096.994,
+      "REPLY",
+      "0,\"No error\""
+    ],
+    [
+      6096.995,
+      "WRITE",
+      "SOURce1:FREQuency:CONCurrent?"
+    ],
+    [
+      6097.347,
+      "REPLY",
+      "0"
+    ],
+    [
+      6097.347,
+      "WRITE",
+      "OUTPut2:STATe?"
+    ],
+    [
+      6097.7,
+      "REPLY",
+      "0"
+    ],
+    [
+      6097.7,
+      "WRITE",
+      "OUTPut2:IMPedance?"
+    ],
+    [
+      6098.052,
+      "REPLY",
+      "2000"
+    ],
+    [
+      6098.052,
+      "WRITE",
+      "SOURce2:FUNCtion:SHAPe?"
+    ],
+    [
+      6098.405,
+      "REPLY",
+      "SIN"
+    ],
+    [
+      6098.405,
+      "WRITE",
+      "SOURce2:FREQuency:MODE?"
+    ],
+    [
+      6098.758,
+      "REPLY",
+      "CW"
+    ],
+    [
+      6098.758,
+      "WRITE",
+      "SOURce2:FREQuency:FIXed?"
+    ],
+    [
+      6099.111,
+      "REPLY",
+      "1.000000e+05"
+    ],
+    [
+      6099.111,
+      "WRITE",
+      "SOURce2:VOLTage:LEVel:IMMediate:AMPLitude?"
+    ],
+    [
+      6099.463,
+      "REPLY",
+      "4.000000e+00"
+    ],
+    [
+      6099.463,
+      "WRITE",
+      "SOURce2:VOLTage:LEVel:IMMediate:OFFSet?"
+    ],
+    [
+      6099.816,
+      "REPLY",
+      "0.000000e+00"
+    ],
+    [
+      6099.816,
+      "WRITE",
+      "*WAI"
+    ],
+    [
+      6100.668,
+      "WRITE",
+      "SYST:ERR?"
+    ],
+    [
+      6101.02,
+      "REPLY",
+      "0,\"No error\""
+    ],
+    [
+      6101.02,
+      "WRITE",
+      "SOURce2:AM:STATe?"
+    ],
+    [
+      6101.373,
+      "REPLY",
+      "0"
+    ],
+    [
+      6101.373,
+      "WRITE",
+      "SOURce2:FM:STATe?"
+    ],
+    [
+      6101.726,
+      "REPLY",
+      "0"
+    ],
+    [
+      6101.726,
+      "WRITE",
+      "SOURce2:PM:STATe?"
+    ],
+    [
+      6102.079,
+      "REPLY",
+      "0"
+    ],
+    [
+      6102.079,
+      "WRITE",
+      "SOURce2:FSK:STATe?"
+    ],
+    [
+      6102.431,
+      "REPLY",
+      "0"
+    ],
+    [
+      6102.431,
+      "WRITE",
+      "SOURce2:PWM:STATe?"
+    ],
+    [
+      6102.785,
+      "REPLY",
+      "0"
+    ],
+    [
+      6102.785,
+      "WRITE",
+      "SOURce2:BURSt:STATe?"
+    ],
+    [
+      6103.138,
+      "REPLY",
+      "0"
+    ],
+    [
+      6103.139,
+      "WRITE",
+      "SOURce2:ASKey:STATe?"
+    ],
+    [
+      6103.491,
+      "REPLY",
+      "0"
+    ],
+    [
+      6103.491,
+      "WRITE",
+      "SOURce2:PSKey:STATe?"
+    ],
+    [
+      6103.843,
+      "REPLY",
+      "0"
+    ],
+    [
+      6103.843,
+      "WRITE",
+      "*WAI"
+    ],
+    [
+      6104.695,
+      "WRITE",
+      "SYST:ERR?"
+    ],
+    [
+      6105.048,
+      "REPLY",
+      "0,\"No error\""
+    ],
+    [
+      6105.048,
+      "WRITE",
+      "SOURce2:FREQuency:CONCurrent?"
+    ],
+    [
+      6105.4,
+      "REPLY",
+      "0"
+    ],
+    [
+      6105.4,
+      "WRITE",
+      "*WAI"
+    ],
+    [
+      6106.252,
+      "WRITE",
+      "SYST:ERR?"
+    ],
+    [
+      6106.605,
+      "REPLY",
+      "0,\"No error\""
+    ]
+  ],
+  "before": {
+    "id": "TEKTRONIX,AFG1062,2011130,SCPI:99.0 FV:V1.0.9",
+    "OUTPut1:STATe": "0",
+    "OUTPut1:IMPedance": "9.9E+37",
+    "SOURce1:FUNCtion:SHAPe": "SIN",
+    "SOURce1:FREQuency:MODE": "CW",
+    "SOURce1:FREQuency:FIXed": "1.000000e+03",
+    "SOURce1:VOLTage:LEVel:IMMediate:AMPLitude": "1.000000e+00",
+    "SOURce1:VOLTage:LEVel:IMMediate:OFFSet": "0.000000e+00",
+    "SOURce1:AM:STATe": "0",
+    "SOURce1:FM:STATe": "0",
+    "SOURce1:PM:STATe": "0",
+    "SOURce1:FSK:STATe": "0",
+    "SOURce1:PWM:STATe": "0",
+    "SOURce1:BURSt:STATe": "0",
+    "SOURce1:ASKey:STATe": "0",
+    "SOURce1:PSKey:STATe": "0",
+    "SOURce1:FREQuency:CONCurrent": "0",
+    "OUTPut2:STATe": "0",
+    "OUTPut2:IMPedance": "2000",
+    "SOURce2:FUNCtion:SHAPe": "SIN",
+    "SOURce2:FREQuency:MODE": "CW",
+    "SOURce2:FREQuency:FIXed": "1.000000e+05",
+    "SOURce2:VOLTage:LEVel:IMMediate:AMPLitude": "4.000000e+00",
+    "SOURce2:VOLTage:LEVel:IMMediate:OFFSet": "0.000000e+00",
+    "SOURce2:AM:STATe": "0",
+    "SOURce2:FM:STATe": "0",
+    "SOURce2:PM:STATe": "0",
+    "SOURce2:FSK:STATe": "0",
+    "SOURce2:PWM:STATe": "0",
+    "SOURce2:BURSt:STATe": "0",
+    "SOURce2:ASKey:STATe": "0",
+    "SOURce2:PSKey:STATe": "0",
+    "SOURce2:FREQuency:CONCurrent": "0"
+  },
+  "runs": [
+    {
+      "requested_start": "SQU",
+      "start": "SQU",
+      "returncode": 1,
+      "log": "AFG_CONTROL_REV 20261026-channel-parity-r1\nAFG_USB_POLICY command_gap_ms=250 query_delay_ms=100 error_quiet_ms=500 read_timeout_ms=10000; no blind retry\nWRITE: *IDN?\nREPLY: TEKTRONIX,AFG1062,2011130,SCPI:99.0 FV:V1.0.9\nWRITE: OUTPut1:STATe?\nREPLY: 0\nWRITE: OUTPut2:STATe?\nREPLY: 0\nWRITE: SYST:ERR?\nREPLY: 0,\"No error\"\nWRITE: SOURce1:FREQuency:CONCurrent?\nREPLY: 0\nWRITE: SOURce2:FREQuency:CONCurrent?\nREPLY: 0\nWRITE: SYST:ERR?\nREPLY: 0,\"No error\"\nWRITE: SOURce1:AM:STATe?\nREPLY: 0\nWRITE: SOURce1:FM:STATe?\nREPLY: 0\nWRITE: SOURce1:PM:STATe?\nREPLY: 0\nWRITE: SOURce1:FSK:STATe?\nREPLY: 0\nWRITE: SOURce1:PWM:STATe?\nREPLY: 0\nWRITE: SOURce1:BURSt:STATe?\nREPLY: 0\nWRITE: SOURce1:ASKey:STATe?\nREPLY: 0\nWRITE: SOURce1:PSKey:STATe?\nREPLY: 0\nWRITE: SYST:ERR?\nREPLY: 0,\"No error\"\nAFG_MODES_OFF_VERIFIED CH1\nWRITE: OUTPut1:IMPedance INFinity\nWRITE: SOURce1:FREQuency:MODE CW\nWRITE: SOURce1:FUNCtion:SHAPe SIN\nWRITE: SOURce1:VOLTage:LEVel:IMMediate:AMPLitude 0.002Vpp\nWRITE: SOURce1:VOLTage:LEVel:IMMediate:OFFSet 0V\nWRITE: SOURce1:FREQuency:FIXed 1000Hz\nWRITE: SOURce1:VOLTage:LEVel:IMMediate:AMPLitude 2Vpp\nWRITE: SOURce1:VOLTage:LEVel:IMMediate:OFFSet 0V\nWRITE: *WAI\nWRITE: SYST:ERR?\nREPLY: 0,\"No error\"\nWRITE: SOURce1:FUNCtion:SHAPe?\nREPLY: SQU\nWRITE: OUTPut1:STATe OFF\nWRITE: OUTPut1:STATe?\nREPLY: 0\nOUTPUT_OFF_VERIFIED CH1\nFAIL: preserve log; settings may be partially changed. Verify selected channel OFF at panel.\n",
+      "after_shape": "SQU",
+      "long_sine": "SIN",
+      "short_sine": "SIN"
+    }
+  ],
+  "after": {
+    "id": "TEKTRONIX,AFG1062,2011130,SCPI:99.0 FV:V1.0.9",
+    "OUTPut1:STATe": "0",
+    "OUTPut1:IMPedance": "9.9E+37",
+    "SOURce1:FUNCtion:SHAPe": "SIN",
+    "SOURce1:FREQuency:MODE": "CW",
+    "SOURce1:FREQuency:FIXed": "1.000000e+03",
+    "SOURce1:VOLTage:LEVel:IMMediate:AMPLitude": "1.000000e+00",
+    "SOURce1:VOLTage:LEVel:IMMediate:OFFSet": "0.000000e+00",
+    "SOURce1:AM:STATe": "0",
+    "SOURce1:FM:STATe": "0",
+    "SOURce1:PM:STATe": "0",
+    "SOURce1:FSK:STATe": "0",
+    "SOURce1:PWM:STATe": "0",
+    "SOURce1:BURSt:STATe": "0",
+    "SOURce1:ASKey:STATe": "0",
+    "SOURce1:PSKey:STATe": "0",
+    "SOURce1:FREQuency:CONCurrent": "0",
+    "OUTPut2:STATe": "0",
+    "OUTPut2:IMPedance": "2000",
+    "SOURce2:FUNCtion:SHAPe": "SIN",
+    "SOURce2:FREQuency:MODE": "CW",
+    "SOURce2:FREQuency:FIXed": "1.000000e+05",
+    "SOURce2:VOLTage:LEVel:IMMediate:AMPLitude": "4.000000e+00",
+    "SOURce2:VOLTage:LEVel:IMMediate:OFFSet": "0.000000e+00",
+    "SOURce2:AM:STATe": "0",
+    "SOURce2:FM:STATe": "0",
+    "SOURce2:PM:STATe": "0",
+    "SOURce2:FSK:STATe": "0",
+    "SOURce2:PWM:STATe": "0",
+    "SOURce2:BURSt:STATe": "0",
+    "SOURce2:ASKey:STATe": "0",
+    "SOURce2:PSKey:STATe": "0",
+    "SOURce2:FREQuency:CONCurrent": "0"
+  },
+  "restored": true,
+  "display": "active"
+}

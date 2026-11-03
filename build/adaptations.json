@@ -1,0 +1,36 @@
+{
+  "basis": "v20261101_09",
+  "immutable_companions": [
+    "skill/ (all files byte-identical)",
+    "report/design_report.pdf (byte-identical)"
+  ],
+  "adapted_source_files": [
+    "src/voice/source/v8_2/prepare_exact.py",
+    "src/voice_app/hy_asr.py",
+    "src/voice_app/cloud.py",
+    "src/voice_app/model_runtime.py",
+    "src/pc-background-launcher/start-background.ps1",
+    "src/pc-relay/source/relay/board_relay.py",
+    "sim/verify_evaluation_data.py",
+    "sim/test_relay_runner.py",
+    "sim/test_relay_startup.ps1",
+    "build/prepare_model_workspace.py"
+  ],
+  "new_entrypoints": [
+    "src/voice_app/main.py",
+    "src/voice_app/speech_prompt.py",
+    "sim/test_voice_api.py"
+  ],
+  "changes": [
+    "Voice-only model runtime and independent CLI; full UI dependencies removed",
+    "LLM transport retained; public voice prompt excludes teaching/vision workflow and execution",
+    "Board HTTP/UART relay retains DS/Hy endpoints without full-UI VoiceBridge",
+    "Build/evaluation layout adapted to voice-only source; model weight overwrite avoided",
+    "PowerShell UTF-8 BOM retained for Windows PowerShell 5 compatibility",
+    "Full original Skill and design report restored unchanged per user instruction"
+  ],
+  "validation_limits": [
+    "No hardware/COM15/cloud API accessed",
+    "No Linux cross compilation or model retraining run"
+  ]
+}

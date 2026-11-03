@@ -1,0 +1,11 @@
+Failed to find real location of D:\anaconda3\python.exe
+Gateway exit: Board not ready
+RECONNECT waiting for board connection
+.RECONNECT waiting for board connection
+RECONNECT waiting for board connection
+.RECONNECT waiting for board connection
+..........
+----------------------------------------------------------------------
+Ran 12 tests in 0.021s
+
+OK

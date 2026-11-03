@@ -1,0 +1,64 @@
+{
+  "scope": "Existing synthetic regression replay; includes a post-replay runtime policy fix, not a fresh independent accuracy benchmark.",
+  "board_runtime_verified": false,
+  "weights_changed": false,
+  "partitions": {
+    "dev": {
+      "samples": 412,
+      "same_audio_transcript_mismatches": 0,
+      "same_audio_decision_mismatches": 0,
+      "vad_split_or_missing": 0,
+      "vad_command_regressions": 0,
+      "vad_asr_decision_changes": 0,
+      "vad_transcript_changes": 1,
+      "original_asr_errors": 12,
+      "original_characters": 4281,
+      "details": [],
+      "baseline_native_CER": 0.002803083391730904,
+      "rejected_unguarded_fast_route_regressions": 0,
+      "negative_samples": 47,
+      "vad_correct_rejection_regressions": 0
+    },
+    "test": {
+      "samples": 415,
+      "same_audio_transcript_mismatches": 0,
+      "same_audio_decision_mismatches": 0,
+      "vad_split_or_missing": 0,
+      "vad_command_regressions": 0,
+      "vad_asr_decision_changes": 0,
+      "vad_transcript_changes": 3,
+      "original_asr_errors": 3,
+      "original_characters": 4656,
+      "details": [],
+      "baseline_native_CER": 0.0006443298969072165,
+      "rejected_unguarded_fast_route_regressions": 50,
+      "negative_samples": 48,
+      "vad_correct_rejection_regressions": 0
+    }
+  },
+  "frontend_bitwise_samples": 827,
+  "frontend_bitwise_mismatches": 0,
+  "ready": {
+    "type": "ready",
+    "model_load_ms": 266.85
+  },
+  "host_benchmark": {
+    "original_cold_process": {
+      "n": 5,
+      "median_ms": 406.9038180168718,
+      "p95_ms": 422.30793402995914
+    },
+    "resident_warm": {
+      "n": 5,
+      "median_ms": 124.626,
+      "p95_ms": 127.59
+    },
+    "CPU": "company workstation x86_64; not Cortex-A9 latency",
+    "ORT_threads": 2
+  },
+  "vad_default_gate_passed": true,
+  "same_audio_regression_passed": true,
+  "complete": true,
+  "vad_policy": "Endpointed live audio uses unchanged full V8 ASR and exact whole command phrases from training labels only. Original fast cascade retained for fixed-window and file modes.",
+  "guard_selected_after_historical_test_replay": true
+}

@@ -1,0 +1,61 @@
+{
+  "scope": "Historical synthetic replay and workstation/QEMU emulation; no real board or new microphone accuracy measurement.",
+  "board_runtime_verified": false,
+  "weights_changed": false,
+  "host_warmup": {
+    "asr_service_pid": 4166717,
+    "busy": false,
+    "completed_requests": 0,
+    "microphone_opened_by_service": false,
+    "model_load_count": 1,
+    "model_load_ms": 235.149898,
+    "ready": true,
+    "rss_kib": 113804,
+    "state": "ready",
+    "swap_kib": 0,
+    "type": "voice_service_status",
+    "version": "8.2",
+    "warmup_wait_ms": 301.738453
+  },
+  "historical_replay": {
+    "audio_count": 827,
+    "inferences": 1654,
+    "mismatch_count": 0,
+    "details": [],
+    "same_service_pid": 4166717,
+    "model_load_count": 1,
+    "independent_accuracy_benchmark": false
+  },
+  "separate_client_reuse": {
+    "pids": [
+      4166717,
+      4166717,
+      4166717
+    ],
+    "loads": [
+      1,
+      1,
+      1
+    ],
+    "startup_wait_ms": [
+      0.181736,
+      0.171311,
+      0.138128
+    ],
+    "passed": true
+  },
+  "host_after_replay": {
+    "asr_service_pid": 4166717,
+    "busy": false,
+    "completed_requests": 1657,
+    "microphone_opened_by_service": false,
+    "model_load_count": 1,
+    "model_load_ms": 235.149898,
+    "ready": true,
+    "rss_kib": 167260,
+    "state": "ready",
+    "swap_kib": 0,
+    "type": "voice_service_status",
+    "version": "8.2"
+  }
+}

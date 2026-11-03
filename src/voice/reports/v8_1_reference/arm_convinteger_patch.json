@@ -1,0 +1,8 @@
+{
+  "patch": "ort_convinteger_signed.patch",
+  "original_sha256": "dd12b6702fbafd2c8d001cf19b07253ec1328cde6917a615587caa79a214c92c",
+  "patched_sha256": "4e735821544360b830e450613ce1c80bfe3fd910826ac2967c5e96cbc7cf2dc2",
+  "weights_changed": false,
+  "arithmetic": "(w_s + 128) - (z_s + 128) == w_s - z_s; uint8 activation and exact int32 accumulation retained",
+  "reason": "ORT 1.22 CPU registers ConvInteger U8xU8 only; the V8 model has signed convolution filters"
+}

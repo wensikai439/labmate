@@ -1,0 +1,82 @@
+{
+  "method": "Input integrity and recomputation of saved per-sample outputs",
+  "checks": [
+    {
+      "name": "input_sha256",
+      "passed": true,
+      "files": 837,
+      "failures": []
+    },
+    {
+      "name": "voice_sample_ids",
+      "passed": true
+    },
+    {
+      "name": "voice_partitions",
+      "passed": true
+    },
+    {
+      "name": "voice_sample_format",
+      "passed": true
+    },
+    {
+      "name": "dev_record_ids",
+      "passed": true
+    },
+    {
+      "name": "dev_cer",
+      "passed": true,
+      "errors": 12,
+      "characters": 4281,
+      "cer": 0.002803083391730904
+    },
+    {
+      "name": "dev_vad_transcripts",
+      "passed": true,
+      "changed": 1
+    },
+    {
+      "name": "dev_resident_outputs",
+      "passed": true
+    },
+    {
+      "name": "test_record_ids",
+      "passed": true
+    },
+    {
+      "name": "test_cer",
+      "passed": true,
+      "errors": 3,
+      "characters": 4656,
+      "cer": 0.0006443298969072165
+    },
+    {
+      "name": "test_vad_transcripts",
+      "passed": true,
+      "changed": 3
+    },
+    {
+      "name": "test_resident_outputs",
+      "passed": true
+    },
+    {
+      "name": "service_coverage",
+      "passed": true
+    },
+    {
+      "name": "service_outputs",
+      "passed": true,
+      "inferences": 1654,
+      "differences": []
+    },
+    {
+      "name": "service_model_reuse",
+      "passed": true
+    },
+    {
+      "name": "benchmark_audio",
+      "passed": true
+    }
+  ],
+  "passed": true
+}

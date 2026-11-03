@@ -1,0 +1,63 @@
+{
+  "model": "SmartBox_V8_WenetSpeech_U2pp_Conformer_finetuned",
+  "onnx_metadata": {
+    "chunk_size": "-1",
+    "left_chunks": "-1",
+    "output_size": "512",
+    "num_blocks": "12",
+    "cnn_module_kernel": "15",
+    "head": "8",
+    "feature_size": "80",
+    "vocab_size": "4240",
+    "encoder": "conformer",
+    "decoder": "bitransformer",
+    "subsampling_rate": "4",
+    "right_context": "6",
+    "pretrained_base": "20220506_u2pp_conformer_exp (WenetSpeech, ~10000 h)",
+    "finetune_data": "SmartBox domain synthetic (16,156 clips / 10.35 h)"
+  },
+  "graph_contract": {
+    "encoder_inputs": ["chunk"],
+    "encoder_input_shape": [1, "T", 80],
+    "encoder_outputs": ["output"],
+    "encoder_output_shape": [1, "T_div_4", 512],
+    "ctc_inputs": ["hidden"],
+    "ctc_outputs": ["probs"],
+    "ctc_output_shape": [1, "T_div_4", 4240],
+    "ctc_output_values": "log_softmax probabilities",
+    "note": "单输入离线图：不声明 att_cache / cnn_cache / att_mask / offset，板端二进制不会构造与其编译期常量形状不符的张量。",
+    "vocab_remap": "教师 5538 字符词表按字符身份映射回板端 4240 词表；4197 个直接对应，43 个落在 <unk>。",
+    "board_binary_compatibility": "与 V6.1 的 smartbox_asr_armv7 / smartbox_cascade_armv7 二进制兼容，无需重编译。"
+  },
+  "frontend": {
+    "sample_rate": 16000,
+    "window_samples": 400,
+    "hop_samples": 160,
+    "fft_size": 512,
+    "mel_bins": 80,
+    "pcm_scale": 32768,
+    "dither": 0.0,
+    "remove_dc_offset": true,
+    "preemphasis": 0.97,
+    "window": "povey",
+    "snip_edges": true,
+    "log_floor": 1.1920928955078125e-07
+  },
+  "constants_source": "torchaudio.compliance.kaldi; 与 V6.1 完全相同，未改动",
+  "cmvn": "global_cmvn 已内嵌在 encoder.quant.onnx 中",
+  "ctc_decoder": {
+    "beam_size": 4,
+    "context_weight": 1.0,
+    "topk": 10,
+    "hotwords": ["RMS", "VPP", "有效值", "峰峰值", "均方根", "峰到峰"]
+  },
+  "verification": {
+    "quantised_int8_dev_120_clips": {
+      "cer": 0.0024,
+      "exact_match": 0.975,
+      "decoder": "greedy_ctc"
+    },
+    "board_runtime_verified": false,
+    "real_microphone_verified": false
+  }
+}

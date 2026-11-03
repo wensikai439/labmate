@@ -1,0 +1,10 @@
+{
+  "source_manifest_sha256": "8230caafba339d55731a0829efd1584d0a3c0dee96a677eef618fc9b26e31755",
+  "partitions_used": [
+    "train"
+  ],
+  "dev_test_rows_used": false,
+  "exact_whole_phrases": 523,
+  "header_sha256": "43e696e757e8fd52d8529624ec91b93f9837e3d8b4cd36eb48a0bf5d089e31f1",
+  "numeric_commands_excluded": true
+}

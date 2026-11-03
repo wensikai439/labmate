@@ -1,0 +1,12 @@
+__pycache__/
+*.py[cod]
+.venv/
+.env
+*.key
+logs/
+.stop-cloud
+src/voice/run/
+evaluation-work/
+model-build/
+
+*.dpapi

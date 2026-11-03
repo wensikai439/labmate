@@ -1,0 +1,22 @@
+{
+  "native_tests": 10,
+  "native_result": "PASS",
+  "control_error_tests": 5,
+  "control_result": "PASS",
+  "ui_result": "PASS",
+  "ui_checks": [
+    "immediate readback",
+    "green highlights",
+    "whole-round clocks",
+    "stale recovery",
+    "vision event deduplication",
+    "existing dialogs",
+    "no page errors"
+  ],
+  "ds_readiness_tests": 10,
+  "ds_readiness_result": "PASS",
+  "hardware_tests_pending": false,
+  "hardware_candidate_cases": 3,
+  "api_control_cases": 2,
+  "restoration_verified": true
+}

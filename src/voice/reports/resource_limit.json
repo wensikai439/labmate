@@ -1,0 +1,9 @@
+{
+  "cpu_logical": 12,
+  "cpu_max": "500000 100000",
+  "memory_max_bytes": 3221225472,
+  "memory_peak_bytes": 778784768,
+  "memory_events": "low 0\nhigh 0\nmax 0\noom 0\noom_kill 0\noom_group_kill 0\nsock_throttled 0\n",
+  "gpu_used": false,
+  "scope": "All heavy work for this audio task used qiansai.slice; CPU quota 5 cores / 12 logical = 41.67%; RAM cap 3 GiB; no GPU jobs."
+}

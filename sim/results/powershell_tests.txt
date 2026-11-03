@@ -1,0 +1,1 @@
+PASS: 11 relay readiness cases and PowerShell syntax; no hardware accessed.

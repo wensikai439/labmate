@@ -1,0 +1,18 @@
+{
+  "models/asr/ctc.quant.onnx": "699e8790c5edb2c48488609357332b911e3f2bbc39ac5188138f485de21a6826",
+  "models/asr/decoder.conf": "95995c74307556991a730112ce8130be2586d5dde4e37198b9da480c84d41bf4",
+  "models/asr/encoder.quant.onnx": "cce0f373f6374d827bb2da03d2c6f299e735870e124a1c5418770495f112b62a",
+  "models/asr/frontend_constants.npz": "088edb4b1b763594a71c4707c78c616f1380ce3264345a62cf9ba3c9535f4b7d",
+  "models/asr/quantised_verification.json": "05594e2c4be9695207a5b8efeedc3abb99e5d38b9c575e3a01ae0f7212adf8eb",
+  "models/asr/runtime.json": "12560da88f1fd1c385c4438487a68e11bf7349b407945c0a6d44fe550c9617f1",
+  "models/asr/units.txt": "85e5641ffcdbdbf1bdca1100030e9684c63fd374c21a9eeb8a3f89ac3fbb465a",
+  "models/intent/calibration_frozen.json": "9ad83da71c75b520a5c2cd8f921e8b6e33417ddc5d79b52e7cfc5ed1d4a2e475",
+  "models/intent/frontend_constants.npz": "c1e8f5dd050c7b189e9ab91dde38cd18b88503675c02ae9d46aa2a613af4480c",
+  "models/intent/integer_kernel.json": "b6988aa1fbabb64b2fd40708f6f17c1c40cc1a9182bd2328b9572627974284eb",
+  "models/intent/model_interface.json": "2dcaeeadd0565295199816ad506dc39bf9ea50409d3ac0b5bd5cadb323023ff8",
+  "models/intent/smartbox_intent.integer.finn.onnx": "86aeb88653292b4038edbf4f96f635943c925e586534ca7d521aa991346fd20e",
+  "models/intent/smartbox_intent.qcdq.onnx": "7ff745f71a946531465eef56131887c965f5dc5553db5a3056737d1cc7f8780b",
+  "models/intent/smartbox_intent.qcdq.onnx.data": "5cdeddfbb35969bc2922457685da3cbf2b24a3414070bc89ad714243da03de3f",
+  "models/intent/smartbox_intent.qonnx.onnx": "b9901a7328d3f9dfad473b5e3cef667db2f0298b2528cc9e1015605627cabea4",
+  "models/intent/smartbox_intent.qonnx.onnx.data": "5cdeddfbb35969bc2922457685da3cbf2b24a3414070bc89ad714243da03de3f"
+}

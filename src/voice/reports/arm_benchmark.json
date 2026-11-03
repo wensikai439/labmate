@@ -1,0 +1,530 @@
+{
+  "scope": "ARMv7 native binaries emulated on company x86 workstation using qemu-arm-static -cpu cortex-a9; these times are not ZedBoard measurements.",
+  "board_runtime_verified": false,
+  "runs": [
+    {
+      "version": "v8_1_original",
+      "audio": "v2p-aa2e3761b1f67db7--v2voice-00",
+      "duration_s": 1.52,
+      "load_ms": 1881.77,
+      "results": [
+        {
+          "transcript": "读取波形频率",
+          "decoder": "offline_ctc_context_prefix",
+          "backend": "PS_CPU_ONNX_INT8_resident",
+          "intent_proposal": "CMD_MEASURE_FREQ",
+          "frequency_hz": null,
+          "confirmation_required": true,
+          "instrument_control_executed": false,
+          "parser": "constrained_zh_rules_v6r2_native",
+          "reason": "single_supported_command_proposal",
+          "board_runtime_verified": false,
+          "timing_ms": {
+            "frontend": 28.1865,
+            "encoder": 4016.16,
+            "ctc_decode": 100.355,
+            "total": 4145.6
+          },
+          "process_peak_rss_kib": 174752
+        },
+        {
+          "transcript": "读取波形频率",
+          "decoder": "offline_ctc_context_prefix",
+          "backend": "PS_CPU_ONNX_INT8_resident",
+          "intent_proposal": "CMD_MEASURE_FREQ",
+          "frequency_hz": null,
+          "confirmation_required": true,
+          "instrument_control_executed": false,
+          "parser": "constrained_zh_rules_v6r2_native",
+          "reason": "single_supported_command_proposal",
+          "board_runtime_verified": false,
+          "timing_ms": {
+            "frontend": 25.7988,
+            "encoder": 3960.5,
+            "ctc_decode": 82.5847,
+            "total": 4069
+          },
+          "process_peak_rss_kib": 175900
+        },
+        {
+          "transcript": "读取波形频率",
+          "decoder": "offline_ctc_context_prefix",
+          "backend": "PS_CPU_ONNX_INT8_resident",
+          "intent_proposal": "CMD_MEASURE_FREQ",
+          "frequency_hz": null,
+          "confirmation_required": true,
+          "instrument_control_executed": false,
+          "parser": "constrained_zh_rules_v6r2_native",
+          "reason": "single_supported_command_proposal",
+          "board_runtime_verified": false,
+          "timing_ms": {
+            "frontend": 26.8844,
+            "encoder": 4074.95,
+            "ctc_decode": 81.225,
+            "total": 4183.12
+          },
+          "process_peak_rss_kib": 176040
+        }
+      ],
+      "median_total_ms": 4145.6
+    },
+    {
+      "version": "v8_1_original",
+      "audio": "v2p-2bc4f0e936dd481c--v2voice-00",
+      "duration_s": 2.48,
+      "load_ms": 1881.77,
+      "results": [
+        {
+          "transcript": "请查询信号发生器的型号",
+          "decoder": "offline_ctc_context_prefix",
+          "backend": "PS_CPU_ONNX_INT8_resident",
+          "intent_proposal": "CMD_IDENTIFY_INSTRUMENT",
+          "frequency_hz": null,
+          "confirmation_required": true,
+          "instrument_control_executed": false,
+          "parser": "constrained_zh_rules_v6r2_native",
+          "reason": "single_supported_command_proposal",
+          "board_runtime_verified": false,
+          "timing_ms": {
+            "frontend": 42.7431,
+            "encoder": 6448.91,
+            "ctc_decode": 155.942,
+            "total": 6647.66
+          },
+          "process_peak_rss_kib": 183176
+        },
+        {
+          "transcript": "请查询信号发生器的型号",
+          "decoder": "offline_ctc_context_prefix",
+          "backend": "PS_CPU_ONNX_INT8_resident",
+          "intent_proposal": "CMD_IDENTIFY_INSTRUMENT",
+          "frequency_hz": null,
+          "confirmation_required": true,
+          "instrument_control_executed": false,
+          "parser": "constrained_zh_rules_v6r2_native",
+          "reason": "single_supported_command_proposal",
+          "board_runtime_verified": false,
+          "timing_ms": {
+            "frontend": 47.4642,
+            "encoder": 7249.65,
+            "ctc_decode": 151.268,
+            "total": 7448.46
+          },
+          "process_peak_rss_kib": 183360
+        },
+        {
+          "transcript": "请查询信号发生器的型号",
+          "decoder": "offline_ctc_context_prefix",
+          "backend": "PS_CPU_ONNX_INT8_resident",
+          "intent_proposal": "CMD_IDENTIFY_INSTRUMENT",
+          "frequency_hz": null,
+          "confirmation_required": true,
+          "instrument_control_executed": false,
+          "parser": "constrained_zh_rules_v6r2_native",
+          "reason": "single_supported_command_proposal",
+          "board_runtime_verified": false,
+          "timing_ms": {
+            "frontend": 42.7933,
+            "encoder": 6514.78,
+            "ctc_decode": 135.985,
+            "total": 6693.62
+          },
+          "process_peak_rss_kib": 183360
+        }
+      ],
+      "median_total_ms": 6693.62
+    },
+    {
+      "version": "v8_1_original",
+      "audio": "v2p-bbd5fd87d385d623--v2voice-11",
+      "duration_s": 4.0,
+      "load_ms": 1881.77,
+      "results": [
+        {
+          "transcript": "嗯老师刚才讲了峰峰值的含义",
+          "decoder": "offline_ctc_context_prefix",
+          "backend": "PS_CPU_ONNX_INT8_resident",
+          "intent_proposal": "UNMATCHED",
+          "frequency_hz": null,
+          "confirmation_required": true,
+          "instrument_control_executed": false,
+          "parser": "constrained_zh_rules_v6r2_native",
+          "reason": "negative_question_or_reported_command_requires_review",
+          "board_runtime_verified": false,
+          "timing_ms": {
+            "frontend": 72.367,
+            "encoder": 10433.9,
+            "ctc_decode": 250.183,
+            "total": 10756.5
+          },
+          "process_peak_rss_kib": 195016
+        },
+        {
+          "transcript": "嗯老师刚才讲了峰峰值的含义",
+          "decoder": "offline_ctc_context_prefix",
+          "backend": "PS_CPU_ONNX_INT8_resident",
+          "intent_proposal": "UNMATCHED",
+          "frequency_hz": null,
+          "confirmation_required": true,
+          "instrument_control_executed": false,
+          "parser": "constrained_zh_rules_v6r2_native",
+          "reason": "negative_question_or_reported_command_requires_review",
+          "board_runtime_verified": false,
+          "timing_ms": {
+            "frontend": 68.0353,
+            "encoder": 10982.5,
+            "ctc_decode": 233.205,
+            "total": 11283.8
+          },
+          "process_peak_rss_kib": 195216
+        },
+        {
+          "transcript": "嗯老师刚才讲了峰峰值的含义",
+          "decoder": "offline_ctc_context_prefix",
+          "backend": "PS_CPU_ONNX_INT8_resident",
+          "intent_proposal": "UNMATCHED",
+          "frequency_hz": null,
+          "confirmation_required": true,
+          "instrument_control_executed": false,
+          "parser": "constrained_zh_rules_v6r2_native",
+          "reason": "negative_question_or_reported_command_requires_review",
+          "board_runtime_verified": false,
+          "timing_ms": {
+            "frontend": 68.2607,
+            "encoder": 11177.2,
+            "ctc_decode": 241.196,
+            "total": 11486.7
+          },
+          "process_peak_rss_kib": 195348
+        }
+      ],
+      "median_total_ms": 11283.8
+    },
+    {
+      "version": "v8_2_external_patched",
+      "audio": "v2p-aa2e3761b1f67db7--v2voice-00",
+      "duration_s": 1.52,
+      "load_ms": 1748.914213,
+      "results": [
+        {
+          "asr_service_pid": 4168166,
+          "backend": "PS_CPU_ONNX_INT8_resident",
+          "board_runtime_verified": false,
+          "confirmation_required": true,
+          "decoder": "offline_ctc_context_prefix",
+          "frequency_hz": null,
+          "instrument_control_executed": false,
+          "intent_proposal": "CMD_MEASURE_FREQ",
+          "memory": {
+            "process_rss_kib": 155060,
+            "process_swap_kib": 0,
+            "system_available_kib": 4780968
+          },
+          "model_load_count": 1,
+          "parser": "constrained_zh_rules_v6r2_native",
+          "process_peak_rss_kib": 154436,
+          "reason": "single_supported_command_proposal",
+          "service_model_load_ms": 1748.914213,
+          "service_model_reused": true,
+          "service_queue_wait_ms": 0.0,
+          "service_startup_wait_ms": 4.385989,
+          "timing_ms": {
+            "ctc_decode": 102.717,
+            "encoder": 4043.18,
+            "frontend": 28.5182,
+            "total": 4180.85
+          },
+          "transcript": "读取波形频率"
+        },
+        {
+          "asr_service_pid": 4168166,
+          "backend": "PS_CPU_ONNX_INT8_resident",
+          "board_runtime_verified": false,
+          "confirmation_required": true,
+          "decoder": "offline_ctc_context_prefix",
+          "frequency_hz": null,
+          "instrument_control_executed": false,
+          "intent_proposal": "CMD_MEASURE_FREQ",
+          "memory": {
+            "process_rss_kib": 155436,
+            "process_swap_kib": 0,
+            "system_available_kib": 4715852
+          },
+          "model_load_count": 1,
+          "parser": "constrained_zh_rules_v6r2_native",
+          "process_peak_rss_kib": 165860,
+          "reason": "single_supported_command_proposal",
+          "service_model_load_ms": 1748.914213,
+          "service_model_reused": true,
+          "service_queue_wait_ms": 0.0,
+          "service_startup_wait_ms": 0.439109,
+          "timing_ms": {
+            "ctc_decode": 81.2075,
+            "encoder": 3894.63,
+            "frontend": 27.3364,
+            "total": 4003.65
+          },
+          "transcript": "读取波形频率"
+        },
+        {
+          "asr_service_pid": 4168166,
+          "backend": "PS_CPU_ONNX_INT8_resident",
+          "board_runtime_verified": false,
+          "confirmation_required": true,
+          "decoder": "offline_ctc_context_prefix",
+          "frequency_hz": null,
+          "instrument_control_executed": false,
+          "intent_proposal": "CMD_MEASURE_FREQ",
+          "memory": {
+            "process_rss_kib": 155436,
+            "process_swap_kib": 0,
+            "system_available_kib": 4587704
+          },
+          "model_load_count": 1,
+          "parser": "constrained_zh_rules_v6r2_native",
+          "process_peak_rss_kib": 166212,
+          "reason": "single_supported_command_proposal",
+          "service_model_load_ms": 1748.914213,
+          "service_model_reused": true,
+          "service_queue_wait_ms": 0.0,
+          "service_startup_wait_ms": 0.41313,
+          "timing_ms": {
+            "ctc_decode": 95.8982,
+            "encoder": 3978.79,
+            "frontend": 26.4196,
+            "total": 4101.54
+          },
+          "transcript": "读取波形频率"
+        }
+      ],
+      "median_total_ms": 4101.54
+    },
+    {
+      "version": "v8_2_external_patched",
+      "audio": "v2p-2bc4f0e936dd481c--v2voice-00",
+      "duration_s": 2.48,
+      "load_ms": 1748.914213,
+      "results": [
+        {
+          "asr_service_pid": 4168166,
+          "backend": "PS_CPU_ONNX_INT8_resident",
+          "board_runtime_verified": false,
+          "confirmation_required": true,
+          "decoder": "offline_ctc_context_prefix",
+          "frequency_hz": null,
+          "instrument_control_executed": false,
+          "intent_proposal": "CMD_IDENTIFY_INSTRUMENT",
+          "memory": {
+            "process_rss_kib": 156364,
+            "process_swap_kib": 0,
+            "system_available_kib": 4427056
+          },
+          "model_load_count": 1,
+          "parser": "constrained_zh_rules_v6r2_native",
+          "process_peak_rss_kib": 173552,
+          "reason": "single_supported_command_proposal",
+          "service_model_load_ms": 1748.914213,
+          "service_model_reused": true,
+          "service_queue_wait_ms": 0.0,
+          "service_startup_wait_ms": 0.504089,
+          "timing_ms": {
+            "ctc_decode": 136.331,
+            "encoder": 6721.57,
+            "frontend": 43.7231,
+            "total": 6902.29
+          },
+          "transcript": "请查询信号发生器的型号"
+        },
+        {
+          "asr_service_pid": 4168166,
+          "backend": "PS_CPU_ONNX_INT8_resident",
+          "board_runtime_verified": false,
+          "confirmation_required": true,
+          "decoder": "offline_ctc_context_prefix",
+          "frequency_hz": null,
+          "instrument_control_executed": false,
+          "intent_proposal": "CMD_IDENTIFY_INSTRUMENT",
+          "memory": {
+            "process_rss_kib": 156364,
+            "process_swap_kib": 0,
+            "system_available_kib": 4429604
+          },
+          "model_load_count": 1,
+          "parser": "constrained_zh_rules_v6r2_native",
+          "process_peak_rss_kib": 174372,
+          "reason": "single_supported_command_proposal",
+          "service_model_load_ms": 1748.914213,
+          "service_model_reused": true,
+          "service_queue_wait_ms": 0.0,
+          "service_startup_wait_ms": 0.437184,
+          "timing_ms": {
+            "ctc_decode": 130.482,
+            "encoder": 6283.09,
+            "frontend": 42.4545,
+            "total": 6456.56
+          },
+          "transcript": "请查询信号发生器的型号"
+        },
+        {
+          "asr_service_pid": 4168166,
+          "backend": "PS_CPU_ONNX_INT8_resident",
+          "board_runtime_verified": false,
+          "confirmation_required": true,
+          "decoder": "offline_ctc_context_prefix",
+          "frequency_hz": null,
+          "instrument_control_executed": false,
+          "intent_proposal": "CMD_IDENTIFY_INSTRUMENT",
+          "memory": {
+            "process_rss_kib": 156364,
+            "process_swap_kib": 0,
+            "system_available_kib": 4566944
+          },
+          "model_load_count": 1,
+          "parser": "constrained_zh_rules_v6r2_native",
+          "process_peak_rss_kib": 174408,
+          "reason": "single_supported_command_proposal",
+          "service_model_load_ms": 1748.914213,
+          "service_model_reused": true,
+          "service_queue_wait_ms": 0.0,
+          "service_startup_wait_ms": 0.543127,
+          "timing_ms": {
+            "ctc_decode": 145.919,
+            "encoder": 6016.54,
+            "frontend": 41.8976,
+            "total": 6204.92
+          },
+          "transcript": "请查询信号发生器的型号"
+        }
+      ],
+      "median_total_ms": 6456.56
+    },
+    {
+      "version": "v8_2_external_patched",
+      "audio": "v2p-bbd5fd87d385d623--v2voice-11",
+      "duration_s": 4.0,
+      "load_ms": 1748.914213,
+      "results": [
+        {
+          "asr_service_pid": 4168166,
+          "backend": "PS_CPU_ONNX_INT8_resident",
+          "board_runtime_verified": false,
+          "confirmation_required": true,
+          "decoder": "offline_ctc_context_prefix",
+          "frequency_hz": null,
+          "instrument_control_executed": false,
+          "intent_proposal": "UNMATCHED",
+          "memory": {
+            "process_rss_kib": 156816,
+            "process_swap_kib": 0,
+            "system_available_kib": 4296412
+          },
+          "model_load_count": 1,
+          "parser": "constrained_zh_rules_v6r2_native",
+          "process_peak_rss_kib": 186280,
+          "reason": "negative_question_or_reported_command_requires_review",
+          "service_model_load_ms": 1748.914213,
+          "service_model_reused": true,
+          "service_queue_wait_ms": 0.0,
+          "service_startup_wait_ms": 0.427239,
+          "timing_ms": {
+            "ctc_decode": 222.057,
+            "encoder": 10455.6,
+            "frontend": 74.5073,
+            "total": 10752.4
+          },
+          "transcript": "嗯老师刚才讲了峰峰值的含义"
+        },
+        {
+          "asr_service_pid": 4168166,
+          "backend": "PS_CPU_ONNX_INT8_resident",
+          "board_runtime_verified": false,
+          "confirmation_required": true,
+          "decoder": "offline_ctc_context_prefix",
+          "frequency_hz": null,
+          "instrument_control_executed": false,
+          "intent_proposal": "UNMATCHED",
+          "memory": {
+            "process_rss_kib": 155988,
+            "process_swap_kib": 0,
+            "system_available_kib": 4152296
+          },
+          "model_load_count": 1,
+          "parser": "constrained_zh_rules_v6r2_native",
+          "process_peak_rss_kib": 186628,
+          "reason": "negative_question_or_reported_command_requires_review",
+          "service_model_load_ms": 1748.914213,
+          "service_model_reused": true,
+          "service_queue_wait_ms": 0.0,
+          "service_startup_wait_ms": 0.415946,
+          "timing_ms": {
+            "ctc_decode": 208.634,
+            "encoder": 10077.3,
+            "frontend": 67.5853,
+            "total": 10353.7
+          },
+          "transcript": "嗯老师刚才讲了峰峰值的含义"
+        },
+        {
+          "asr_service_pid": 4168166,
+          "backend": "PS_CPU_ONNX_INT8_resident",
+          "board_runtime_verified": false,
+          "confirmation_required": true,
+          "decoder": "offline_ctc_context_prefix",
+          "frequency_hz": null,
+          "instrument_control_executed": false,
+          "intent_proposal": "UNMATCHED",
+          "memory": {
+            "process_rss_kib": 157268,
+            "process_swap_kib": 0,
+            "system_available_kib": 3841328
+          },
+          "model_load_count": 1,
+          "parser": "constrained_zh_rules_v6r2_native",
+          "process_peak_rss_kib": 186628,
+          "reason": "negative_question_or_reported_command_requires_review",
+          "service_model_load_ms": 1748.914213,
+          "service_model_reused": true,
+          "service_queue_wait_ms": 0.0,
+          "service_startup_wait_ms": 0.565098,
+          "timing_ms": {
+            "ctc_decode": 208.249,
+            "encoder": 10419.6,
+            "frontend": 69.5722,
+            "total": 10697.7
+          },
+          "transcript": "嗯老师刚才讲了峰峰值的含义"
+        }
+      ],
+      "median_total_ms": 10697.7
+    }
+  ],
+  "arm_service_warmup": {
+    "asr_service_pid": 4168166,
+    "busy": false,
+    "completed_requests": 0,
+    "microphone_opened_by_service": false,
+    "model_load_count": 1,
+    "model_load_ms": 1748.914213,
+    "ready": true,
+    "rss_kib": 137320,
+    "state": "ready",
+    "swap_kib": 0,
+    "type": "voice_service_status",
+    "version": "8.2",
+    "warmup_wait_ms": 2099.823001
+  },
+  "arm_client_status": {
+    "asr_service_pid": 4168166,
+    "busy": false,
+    "completed_requests": 9,
+    "microphone_opened_by_service": false,
+    "model_load_count": 1,
+    "model_load_ms": 1748.914213,
+    "ready": true,
+    "rss_kib": 157268,
+    "state": "ready",
+    "swap_kib": 0,
+    "type": "voice_service_status",
+    "version": "8.2"
+  }
+}

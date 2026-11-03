@@ -1,0 +1,73 @@
+{
+  "checked_at": "2026-11-03T09:36:45.631503+08:00",
+  "checks": [
+    {
+      "name": "ascii_file_paths",
+      "passed": true
+    },
+    {
+      "name": "python_syntax",
+      "passed": true,
+      "errors": []
+    },
+    {
+      "name": "engineering_document_links",
+      "passed": true,
+      "broken": [],
+      "preserved_skill_full_project_references": 8
+    },
+    {
+      "name": "original_source_hashes",
+      "passed": true,
+      "count": 1059
+    },
+    {
+      "name": "skill_unchanged",
+      "passed": true,
+      "files": 18
+    },
+    {
+      "name": "report_unchanged",
+      "passed": true,
+      "files": 1
+    },
+    {
+      "name": "closed_source_modules_absent",
+      "passed": true
+    },
+    {
+      "name": "credential_scan",
+      "passed": true,
+      "paths": []
+    },
+    {
+      "name": "python_tests",
+      "passed": true,
+      "exit_code": 0
+    },
+    {
+      "name": "powershell_tests",
+      "passed": true,
+      "exit_code": 0
+    },
+    {
+      "name": "original_skill_evidence",
+      "passed": true,
+      "exit_code": 0
+    },
+    {
+      "name": "evaluation_saved_outputs",
+      "passed": true
+    },
+    {
+      "name": "audio_827_original_hashes",
+      "passed": true
+    }
+  ],
+  "passed": true,
+  "limits": [
+    "No board or cloud test",
+    "No new model inference",
+    "No cross compilation"
+  ]
+}

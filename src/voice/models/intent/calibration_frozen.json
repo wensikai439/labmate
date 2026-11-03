@@ -1,0 +1,53 @@
+{
+  "temperature": 0.8555950256826023,
+  "class_thresholds": [
+    1.000001,
+    1.000001,
+    0.9,
+    0.9568754306403469,
+    0.9,
+    0.916934261495837,
+    0.9879988267975132,
+    0.9664496949391345,
+    0.9643213867296033,
+    0.9946496868035792
+  ],
+  "fit_scope": "six disjoint V6 synthetic calibration voice profiles; three correlated acoustic views per base recording",
+  "unique_recordings": 1081,
+  "synthetic_voice_profiles": [
+    "synthetic:v6-cosyvoice3-calibration-00",
+    "synthetic:v6-cosyvoice3-calibration-01",
+    "synthetic:v6-qwen3_tts_base-calibration-00",
+    "synthetic:v6-qwen3_tts_base-calibration-01",
+    "synthetic:v6-qwen3_tts_base-calibration-02",
+    "synthetic:v6-qwen3_tts_base-calibration-03"
+  ],
+  "class_balanced_NLL": 0.5245358249461699,
+  "fit_metrics": {
+    "accuracy": 0.7998766574159729,
+    "macro_recall": 0.7978670599660662,
+    "per_class_recall": [
+      0.8076588337684943,
+      null,
+      0.8021978021978022,
+      0.9754385964912281,
+      0.9270833333333334,
+      0.8235294117647058,
+      0.759493670886076,
+      0.5243055555555556,
+      0.7659574468085106,
+      0.7951388888888888
+    ],
+    "examples": 3243
+  },
+  "accepted_command_proposals": 714,
+  "incorrect_command_proposals": 0,
+  "correct_command_coverage": 0.34097421203438394,
+  "calibration_x_sha256": "3043548b27205b18307552f17e72634d12441cc7a90b3fe8fd2a42a15544980f",
+  "calibration_ids_sha256": "9067a3d2b2bf056c9dd880e2e824a6523aa6c733311b16e53e2829c8a2056b77",
+  "final_test_used": false,
+  "real_lab_false_activations_per_hour_available": false,
+  "thresholds_above_one_disable_classes": true,
+  "confirmation_required": true,
+  "instrument_control_executed": false
+}

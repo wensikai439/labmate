@@ -1,0 +1,226 @@
+{
+  "models": {
+    "encoder.quant.onnx": {
+      "bytes": 94687935,
+      "ops": {
+        "Constant": 631,
+        "Reshape": 123,
+        "Sub": 74,
+        "ConstantOfShape": 12,
+        "Mul": 442,
+        "Concat": 73,
+        "Unsqueeze": 113,
+        "DynamicQuantizeLinear": 112,
+        "Slice": 13,
+        "ConvInteger": 38,
+        "Transpose": 133,
+        "Cast": 171,
+        "Add": 367,
+        "Relu": 2,
+        "Shape": 102,
+        "Gather": 102,
+        "MatMulInteger": 109,
+        "ReduceMean": 146,
+        "Pow": 73,
+        "Sqrt": 73,
+        "Div": 85,
+        "Sigmoid": 48,
+        "MatMul": 36,
+        "Softmax": 12,
+        "Pad": 12,
+        "Split": 12
+      },
+      "types_bytes": {
+        "1": 11037312,
+        "3": 82934272,
+        "7": 0
+      },
+      "largest_initializers": [
+        {
+          "name": "encoder.embed.pos_enc.pe",
+          "shape": [
+            1,
+            5000,
+            512
+          ],
+          "type": 1,
+          "bytes": 10240000
+        },
+        {
+          "name": "onnx::MatMul_3264_quantized",
+          "shape": [
+            9728,
+            512
+          ],
+          "type": 3,
+          "bytes": 4980736
+        },
+        {
+          "name": "encoder.embed.conv.2.weight_quantized",
+          "shape": [
+            512,
+            512,
+            3,
+            3
+          ],
+          "type": 3,
+          "bytes": 2359296
+        },
+        {
+          "name": "onnx::MatMul_3268_quantized",
+          "shape": [
+            512,
+            2048
+          ],
+          "type": 3,
+          "bytes": 1048576
+        },
+        {
+          "name": "onnx::MatMul_3269_quantized",
+          "shape": [
+            2048,
+            512
+          ],
+          "type": 3,
+          "bytes": 1048576
+        },
+        {
+          "name": "onnx::MatMul_3323_quantized",
+          "shape": [
+            512,
+            2048
+          ],
+          "type": 3,
+          "bytes": 1048576
+        },
+        {
+          "name": "onnx::MatMul_3324_quantized",
+          "shape": [
+            2048,
+            512
+          ],
+          "type": 3,
+          "bytes": 1048576
+        },
+        {
+          "name": "onnx::MatMul_3325_quantized",
+          "shape": [
+            512,
+            2048
+          ],
+          "type": 3,
+          "bytes": 1048576
+        },
+        {
+          "name": "onnx::MatMul_3326_quantized",
+          "shape": [
+            2048,
+            512
+          ],
+          "type": 3,
+          "bytes": 1048576
+        },
+        {
+          "name": "onnx::MatMul_3344_quantized",
+          "shape": [
+            512,
+            2048
+          ],
+          "type": 3,
+          "bytes": 1048576
+        },
+        {
+          "name": "onnx::MatMul_3345_quantized",
+          "shape": [
+            2048,
+            512
+          ],
+          "type": 3,
+          "bytes": 1048576
+        },
+        {
+          "name": "onnx::MatMul_3346_quantized",
+          "shape": [
+            512,
+            2048
+          ],
+          "type": 3,
+          "bytes": 1048576
+        },
+        {
+          "name": "onnx::MatMul_3347_quantized",
+          "shape": [
+            2048,
+            512
+          ],
+          "type": 3,
+          "bytes": 1048576
+        },
+        {
+          "name": "onnx::MatMul_3365_quantized",
+          "shape": [
+            512,
+            2048
+          ],
+          "type": 3,
+          "bytes": 1048576
+        },
+        {
+          "name": "onnx::MatMul_3366_quantized",
+          "shape": [
+            2048,
+            512
+          ],
+          "type": 3,
+          "bytes": 1048576
+        }
+      ]
+    },
+    "ctc.quant.onnx": {
+      "bytes": 2189086,
+      "ops": {
+        "DynamicQuantizeLinear": 1,
+        "Mul": 2,
+        "MatMulInteger": 1,
+        "Cast": 1,
+        "Add": 1,
+        "LogSoftmax": 1
+      },
+      "types_bytes": {
+        "1": 16960,
+        "3": 2170880
+      },
+      "largest_initializers": [
+        {
+          "name": "onnx::MatMul_7_quantized",
+          "shape": [
+            512,
+            4240
+          ],
+          "type": 3,
+          "bytes": 2170880
+        },
+        {
+          "name": "linear.bias",
+          "shape": [
+            4240
+          ],
+          "type": 1,
+          "bytes": 16960
+        },
+        {
+          "name": "onnx::MatMul_7_scale",
+          "shape": [],
+          "type": 1,
+          "bytes": 0
+        },
+        {
+          "name": "onnx::MatMul_7_zero_point",
+          "shape": [],
+          "type": 3,
+          "bytes": 0
+        }
+      ]
+    }
+  }
+}

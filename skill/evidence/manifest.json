@@ -1,0 +1,81 @@
+{
+  "schema_version": 1,
+  "files": [
+    {
+      "file": "old-reproduction.json",
+      "sha256": "725ae6a9cf2a882316514d9be7ab2bf498ab62fb58adc8f02b34b8db2c11fa53",
+      "source": "D:/qiansai/skill/evidence/old-reproduction.json",
+      "acquisition_date": "2026-10-30",
+      "date_basis": "Development conversation and archive context; board epoch is not wall-clock evidence",
+      "kind": "SCPI failure reproduction",
+      "v08_sha256": "725ae6a9cf2a882316514d9be7ab2bf498ab62fb58adc8f02b34b8db2c11fa53"
+    },
+    {
+      "file": "candidate-hardware.json",
+      "sha256": "ce907cc63661928c6371a83303083fa22f12d30dfe0254bec5ce27b0cde571b9",
+      "source": "D:/qiansai/skill/evidence/candidate-hardware.json",
+      "acquisition_date": "2026-10-30",
+      "date_basis": "Development conversation and archive context; board epoch is not wall-clock evidence",
+      "kind": "Three hardware cases and restoration",
+      "v08_sha256": "ce907cc63661928c6371a83303083fa22f12d30dfe0254bec5ce27b0cde571b9"
+    },
+    {
+      "file": "local-test-results.json",
+      "sha256": "1202b402d3ab5855a44ea00b4be70c5aeea2a6c1b5350d37543926e9ef5107ee",
+      "source": "D:/qiansai/skill/evidence/local-test-results.json",
+      "acquisition_date": "2026-10-30",
+      "date_basis": "Development conversation and archive context; board epoch is not wall-clock evidence",
+      "kind": "Historical local and UI regression summary",
+      "v08_sha256": "1202b402d3ab5855a44ea00b4be70c5aeea2a6c1b5350d37543926e9ef5107ee"
+    },
+    {
+      "file": "model-checkpoints.json",
+      "sha256": "95f8853689ebc1981abb763dc414badafc77bee144ccbe9133b3ea11fd5b7c7f",
+      "source": "sim/historical/file_b30e473d38d8.json",
+      "acquisition_date": "2026-10-28",
+      "date_basis": "Development conversation and archive context; board epoch is not wall-clock evidence",
+      "kind": "38 model lifecycle checkpoints"
+    },
+    {
+      "file": "ds-integration.json",
+      "sha256": "3c643d4a8539d1d4fdc01b13018bb673aff13784e0f506f9fe5e835549008afd",
+      "source": "sim/historical/file_3a11b0c268ef.json",
+      "acquisition_date": "2026-10-28",
+      "date_basis": "Development conversation and archive context; board epoch is not wall-clock evidence",
+      "kind": "23 integration checks"
+    },
+    {
+      "file": "ds-reconnect.json",
+      "sha256": "49d1af0025ae44ebbb9a208fde796069898c57f22a02720011640cfe37d56430",
+      "source": "sim/historical/ds_reconnect_board_probe.json",
+      "acquisition_date": "2026-11-01",
+      "date_basis": "Development conversation and archive context; board epoch is not wall-clock evidence",
+      "kind": "Three board DS replies; no instrument control"
+    },
+    {
+      "file": "quotes.json",
+      "sha256": "bb630f6ecbea75b48a9087d043a4b13d00c3ce206cbf016bd47e2ddb0aac4ce1",
+      "source": "Original development chats; thread_id, turn_id and item index are included in quotes.json",
+      "acquisition_date": "2026-11-01",
+      "kind": "25 verbatim excerpts from original development chats",
+      "source_rechecked_date": "2026-11-02"
+    },
+    {
+      "file": "reuse-results.json",
+      "sha256": "5c0be42a89724cb02e8f0173436e67fa59bddac713c7129f0d81823782aae7bb",
+      "source": "skill/run_checks.py",
+      "acquisition_date": "2026-11-01",
+      "kind": "Historical November 1 offline execution of existing tests"
+    },
+    {
+      "file": "current-results.json",
+      "sha256": "16361da4899bcd67c21e1057f44cf26dba69ef7a6e584c9fef118e4e1859fdb4",
+      "source": "skill/run_checks.py",
+      "acquisition_date": "2026-11-02",
+      "kind": "27 offline cases using source dependencies from v20261101_09 engineering ZIP; no hardware or cloud"
+    }
+  ],
+  "date_note": "Acquisition dates follow original development turns. Some original board timestamps reflect an unsynchronized 2022 clock.",
+  "integrity_note": "SHA-256 checks file identity within this delivery; source traceability is provided separately and is not a digital signature.",
+  "scope": "Historical evidence bytes retained. current-results.json is a separate November 2 offline run; engineering package and source hashes are recorded there."
+}
